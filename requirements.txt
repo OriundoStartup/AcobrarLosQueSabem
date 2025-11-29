@@ -1,0 +1,13 @@
+# Core
+streamlit==1.31.0
+python-dotenv==1.0.0
+
+# Database
+sqlalchemy==2.0.25
+
+# Validation
+pydantic==2.6.0
+pydantic-settings==2.1.0
+
+# Utilities
+loguru==0.7.2
