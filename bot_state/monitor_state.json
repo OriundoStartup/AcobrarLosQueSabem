@@ -1,0 +1,60 @@
+{
+  "last_check": "2025-12-02T17:12:19.962476",
+  "known_programs": {
+    "35587e984129": {
+      "fecha": null,
+      "hipodromo": "HC",
+      "descargado": false,
+      "detectado": "2025-12-02T17:11:34.170211"
+    },
+    "4cdc50b19864": {
+      "fecha": null,
+      "hipodromo": "HC",
+      "descargado": false,
+      "detectado": "2025-12-02T17:11:34.170264"
+    },
+    "90619ecd2a14": {
+      "fecha": null,
+      "hipodromo": "HC",
+      "descargado": false,
+      "detectado": "2025-12-02T17:11:34.170286"
+    },
+    "07c92e27f01b": {
+      "fecha": null,
+      "hipodromo": "HC",
+      "descargado": false,
+      "detectado": "2025-12-02T17:11:34.170305"
+    },
+    "cb27c788d282": {
+      "fecha": null,
+      "hipodromo": "HC",
+      "descargado": false,
+      "detectado": "2025-12-02T17:11:34.170324"
+    },
+    "d3be78ac7c62": {
+      "fecha": null,
+      "hipodromo": "HC",
+      "descargado": false,
+      "detectado": "2025-12-02T17:11:34.170369"
+    },
+    "8d4a730e067d": {
+      "fecha": null,
+      "hipodromo": "CHS",
+      "descargado": true,
+      "detectado": "2025-12-02T17:12:03.953046"
+    },
+    "173e28a5afdf": {
+      "fecha": null,
+      "hipodromo": "CHS",
+      "descargado": true,
+      "detectado": "2025-12-02T17:12:03.953073"
+    },
+    "4dbc0df438d9": {
+      "fecha": null,
+      "hipodromo": "CHS",
+      "descargado": true,
+      "detectado": "2025-12-02T17:12:03.953094"
+    }
+  },
+  "known_results": {}
+}

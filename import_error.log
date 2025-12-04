@@ -1,0 +1,37 @@
+Error dumping raw_resultados: duplicate column name: carrera
+Traceback (most recent call last):
+  File "C:\Users\USUARIO\a-cobrar-los-que-saben\app\ml\import_raw_optimized.py", line 86, in import_files
+    final_df.to_sql(table_name, conn, if_exists='replace', index=False)
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USUARIO\AppData\Local\Programs\Python\Python313\Lib\site-packages\pandas\util\_decorators.py", line 333, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\USUARIO\AppData\Local\Programs\Python\Python313\Lib\site-packages\pandas\core\generic.py", line 3109, in to_sql
+    return sql.to_sql(
+           ~~~~~~~~~~^
+        self,
+        ^^^^^
+    ...<8 lines>...
+        method=method,
+        ^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\USUARIO\AppData\Local\Programs\Python\Python313\Lib\site-packages\pandas\io\sql.py", line 844, in to_sql
+    return pandas_sql.to_sql(
+           ~~~~~~~~~~~~~~~~~^
+        frame,
+        ^^^^^^
+    ...<9 lines>...
+        **engine_kwargs,
+        ^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\USUARIO\AppData\Local\Programs\Python\Python313\Lib\site-packages\pandas\io\sql.py", line 2840, in to_sql
+    table.create()
+    ~~~~~~~~~~~~^^
+  File "C:\Users\USUARIO\AppData\Local\Programs\Python\Python313\Lib\site-packages\pandas\io\sql.py", line 997, in create
+    self._execute_create()
+    ~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\USUARIO\AppData\Local\Programs\Python\Python313\Lib\site-packages\pandas\io\sql.py", line 2514, in _execute_create
+    conn.execute(stmt)
+    ~~~~~~~~~~~~^^^^^^
+sqlite3.OperationalError: duplicate column name: carrera

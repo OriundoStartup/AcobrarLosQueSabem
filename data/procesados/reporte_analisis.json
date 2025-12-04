@@ -1,0 +1,138 @@
+{
+  "fecha_generacion": "2025-12-02T10:20:06.382461",
+  "resumen": {
+    "total_jornadas": 4,
+    "total_carreras": 70,
+    "total_participantes": 813
+  },
+  "jornadas": [
+    {
+      "fecha": "2025-12-03",
+      "hipodromo": "Valparaíso Sporting Club",
+      "total_carreras": 15,
+      "carreras_ids": 15
+    },
+    {
+      "fecha": "2025-12-01",
+      "hipodromo": "Club Hípico de Santiago",
+      "total_carreras": 18,
+      "carreras_ids": 18
+    },
+    {
+      "fecha": "2025-11-30",
+      "hipodromo": "Club Hípico de Santiago",
+      "total_carreras": 18,
+      "carreras_ids": 18
+    },
+    {
+      "fecha": "2025-11-22",
+      "hipodromo": "Sin especificar",
+      "total_carreras": 19,
+      "carreras_ids": 19
+    }
+  ],
+  "top_jinetes": [
+    {
+      "jinete": "Hugo Ochoa",
+      "num_montadas": 25,
+      "num_carreras": 25
+    },
+    {
+      "jinete": "Jaime Medina",
+      "num_montadas": 22,
+      "num_carreras": 22
+    },
+    {
+      "jinete": "Rodolfo Fuenzalida",
+      "num_montadas": 21,
+      "num_carreras": 21
+    },
+    {
+      "jinete": "Nicolas Ramirez",
+      "num_montadas": 21,
+      "num_carreras": 21
+    },
+    {
+      "jinete": "Rodrigo Painen",
+      "num_montadas": 19,
+      "num_carreras": 19
+    },
+    {
+      "jinete": "Felipe Henriquez",
+      "num_montadas": 18,
+      "num_carreras": 18
+    },
+    {
+      "jinete": "Darien Cheuque",
+      "num_montadas": 18,
+      "num_carreras": 18
+    },
+    {
+      "jinete": "Nicolas Santibañez",
+      "num_montadas": 17,
+      "num_carreras": 17
+    },
+    {
+      "jinete": "Wladimir Quinteros",
+      "num_montadas": 16,
+      "num_carreras": 16
+    },
+    {
+      "jinete": "Francisco Morales",
+      "num_montadas": 13,
+      "num_carreras": 13
+    }
+  ],
+  "top_caballos": [
+    {
+      "nombre_caballo": "DOÑA CONSUELO",
+      "num_carreras": 2,
+      "peso_promedio": 55.0
+    },
+    {
+      "nombre_caballo": "ZM",
+      "num_carreras": 1,
+      "peso_promedio": 60.0
+    },
+    {
+      "nombre_caballo": "YIPSSI SAYEN",
+      "num_carreras": 1,
+      "peso_promedio": 57.0
+    },
+    {
+      "nombre_caballo": "XENOTES",
+      "num_carreras": 1,
+      "peso_promedio": 57.0
+    },
+    {
+      "nombre_caballo": "WINGS OF FIRE",
+      "num_carreras": 1,
+      "peso_promedio": 57.0
+    },
+    {
+      "nombre_caballo": "WARRIOR SPIRIT",
+      "num_carreras": 1,
+      "peso_promedio": 57.0
+    },
+    {
+      "nombre_caballo": "WARA AND RED",
+      "num_carreras": 1,
+      "peso_promedio": 57.0
+    },
+    {
+      "nombre_caballo": "WALLACE",
+      "num_carreras": 1,
+      "peso_promedio": 57.0
+    },
+    {
+      "nombre_caballo": "VILLERA",
+      "num_carreras": 1,
+      "peso_promedio": 58.0
+    },
+    {
+      "nombre_caballo": "VIDA SALVAJE",
+      "num_carreras": 1,
+      "peso_promedio": 56.0
+    }
+  ]
+}

@@ -1,0 +1,7357 @@
+{
+  "metadata": {
+    "fecha_generacion": "2025-12-04 12:40:37",
+    "modelo": "xgboost",
+    "metricas_entrenamiento": {
+      "rmse_train": 0.13810516126488137,
+      "rmse_test": 0.8637270229612372,
+      "mae_train": 0.09917078912258148,
+      "mae_test": 0.5603029131889343,
+      "r2_train": 0.9994807243347168,
+      "r2_test": 0.9697760343551636
+    }
+  },
+  "predicciones": [
+    {
+      "fecha": "2025-11-17",
+      "hipodromo": "CHC",
+      "nro_carrera": 1,
+      "confianza": 42,
+      "top4": [
+        "PERFECTA ACTITUD",
+        "LUPO",
+        "NO HAY ADIOS"
+      ],
+      "detalle": [
+        {
+          "caballo": "PERFECTA ACTITUD",
+          "jinete": "JOSE VILLABLANCA",
+          "partidor": 10,
+          "puntaje": 4.604,
+          "probabilidad": 100,
+          "ranking": 1,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "LUPO",
+          "jinete": "FRANCISCO MORALES",
+          "partidor": 11,
+          "puntaje": 4.949,
+          "probabilidad": 83,
+          "ranking": 2,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "NO HAY ADIOS",
+          "jinete": "BASTIAN SOTO",
+          "partidor": 3,
+          "puntaje": 6.7519,
+          "probabilidad": 0,
+          "ranking": 3,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        }
+      ]
+    },
+    {
+      "fecha": "2025-11-17",
+      "hipodromo": "CHC",
+      "nro_carrera": 2,
+      "confianza": 18,
+      "top4": [
+        "TURQUESA DORADA",
+        "FRANBEL SOUR",
+        "PACIENCIA ETERNA",
+        "SEE YOU AGAIN"
+      ],
+      "detalle": [
+        {
+          "caballo": "TURQUESA DORADA",
+          "jinete": "JORGE VERA",
+          "partidor": 9,
+          "puntaje": 4.8089,
+          "probabilidad": 100,
+          "ranking": 1,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "FRANBEL SOUR",
+          "jinete": "N.N.",
+          "partidor": 2,
+          "puntaje": 5.0035,
+          "probabilidad": 78,
+          "ranking": 2,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "PACIENCIA ETERNA",
+          "jinete": "N.N.",
+          "partidor": 6,
+          "puntaje": 5.1466,
+          "probabilidad": 62,
+          "ranking": 3,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "SEE YOU AGAIN",
+          "jinete": "RONALD FOURNET",
+          "partidor": 10,
+          "puntaje": 5.7184,
+          "probabilidad": 0,
+          "ranking": 4,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        }
+      ]
+    },
+    {
+      "fecha": "2025-11-17",
+      "hipodromo": "CHC",
+      "nro_carrera": 3,
+      "confianza": 0,
+      "top4": [
+        "CHIANA"
+      ],
+      "detalle": [
+        {
+          "caballo": "CHIANA",
+          "jinete": "BERNARDO LEON",
+          "partidor": 2,
+          "puntaje": 5.0035,
+          "probabilidad": 50,
+          "ranking": 1,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        }
+      ]
+    },
+    {
+      "fecha": "2025-11-17",
+      "hipodromo": "CHC",
+      "nro_carrera": 4,
+      "confianza": 3,
+      "top4": [
+        "GUACHACA",
+        "EL BRUJO",
+        "GO SUNSHINE GO"
+      ],
+      "detalle": [
+        {
+          "caballo": "GUACHACA",
+          "jinete": "MAURICIO GALAZ",
+          "partidor": 12,
+          "puntaje": 4.9393,
+          "probabilidad": 100,
+          "ranking": 1,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "EL BRUJO",
+          "jinete": "GERARD RODRIGUEZ",
+          "partidor": 11,
+          "puntaje": 5.065,
+          "probabilidad": 31,
+          "ranking": 2,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "GO SUNSHINE GO",
+          "jinete": "JORGE ZUÑIGA",
+          "partidor": 7,
+          "puntaje": 5.1225,
+          "probabilidad": 0,
+          "ranking": 3,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        }
+      ]
+    },
+    {
+      "fecha": "2025-11-17",
+      "hipodromo": "CHC",
+      "nro_carrera": 5,
+      "confianza": 5,
+      "top4": [
+        "TENTADERO",
+        "MITOU"
+      ],
+      "detalle": [
+        {
+          "caballo": "TENTADERO",
+          "jinete": "IGNACIO VALDIVIA",
+          "partidor": 4,
+          "puntaje": 4.551,
+          "probabilidad": 100,
+          "ranking": 1,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "MITOU",
+          "jinete": "NICOLAS RAMIREZ",
+          "partidor": 5,
+          "puntaje": 4.8493,
+          "probabilidad": 0,
+          "ranking": 2,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        }
+      ]
+    },
+    {
+      "fecha": "2025-11-17",
+      "hipodromo": "CHC",
+      "nro_carrera": 6,
+      "confianza": 0,
+      "top4": [
+        "FLYNG HEARTS"
+      ],
+      "detalle": [
+        {
+          "caballo": "FLYNG HEARTS",
+          "jinete": "JOAQUIN HERRERA",
+          "partidor": 5,
+          "puntaje": 5.0784,
+          "probabilidad": 50,
+          "ranking": 1,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        }
+      ]
+    },
+    {
+      "fecha": "2025-11-17",
+      "hipodromo": "CHC",
+      "nro_carrera": 7,
+      "confianza": 52,
+      "top4": [
+        "HOVLAND",
+        "VITRUVIUS"
+      ],
+      "detalle": [
+        {
+          "caballo": "HOVLAND",
+          "jinete": "DARIEN CHEUQUE",
+          "partidor": 12,
+          "puntaje": 4.9339,
+          "probabilidad": 100,
+          "ranking": 1,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "VITRUVIUS",
+          "jinete": "SEBASTIAN GONZALEZ",
+          "partidor": 8,
+          "puntaje": 7.5732,
+          "probabilidad": 0,
+          "ranking": 2,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        }
+      ]
+    },
+    {
+      "fecha": "2025-11-17",
+      "hipodromo": "CHC",
+      "nro_carrera": 8,
+      "confianza": 0,
+      "top4": [
+        "PEDERNERA"
+      ],
+      "detalle": [
+        {
+          "caballo": "PEDERNERA",
+          "jinete": "JAIME MEDINA",
+          "partidor": 3,
+          "puntaje": 5.0839,
+          "probabilidad": 50,
+          "ranking": 1,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        }
+      ]
+    },
+    {
+      "fecha": "2025-11-17",
+      "hipodromo": "CHC",
+      "nro_carrera": 9,
+      "confianza": 0,
+      "top4": [
+        "CABIN CASSIA"
+      ],
+      "detalle": [
+        {
+          "caballo": "CABIN CASSIA",
+          "jinete": "JAIME MEDINA",
+          "partidor": 7,
+          "puntaje": 5.2193,
+          "probabilidad": 50,
+          "ranking": 1,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        }
+      ]
+    },
+    {
+      "fecha": "2025-11-17",
+      "hipodromo": "CHC",
+      "nro_carrera": 10,
+      "confianza": 0,
+      "top4": [
+        "RED DADDY"
+      ],
+      "detalle": [
+        {
+          "caballo": "RED DADDY",
+          "jinete": "NICOLAS MOLINA",
+          "partidor": 6,
+          "puntaje": 4.9092,
+          "probabilidad": 50,
+          "ranking": 1,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        }
+      ]
+    },
+    {
+      "fecha": "2025-11-17",
+      "hipodromo": "CHC",
+      "nro_carrera": 11,
+      "confianza": 0,
+      "top4": [
+        "INDIAN POET"
+      ],
+      "detalle": [
+        {
+          "caballo": "INDIAN POET",
+          "jinete": "MAURICIO CHAMORRO",
+          "partidor": 1,
+          "puntaje": 4.9603,
+          "probabilidad": 50,
+          "ranking": 1,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        }
+      ]
+    },
+    {
+      "fecha": "2025-11-17",
+      "hipodromo": "CHC",
+      "nro_carrera": 12,
+      "confianza": 0,
+      "top4": [
+        "PAPUDO CHROME"
+      ],
+      "detalle": [
+        {
+          "caballo": "PAPUDO CHROME",
+          "jinete": "VICTOR MIRANDA",
+          "partidor": 7,
+          "puntaje": 7.2441,
+          "probabilidad": 50,
+          "ranking": 1,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        }
+      ]
+    },
+    {
+      "fecha": "2025-11-17",
+      "hipodromo": "CHC",
+      "nro_carrera": 13,
+      "confianza": 28,
+      "top4": [
+        "ENTRE NEGROS",
+        "A TODO VAPOR"
+      ],
+      "detalle": [
+        {
+          "caballo": "ENTRE NEGROS",
+          "jinete": "OSCAR ULLOA",
+          "partidor": 8,
+          "puntaje": 5.4619,
+          "probabilidad": 100,
+          "ranking": 1,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "A TODO VAPOR",
+          "jinete": "JESUS TORO",
+          "partidor": 11,
+          "puntaje": 6.881,
+          "probabilidad": 0,
+          "ranking": 2,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        }
+      ]
+    },
+    {
+      "fecha": "2025-11-17",
+      "hipodromo": "CHC",
+      "nro_carrera": 14,
+      "confianza": 0,
+      "top4": [
+        "SUPERAME"
+      ],
+      "detalle": [
+        {
+          "caballo": "SUPERAME",
+          "jinete": "OSCAR ULLOA",
+          "partidor": 6,
+          "puntaje": 5.0035,
+          "probabilidad": 50,
+          "ranking": 1,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        }
+      ]
+    },
+    {
+      "fecha": "2025-11-17",
+      "hipodromo": "CHC",
+      "nro_carrera": 15,
+      "confianza": 8,
+      "top4": [
+        "QUEEN ANY",
+        "BEL FIOR",
+        "CHICA DEL LUCERO",
+        "JE T'AIME"
+      ],
+      "detalle": [
+        {
+          "caballo": "QUEEN ANY",
+          "jinete": "N.N.",
+          "partidor": 3,
+          "puntaje": 4.8785,
+          "probabilidad": 100,
+          "ranking": 1,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "BEL FIOR",
+          "jinete": "RODRIGO PAINEN",
+          "partidor": 5,
+          "puntaje": 4.8977,
+          "probabilidad": 95,
+          "ranking": 2,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "CHICA DEL LUCERO",
+          "jinete": "NICOLAS MOLINA",
+          "partidor": 4,
+          "puntaje": 5.1312,
+          "probabilidad": 40,
+          "ranking": 3,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "JE T'AIME",
+          "jinete": "GERARD RODRIGUEZ",
+          "partidor": 7,
+          "puntaje": 5.2519,
+          "probabilidad": 12,
+          "ranking": 4,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "CAPITANA MARVEL",
+          "jinete": "WLADIMIR QUINTEROS",
+          "partidor": 2,
+          "puntaje": 5.3058,
+          "probabilidad": 0,
+          "ranking": 5,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        }
+      ]
+    },
+    {
+      "fecha": "2025-11-17",
+      "hipodromo": "CHC",
+      "nro_carrera": 16,
+      "confianza": 39,
+      "top4": [
+        "LA ALU",
+        "ZULEMA ZAHIR",
+        "GRIEZMANN",
+        "BREGO"
+      ],
+      "detalle": [
+        {
+          "caballo": "LA ALU",
+          "jinete": "IGNACIO VALDIVIA",
+          "partidor": 15,
+          "puntaje": 4.6881,
+          "probabilidad": 100,
+          "ranking": 1,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "ZULEMA ZAHIR",
+          "jinete": "JESUS REYES",
+          "partidor": 12,
+          "puntaje": 5.3211,
+          "probabilidad": 67,
+          "ranking": 2,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "GRIEZMANN",
+          "jinete": "RODOLFO S. DORES",
+          "partidor": 4,
+          "puntaje": 6.0993,
+          "probabilidad": 27,
+          "ranking": 3,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "BREGO",
+          "jinete": "BASTIAN SOTO",
+          "partidor": 5,
+          "puntaje": 6.6427,
+          "probabilidad": 0,
+          "ranking": 4,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        }
+      ]
+    },
+    {
+      "fecha": "2025-11-17",
+      "hipodromo": "CHC",
+      "nro_carrera": 17,
+      "confianza": 0,
+      "top4": [
+        "BALDER EL NORUEGO"
+      ],
+      "detalle": [
+        {
+          "caballo": "BALDER EL NORUEGO",
+          "jinete": "RODOLFO FUENZALIDA",
+          "partidor": 2,
+          "puntaje": 4.7359,
+          "probabilidad": 50,
+          "ranking": 1,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        }
+      ]
+    },
+    {
+      "fecha": "2025-11-17",
+      "hipodromo": "CHC",
+      "nro_carrera": 18,
+      "confianza": 41,
+      "top4": [
+        "HAMM GOOD",
+        "JAVIVALETU",
+        "DI LA VERDAD ROSA",
+        "ACHAPLINA"
+      ],
+      "detalle": [
+        {
+          "caballo": "HAMM GOOD",
+          "jinete": "RODRIGO PAINEN",
+          "partidor": 14,
+          "puntaje": 4.7902,
+          "probabilidad": 100,
+          "ranking": 1,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "JAVIVALETU",
+          "jinete": "N.N.",
+          "partidor": 4,
+          "puntaje": 5.0199,
+          "probabilidad": 88,
+          "ranking": 2,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "DI LA VERDAD ROSA",
+          "jinete": "RICARDO SOLORZA",
+          "partidor": 9,
+          "puntaje": 5.6701,
+          "probabilidad": 57,
+          "ranking": 3,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "ACHAPLINA",
+          "jinete": "BASTIAN SOTO",
+          "partidor": 11,
+          "puntaje": 6.8547,
+          "probabilidad": 0,
+          "ranking": 4,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        }
+      ]
+    },
+    {
+      "fecha": "2025-11-21",
+      "hipodromo": "CHC",
+      "nro_carrera": 1,
+      "confianza": 56,
+      "top4": [
+        "QUIEN ME PILLO",
+        "EL KICHAN",
+        "AMOR PERFECTO",
+        "FERRAT"
+      ],
+      "detalle": [
+        {
+          "caballo": "QUIEN ME PILLO",
+          "jinete": "FELIPE HENRIQUEZ",
+          "partidor": 7,
+          "puntaje": 4.3199,
+          "probabilidad": 100,
+          "ranking": 1,
+          "stats": {
+            "carreras": 1,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 4.0
+          }
+        },
+        {
+          "caballo": "EL KICHAN",
+          "jinete": "RODOLFO FUENZALIDA",
+          "partidor": 12,
+          "puntaje": 4.6955,
+          "probabilidad": 86,
+          "ranking": 2,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "AMOR PERFECTO",
+          "jinete": "AXEL ALVAREZ",
+          "partidor": 9,
+          "puntaje": 4.8364,
+          "probabilidad": 81,
+          "ranking": 3,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "FERRAT",
+          "jinete": "JOSE VILLABLANCA",
+          "partidor": 8,
+          "puntaje": 4.8456,
+          "probabilidad": 81,
+          "ranking": 4,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "FLEETWOOD",
+          "jinete": "N.N.",
+          "partidor": 3,
+          "puntaje": 4.8785,
+          "probabilidad": 80,
+          "ranking": 5,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "SOBRAO DE CARIÑO",
+          "jinete": "NICOLAS MOLINA",
+          "partidor": 15,
+          "puntaje": 4.9375,
+          "probabilidad": 78,
+          "ranking": 6,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "MI SOLCITO",
+          "jinete": "NICOLAS SANTIBAÑEZ",
+          "partidor": 11,
+          "puntaje": 4.9531,
+          "probabilidad": 77,
+          "ranking": 7,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "GRAN TOURIST",
+          "jinete": "MOISES A. DONOSO",
+          "partidor": 2,
+          "puntaje": 5.0035,
+          "probabilidad": 75,
+          "ranking": 8,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "YO SOY YI",
+          "jinete": "GERARD RODRIGUEZ",
+          "partidor": 1,
+          "puntaje": 5.0797,
+          "probabilidad": 73,
+          "ranking": 9,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "SPECIAL MACHINE",
+          "jinete": "FRANCISCO MORALES",
+          "partidor": 6,
+          "puntaje": 5.1466,
+          "probabilidad": 70,
+          "ranking": 10,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "AKUMA",
+          "jinete": "JUAN MUÑOZ",
+          "partidor": 5,
+          "puntaje": 5.1466,
+          "probabilidad": 70,
+          "ranking": 11,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "ATEX",
+          "jinete": "DARIEN CHEUQUE",
+          "partidor": 4,
+          "puntaje": 5.198,
+          "probabilidad": 69,
+          "ranking": 12,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "DESCREIDA",
+          "jinete": "TOMAS SEITH",
+          "partidor": 13,
+          "puntaje": 5.498,
+          "probabilidad": 58,
+          "ranking": 13,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "LUDMILA",
+          "jinete": "BASTIAN SOTO",
+          "partidor": 14,
+          "puntaje": 5.7965,
+          "probabilidad": 48,
+          "ranking": 14,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "AHMAKIL",
+          "jinete": "PIERO REYES P.",
+          "partidor": 10,
+          "puntaje": 7.1672,
+          "probabilidad": 0,
+          "ranking": 15,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        }
+      ]
+    },
+    {
+      "fecha": "2025-11-21",
+      "hipodromo": "CHC",
+      "nro_carrera": 2,
+      "confianza": 40,
+      "top4": [
+        "KERRYS",
+        "SONG SONG BLUE",
+        "LADY FIRST",
+        "YA AGUS"
+      ],
+      "detalle": [
+        {
+          "caballo": "KERRYS",
+          "jinete": "RODOLFO FUENZALIDA",
+          "partidor": 9,
+          "puntaje": 4.6481,
+          "probabilidad": 100,
+          "ranking": 1,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "SONG SONG BLUE",
+          "jinete": "RODRIGO COVARRUBIAS",
+          "partidor": 15,
+          "puntaje": 4.7607,
+          "probabilidad": 94,
+          "ranking": 2,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "LADY FIRST",
+          "jinete": "JORGE ZUÑIGA",
+          "partidor": 4,
+          "puntaje": 4.9177,
+          "probabilidad": 86,
+          "ranking": 3,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "YA AGUS",
+          "jinete": "FELIPE HENRIQUEZ",
+          "partidor": 1,
+          "puntaje": 4.9603,
+          "probabilidad": 84,
+          "ranking": 4,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "SIGAN LA MUSICA",
+          "jinete": "RODRIGO PAINEN",
+          "partidor": 7,
+          "puntaje": 5.0356,
+          "probabilidad": 80,
+          "ranking": 5,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "NUEVA ACTRICE",
+          "jinete": "DARIEN CHEUQUE",
+          "partidor": 3,
+          "puntaje": 5.1491,
+          "probabilidad": 75,
+          "ranking": 6,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "LUGA",
+          "jinete": "JONATHAN A. CASTILLO",
+          "partidor": 12,
+          "puntaje": 5.243,
+          "probabilidad": 70,
+          "ranking": 7,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "TIA LUZMIRA",
+          "jinete": "GERARD RODRIGUEZ",
+          "partidor": 6,
+          "puntaje": 5.2562,
+          "probabilidad": 69,
+          "ranking": 8,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "POWER GIRL",
+          "jinete": "FABIAN MEDINA",
+          "partidor": 11,
+          "puntaje": 5.3295,
+          "probabilidad": 66,
+          "ranking": 9,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "GOLFISTA",
+          "jinete": "MIGUEL GUTIERREZ",
+          "partidor": 5,
+          "puntaje": 5.3409,
+          "probabilidad": 65,
+          "ranking": 10,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "MI NIETA AGUSTINA",
+          "jinete": "NICOLAS MOLINA",
+          "partidor": 8,
+          "puntaje": 5.3804,
+          "probabilidad": 63,
+          "ranking": 11,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "LANNA",
+          "jinete": "JOSE CUETO",
+          "partidor": 13,
+          "puntaje": 5.498,
+          "probabilidad": 58,
+          "ranking": 12,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "SAHOURIYE",
+          "jinete": "BASTIAN SOTO",
+          "partidor": 14,
+          "puntaje": 5.7965,
+          "probabilidad": 43,
+          "ranking": 13,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "SEÑORA RITA",
+          "jinete": "RONALD FOURNET",
+          "partidor": 2,
+          "puntaje": 6.1207,
+          "probabilidad": 27,
+          "ranking": 14,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "ESTILO ANTIGUO",
+          "jinete": "SEBASTIAN GONZALEZ",
+          "partidor": 10,
+          "puntaje": 6.6736,
+          "probabilidad": 0,
+          "ranking": 15,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        }
+      ]
+    },
+    {
+      "fecha": "2025-11-21",
+      "hipodromo": "CHC",
+      "nro_carrera": 3,
+      "confianza": 6,
+      "top4": [
+        "MY RESILIENCE",
+        "PERFECTA ACTITUD",
+        "EL BIGOTE",
+        "GENESIS"
+      ],
+      "detalle": [
+        {
+          "caballo": "MY RESILIENCE",
+          "jinete": "NICOLAS RAMIREZ",
+          "partidor": 2,
+          "puntaje": 4.7864,
+          "probabilidad": 100,
+          "ranking": 1,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "PERFECTA ACTITUD",
+          "jinete": "JOSE VILLABLANCA",
+          "partidor": 8,
+          "puntaje": 4.8456,
+          "probabilidad": 82,
+          "ranking": 2,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "EL BIGOTE",
+          "jinete": "AXEL ALVAREZ",
+          "partidor": 7,
+          "puntaje": 4.8697,
+          "probabilidad": 74,
+          "ranking": 3,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "GENESIS",
+          "jinete": "HUGO OCHOA",
+          "partidor": 4,
+          "puntaje": 4.8771,
+          "probabilidad": 72,
+          "ranking": 4,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "SASSI",
+          "jinete": "BERNARDO LEON",
+          "partidor": 3,
+          "puntaje": 4.8785,
+          "probabilidad": 72,
+          "ranking": 5,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "PESO DORADO",
+          "jinete": "JORGE ZUÑIGA",
+          "partidor": 1,
+          "puntaje": 4.9175,
+          "probabilidad": 60,
+          "ranking": 6,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "EL FELICIDAD",
+          "jinete": "JONATHAN A. CASTILLO",
+          "partidor": 5,
+          "puntaje": 4.9318,
+          "probabilidad": 56,
+          "ranking": 7,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "MUY SOLO AQUI",
+          "jinete": "RAFAEL CISTERNAS",
+          "partidor": 6,
+          "puntaje": 5.1172,
+          "probabilidad": 0,
+          "ranking": 8,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        }
+      ]
+    },
+    {
+      "fecha": "2025-11-21",
+      "hipodromo": "CHC",
+      "nro_carrera": 4,
+      "confianza": 12,
+      "top4": [
+        "BERNOULLI",
+        "CAMBIA EL SWITCH",
+        "SIRENA SOLITARIA",
+        "SEVEN WONDERS"
+      ],
+      "detalle": [
+        {
+          "caballo": "BERNOULLI",
+          "jinete": "IGNACIO VALDIVIA",
+          "partidor": 5,
+          "puntaje": 4.6776,
+          "probabilidad": 100,
+          "ranking": 1,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "CAMBIA EL SWITCH",
+          "jinete": "FABIAN MEDINA",
+          "partidor": 4,
+          "puntaje": 4.8092,
+          "probabilidad": 78,
+          "ranking": 2,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "SIRENA SOLITARIA",
+          "jinete": "HUGO OCHOA",
+          "partidor": 1,
+          "puntaje": 4.8769,
+          "probabilidad": 67,
+          "ranking": 3,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "SEVEN WONDERS",
+          "jinete": "ANYELO RIVERA",
+          "partidor": 6,
+          "puntaje": 4.9318,
+          "probabilidad": 58,
+          "ranking": 4,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "PRIVATE PARTY",
+          "jinete": "OSCAR ULLOA",
+          "partidor": 7,
+          "puntaje": 5.1457,
+          "probabilidad": 22,
+          "ranking": 5,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "MALORY",
+          "jinete": "JAIME MEDINA",
+          "partidor": 2,
+          "puntaje": 5.2273,
+          "probabilidad": 9,
+          "ranking": 6,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "LADY IN BLACK",
+          "jinete": "JOAQUIN HERRERA",
+          "partidor": 3,
+          "puntaje": 5.2829,
+          "probabilidad": 0,
+          "ranking": 7,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        }
+      ]
+    },
+    {
+      "fecha": "2025-11-21",
+      "hipodromo": "CHC",
+      "nro_carrera": 5,
+      "confianza": 100,
+      "top4": [
+        "QUARTARELLA",
+        "ACLIS",
+        "POWER MARINE",
+        "LEYSKA"
+      ],
+      "detalle": [
+        {
+          "caballo": "QUARTARELLA",
+          "jinete": "RAFAEL CISTERNAS",
+          "partidor": 1,
+          "puntaje": 3.2633,
+          "probabilidad": 100,
+          "ranking": 1,
+          "stats": {
+            "carreras": 1,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 3.0
+          }
+        },
+        {
+          "caballo": "ACLIS",
+          "jinete": "JOSE VILLABLANCA",
+          "partidor": 10,
+          "puntaje": 4.604,
+          "probabilidad": 83,
+          "ranking": 2,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "POWER MARINE",
+          "jinete": "RODOLFO FUENZALIDA",
+          "partidor": 12,
+          "puntaje": 4.6955,
+          "probabilidad": 82,
+          "ranking": 3,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "LEYSKA",
+          "jinete": "NICOLAS RAMIREZ",
+          "partidor": 4,
+          "puntaje": 4.7227,
+          "probabilidad": 81,
+          "ranking": 4,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "KING NICOLAS",
+          "jinete": "GERARD RODRIGUEZ",
+          "partidor": 9,
+          "puntaje": 5.0,
+          "probabilidad": 78,
+          "ranking": 5,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "PEDRINHO",
+          "jinete": "JORGE A. MORA",
+          "partidor": 2,
+          "puntaje": 5.0035,
+          "probabilidad": 78,
+          "ranking": 6,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "KEBIRA",
+          "jinete": "REINALDO LOYOLA",
+          "partidor": 7,
+          "puntaje": 5.1095,
+          "probabilidad": 76,
+          "ranking": 7,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "PITTIRANGA",
+          "jinete": "AXEL ALVAREZ",
+          "partidor": 13,
+          "puntaje": 5.696,
+          "probabilidad": 69,
+          "ranking": 8,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "MY CLAUDIA",
+          "jinete": "BASTIAN SOTO",
+          "partidor": 6,
+          "puntaje": 6.6588,
+          "probabilidad": 57,
+          "ranking": 9,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "GRAN PIOLA",
+          "jinete": "JESUS TORO",
+          "partidor": 5,
+          "puntaje": 6.6868,
+          "probabilidad": 57,
+          "ranking": 10,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "GRAN SAMIR",
+          "jinete": "SEBASTIAN GONZALEZ",
+          "partidor": 11,
+          "puntaje": 7.0174,
+          "probabilidad": 53,
+          "ranking": 11,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "AKISI",
+          "jinete": "MIGUEL GUTIERREZ",
+          "partidor": 3,
+          "puntaje": 7.3724,
+          "probabilidad": 48,
+          "ranking": 12,
+          "stats": {
+            "carreras": 1,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 7.0
+          }
+        },
+        {
+          "caballo": "TANGO",
+          "jinete": "MOISES A. DONOSO",
+          "partidor": 8,
+          "puntaje": 11.2593,
+          "probabilidad": 0,
+          "ranking": 13,
+          "stats": {
+            "carreras": 1,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 11.0
+          }
+        }
+      ]
+    },
+    {
+      "fecha": "2025-11-21",
+      "hipodromo": "CHC",
+      "nro_carrera": 6,
+      "confianza": 24,
+      "top4": [
+        "KISS THE QUEEN",
+        "CHE AWAY",
+        "DULCITA",
+        "DOTADITA"
+      ],
+      "detalle": [
+        {
+          "caballo": "KISS THE QUEEN",
+          "jinete": "IGNACIO VALDIVIA",
+          "partidor": 4,
+          "puntaje": 4.551,
+          "probabilidad": 100,
+          "ranking": 1,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "CHE AWAY",
+          "jinete": "RODOLFO FUENZALIDA",
+          "partidor": 10,
+          "puntaje": 4.7166,
+          "probabilidad": 86,
+          "ranking": 2,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "DULCITA",
+          "jinete": "RODRIGO COVARRUBIAS",
+          "partidor": 9,
+          "puntaje": 4.8918,
+          "probabilidad": 72,
+          "ranking": 3,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "DOTADITA",
+          "jinete": "RODRIGO PAINEN",
+          "partidor": 5,
+          "puntaje": 4.8977,
+          "probabilidad": 72,
+          "ranking": 4,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "TRANQUILA NIÑA",
+          "jinete": "DARIEN CHEUQUE",
+          "partidor": 6,
+          "puntaje": 4.9034,
+          "probabilidad": 71,
+          "ranking": 5,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "YADA",
+          "jinete": "N.N.",
+          "partidor": 1,
+          "puntaje": 4.9603,
+          "probabilidad": 66,
+          "ranking": 6,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "PAMPITA ALEGRE",
+          "jinete": "NICOLAS MOLINA",
+          "partidor": 14,
+          "puntaje": 4.9756,
+          "probabilidad": 65,
+          "ranking": 7,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "PASCUERA",
+          "jinete": "MOISES A. DONOSO",
+          "partidor": 2,
+          "puntaje": 5.0035,
+          "probabilidad": 63,
+          "ranking": 8,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "LIORA",
+          "jinete": "RONALD FOURNET",
+          "partidor": 12,
+          "puntaje": 5.0979,
+          "probabilidad": 55,
+          "ranking": 9,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "RAPILLANA",
+          "jinete": "JAIME MEDINA",
+          "partidor": 7,
+          "puntaje": 5.2193,
+          "probabilidad": 46,
+          "ranking": 10,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "LISTO NO MAS",
+          "jinete": "JORGE ZUÑIGA",
+          "partidor": 8,
+          "puntaje": 5.3002,
+          "probabilidad": 39,
+          "ranking": 11,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "MI JARDIN",
+          "jinete": "FABIAN MEDINA",
+          "partidor": 11,
+          "puntaje": 5.3295,
+          "probabilidad": 37,
+          "ranking": 12,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "MADAM SECRETARY",
+          "jinete": "MIGUEL GUTIERREZ",
+          "partidor": 3,
+          "puntaje": 5.4213,
+          "probabilidad": 29,
+          "ranking": 13,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "KOBRICH",
+          "jinete": "JOAQUIN HERRERA",
+          "partidor": 13,
+          "puntaje": 5.7893,
+          "probabilidad": 0,
+          "ranking": 14,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        }
+      ]
+    },
+    {
+      "fecha": "2025-11-21",
+      "hipodromo": "CHC",
+      "nro_carrera": 7,
+      "confianza": 20,
+      "top4": [
+        "LA CROSSE",
+        "DE ESMERALDA",
+        "QUIET MOON",
+        "REINHA"
+      ],
+      "detalle": [
+        {
+          "caballo": "LA CROSSE",
+          "jinete": "JORGE A. GONZALEZ",
+          "partidor": 4,
+          "puntaje": 4.7931,
+          "probabilidad": 100,
+          "ranking": 1,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "DE ESMERALDA",
+          "jinete": "OSCAR ULLOA",
+          "partidor": 5,
+          "puntaje": 5.0035,
+          "probabilidad": 79,
+          "ranking": 2,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "QUIET MOON",
+          "jinete": "DAVID SANCHEZ",
+          "partidor": 6,
+          "puntaje": 5.1466,
+          "probabilidad": 64,
+          "ranking": 3,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "REINHA",
+          "jinete": "JAIME MEDINA",
+          "partidor": 2,
+          "puntaje": 5.2273,
+          "probabilidad": 56,
+          "ranking": 4,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "LA DIGNATARIA",
+          "jinete": "JOAQUIN HERRERA",
+          "partidor": 3,
+          "puntaje": 5.2829,
+          "probabilidad": 51,
+          "ranking": 5,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "VELA AL VIENTO",
+          "jinete": "SEBASTIAN GONZALEZ",
+          "partidor": 1,
+          "puntaje": 5.7961,
+          "probabilidad": 0,
+          "ranking": 6,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        }
+      ]
+    },
+    {
+      "fecha": "2025-11-21",
+      "hipodromo": "CHC",
+      "nro_carrera": 8,
+      "confianza": 100,
+      "top4": [
+        "SIETE DE ABRIL",
+        "WEST PALM BEACH",
+        "RIO AZOPARDO",
+        "CARLITOS YUSTI"
+      ],
+      "detalle": [
+        {
+          "caballo": "SIETE DE ABRIL",
+          "jinete": "IGNACIO VALDIVIA",
+          "partidor": 1,
+          "puntaje": 2.023,
+          "probabilidad": 100,
+          "ranking": 1,
+          "stats": {
+            "carreras": 1,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 2.0
+          }
+        },
+        {
+          "caballo": "WEST PALM BEACH",
+          "jinete": "JONATHAN A. CASTILLO",
+          "partidor": 7,
+          "puntaje": 4.8697,
+          "probabilidad": 43,
+          "ranking": 2,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "RIO AZOPARDO",
+          "jinete": "NICOLAS MOLINA",
+          "partidor": 6,
+          "puntaje": 4.9092,
+          "probabilidad": 42,
+          "ranking": 3,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "CARLITOS YUSTI",
+          "jinete": "JORGE ZUÑIGA",
+          "partidor": 10,
+          "puntaje": 4.9307,
+          "probabilidad": 42,
+          "ranking": 4,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "PLUMA DE MAR",
+          "jinete": "JAIME A. MIÑO",
+          "partidor": 2,
+          "puntaje": 5.0035,
+          "probabilidad": 41,
+          "ranking": 5,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "ME VOY DIDI",
+          "jinete": "JOAQUIN HERRERA",
+          "partidor": 11,
+          "puntaje": 5.0601,
+          "probabilidad": 39,
+          "ranking": 6,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "GALWAY GIRL",
+          "jinete": "HUGO OCHOA",
+          "partidor": 5,
+          "puntaje": 5.0826,
+          "probabilidad": 39,
+          "ranking": 7,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "NALALA",
+          "jinete": "JAIME MEDINA",
+          "partidor": 12,
+          "puntaje": 5.1223,
+          "probabilidad": 38,
+          "ranking": 8,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "SINESIO",
+          "jinete": "DARIEN CHEUQUE",
+          "partidor": 4,
+          "puntaje": 5.198,
+          "probabilidad": 37,
+          "ranking": 9,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "ONIX BLUE",
+          "jinete": "RODRIGO PAINEN",
+          "partidor": 8,
+          "puntaje": 5.3119,
+          "probabilidad": 34,
+          "ranking": 10,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "JALISCO",
+          "jinete": "PEDRO ROBLES",
+          "partidor": 3,
+          "puntaje": 6.149,
+          "probabilidad": 18,
+          "ranking": 11,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "MY GREAT",
+          "jinete": "JESUS TORO",
+          "partidor": 9,
+          "puntaje": 6.4901,
+          "probabilidad": 11,
+          "ranking": 12,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "STRAY KIDS",
+          "jinete": "JAVIER I. GUAJARDO",
+          "partidor": 13,
+          "puntaje": 7.0825,
+          "probabilidad": 0,
+          "ranking": 13,
+          "stats": {
+            "carreras": 1,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 6.0
+          }
+        }
+      ]
+    },
+    {
+      "fecha": "2025-11-21",
+      "hipodromo": "CHC",
+      "nro_carrera": 9,
+      "confianza": 79,
+      "top4": [
+        "PRIETO AZABACHE",
+        "MISTERIO LUMINOSO",
+        "MR MORRIS",
+        "TENGO UN SUEÑO"
+      ],
+      "detalle": [
+        {
+          "caballo": "PRIETO AZABACHE",
+          "jinete": "RODOLFO FUENZALIDA",
+          "partidor": 11,
+          "puntaje": 4.7053,
+          "probabilidad": 100,
+          "ranking": 1,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "MISTERIO LUMINOSO",
+          "jinete": "JORGE A. GONZALEZ",
+          "partidor": 5,
+          "puntaje": 4.8929,
+          "probabilidad": 95,
+          "ranking": 2,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "MR MORRIS",
+          "jinete": "GERARD RODRIGUEZ",
+          "partidor": 9,
+          "puntaje": 5.0,
+          "probabilidad": 92,
+          "ranking": 3,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "TENGO UN SUEÑO",
+          "jinete": "FRANCISCO MORALES",
+          "partidor": 2,
+          "puntaje": 5.0035,
+          "probabilidad": 92,
+          "ranking": 4,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "RUIDO DE CASCOS",
+          "jinete": "JOAQUIN HERRERA",
+          "partidor": 1,
+          "puntaje": 5.1053,
+          "probabilidad": 89,
+          "ranking": 5,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "SCALPING",
+          "jinete": "NICOLAS MOLINA",
+          "partidor": 4,
+          "puntaje": 5.1312,
+          "probabilidad": 89,
+          "ranking": 6,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "INDIAN POET",
+          "jinete": "JAIME MEDINA",
+          "partidor": 10,
+          "puntaje": 5.1321,
+          "probabilidad": 89,
+          "ranking": 7,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "CRISTALINO",
+          "jinete": "N.N.",
+          "partidor": 6,
+          "puntaje": 5.1466,
+          "probabilidad": 88,
+          "ranking": 8,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "RADIANT ORQUIDEA",
+          "jinete": "WLADIMIR QUINTEROS",
+          "partidor": 3,
+          "puntaje": 5.1624,
+          "probabilidad": 88,
+          "ranking": 9,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "SOY DEL CICLON (ARG)",
+          "jinete": "OSCAR MENESES",
+          "partidor": 8,
+          "puntaje": 5.3591,
+          "probabilidad": 83,
+          "ranking": 10,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "CI MANCHI FRATELO",
+          "jinete": "JOSE PAREDES",
+          "partidor": 7,
+          "puntaje": 8.6647,
+          "probabilidad": 0,
+          "ranking": 11,
+          "stats": {
+            "carreras": 1,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 9.0
+          }
+        }
+      ]
+    },
+    {
+      "fecha": "2025-11-21",
+      "hipodromo": "CHC",
+      "nro_carrera": 10,
+      "confianza": 15,
+      "top4": [
+        "LUCKY EMPIRE",
+        "EL DOCTORADO",
+        "GRAN RAI",
+        "PRIMER VALS"
+      ],
+      "detalle": [
+        {
+          "caballo": "LUCKY EMPIRE",
+          "jinete": "IGNACIO VALDIVIA",
+          "partidor": 1,
+          "puntaje": 4.5787,
+          "probabilidad": 100,
+          "ranking": 1,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "EL DOCTORADO",
+          "jinete": "JORGE A. GONZALEZ",
+          "partidor": 4,
+          "puntaje": 4.7931,
+          "probabilidad": 72,
+          "ranking": 2,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "GRAN RAI",
+          "jinete": "NICOLAS RAMIREZ",
+          "partidor": 3,
+          "puntaje": 4.8635,
+          "probabilidad": 63,
+          "ranking": 3,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "PRIMER VALS",
+          "jinete": "JAVIER I. GUAJARDO",
+          "partidor": 9,
+          "puntaje": 4.9239,
+          "probabilidad": 55,
+          "ranking": 4,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "CASTOR TROY",
+          "jinete": "RAFAEL CISTERNAS",
+          "partidor": 2,
+          "puntaje": 4.9667,
+          "probabilidad": 50,
+          "ranking": 5,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "EL UNGIDO",
+          "jinete": "JOAQUIN HERRERA",
+          "partidor": 5,
+          "puntaje": 5.0784,
+          "probabilidad": 35,
+          "ranking": 6,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "LARRYKANE",
+          "jinete": "HUGO OCHOA",
+          "partidor": 6,
+          "puntaje": 5.0826,
+          "probabilidad": 35,
+          "ranking": 7,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "ANALOGO",
+          "jinete": "LESLY C. GONZALEZ",
+          "partidor": 7,
+          "puntaje": 5.1095,
+          "probabilidad": 31,
+          "ranking": 8,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "SPARTAN",
+          "jinete": "BERNARDO LEON",
+          "partidor": 8,
+          "puntaje": 5.3591,
+          "probabilidad": 0,
+          "ranking": 9,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        }
+      ]
+    },
+    {
+      "fecha": "2025-11-21",
+      "hipodromo": "CHC",
+      "nro_carrera": 11,
+      "confianza": 100,
+      "top4": [
+        "VOLANTE MIXTO",
+        "MORINGA",
+        "NONA BLANCA",
+        "VAI BENE COSI"
+      ],
+      "detalle": [
+        {
+          "caballo": "VOLANTE MIXTO",
+          "jinete": "FELIPE HENRIQUEZ",
+          "partidor": 1,
+          "puntaje": 3.3028,
+          "probabilidad": 99,
+          "ranking": 1,
+          "stats": {
+            "carreras": 1,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 3.0
+          }
+        },
+        {
+          "caballo": "MORINGA",
+          "jinete": "NICOLAS RAMIREZ",
+          "partidor": 9,
+          "puntaje": 4.782,
+          "probabilidad": 74,
+          "ranking": 2,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "NONA BLANCA",
+          "jinete": "RODRIGO PAINEN",
+          "partidor": 12,
+          "puntaje": 4.8531,
+          "probabilidad": 73,
+          "ranking": 3,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "VAI BENE COSI",
+          "jinete": "GERARD RODRIGUEZ",
+          "partidor": 15,
+          "puntaje": 4.906,
+          "probabilidad": 72,
+          "ranking": 4,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "CASUAL VISION",
+          "jinete": "DARIEN CHEUQUE",
+          "partidor": 7,
+          "puntaje": 5.0585,
+          "probabilidad": 69,
+          "ranking": 5,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "BENVENUTO CELLINI",
+          "jinete": "RODOLFO FUENZALIDA",
+          "partidor": 8,
+          "puntaje": 5.1153,
+          "probabilidad": 68,
+          "ranking": 6,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "VITA KC",
+          "jinete": "JORGE ZUÑIGA",
+          "partidor": 6,
+          "puntaje": 5.1232,
+          "probabilidad": 68,
+          "ranking": 7,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "TE DIGO ALGO",
+          "jinete": "NICOLAS MOLINA",
+          "partidor": 4,
+          "puntaje": 5.1312,
+          "probabilidad": 68,
+          "ranking": 8,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "JARDIN OLVIDADO",
+          "jinete": "MOISES A. DONOSO",
+          "partidor": 5,
+          "puntaje": 5.1466,
+          "probabilidad": 68,
+          "ranking": 9,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "EN CAPILLA",
+          "jinete": "WLADIMIR QUINTEROS",
+          "partidor": 3,
+          "puntaje": 5.1624,
+          "probabilidad": 68,
+          "ranking": 10,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "KOLETTE",
+          "jinete": "WILBERT LEON",
+          "partidor": 14,
+          "puntaje": 5.9263,
+          "probabilidad": 54,
+          "ranking": 11,
+          "stats": {
+            "carreras": 1,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 6.0
+          }
+        },
+        {
+          "caballo": "CAMELOT",
+          "jinete": "RONALD FOURNET",
+          "partidor": 13,
+          "puntaje": 5.9881,
+          "probabilidad": 53,
+          "ranking": 12,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "ANTIOCO",
+          "jinete": "BASTIAN SOTO",
+          "partidor": 2,
+          "puntaje": 6.7417,
+          "probabilidad": 40,
+          "ranking": 13,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "FINAU",
+          "jinete": "LUIS GONZALEZ",
+          "partidor": 11,
+          "puntaje": 7.0973,
+          "probabilidad": 34,
+          "ranking": 14,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "BEHIND THE SUN",
+          "jinete": "VICTOR MIRANDA",
+          "partidor": 10,
+          "puntaje": 9.1203,
+          "probabilidad": 0,
+          "ranking": 15,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        }
+      ]
+    },
+    {
+      "fecha": "2025-11-21",
+      "hipodromo": "CHC",
+      "nro_carrera": 12,
+      "confianza": 100,
+      "top4": [
+        "SINGLE BARREL",
+        "STRONG DAIKIRI",
+        "MILTEO",
+        "DEMBO"
+      ],
+      "detalle": [
+        {
+          "caballo": "SINGLE BARREL",
+          "jinete": "IGNACIO VALDIVIA",
+          "partidor": 1,
+          "puntaje": 4.5787,
+          "probabilidad": 100,
+          "ranking": 1,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "STRONG DAIKIRI",
+          "jinete": "OSCAR MENESES",
+          "partidor": 9,
+          "puntaje": 4.8918,
+          "probabilidad": 94,
+          "ranking": 2,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "MILTEO",
+          "jinete": "RAFAEL CISTERNAS",
+          "partidor": 11,
+          "puntaje": 4.9557,
+          "probabilidad": 93,
+          "ranking": 3,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "DEMBO",
+          "jinete": "LUIS TORRES",
+          "partidor": 10,
+          "puntaje": 4.9603,
+          "probabilidad": 93,
+          "ranking": 4,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "MONACO (ARG)",
+          "jinete": "JOAQUIN HERRERA",
+          "partidor": 5,
+          "puntaje": 5.0784,
+          "probabilidad": 90,
+          "ranking": 5,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "JEREZANO",
+          "jinete": "BERNARDO LEON",
+          "partidor": 7,
+          "puntaje": 5.1095,
+          "probabilidad": 90,
+          "ranking": 6,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "PECADO INCONFESABLE (ARG)",
+          "jinete": "JAIME A. MIÑO",
+          "partidor": 6,
+          "puntaje": 5.1466,
+          "probabilidad": 89,
+          "ranking": 7,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "SIGNORE PIO",
+          "jinete": "DARIEN CHEUQUE",
+          "partidor": 3,
+          "puntaje": 5.1491,
+          "probabilidad": 89,
+          "ranking": 8,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "DALIKA",
+          "jinete": "NICOLAS RAMIREZ",
+          "partidor": 12,
+          "puntaje": 5.1886,
+          "probabilidad": 88,
+          "ranking": 9,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "MOSALA",
+          "jinete": "JAIME MEDINA",
+          "partidor": 2,
+          "puntaje": 5.2273,
+          "probabilidad": 88,
+          "ranking": 10,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "JAIMINI",
+          "jinete": "MIGUEL GUTIERREZ",
+          "partidor": 4,
+          "puntaje": 5.4145,
+          "probabilidad": 84,
+          "ranking": 11,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "PIANTAO",
+          "jinete": "KEVIN ESPINA",
+          "partidor": 13,
+          "puntaje": 5.8442,
+          "probabilidad": 76,
+          "ranking": 12,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "NA NI NA",
+          "jinete": "WLADIMIR QUINTEROS",
+          "partidor": 8,
+          "puntaje": 10.0669,
+          "probabilidad": 0,
+          "ranking": 13,
+          "stats": {
+            "carreras": 1,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 10.0
+          }
+        }
+      ]
+    },
+    {
+      "fecha": "2025-11-21",
+      "hipodromo": "CHC",
+      "nro_carrera": 13,
+      "confianza": 23,
+      "top4": [
+        "RAUCO",
+        "EL SABLAZO",
+        "ELKAN DADDY",
+        "TERRIBLE BRUNO"
+      ],
+      "detalle": [
+        {
+          "caballo": "RAUCO",
+          "jinete": "RAFAEL CISTERNAS",
+          "partidor": 3,
+          "puntaje": 4.8418,
+          "probabilidad": 100,
+          "ranking": 1,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "EL SABLAZO",
+          "jinete": "NICOLAS RAMIREZ",
+          "partidor": 5,
+          "puntaje": 4.8493,
+          "probabilidad": 99,
+          "ranking": 2,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "ELKAN DADDY",
+          "jinete": "JORGE ZUÑIGA",
+          "partidor": 9,
+          "puntaje": 4.8657,
+          "probabilidad": 97,
+          "ranking": 3,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "TERRIBLE BRUNO",
+          "jinete": "NICOLAS MOLINA",
+          "partidor": 1,
+          "puntaje": 4.938,
+          "probabilidad": 91,
+          "ranking": 4,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "REAL FATHER",
+          "jinete": "DARIEN CHEUQUE",
+          "partidor": 11,
+          "puntaje": 4.9437,
+          "probabilidad": 91,
+          "ranking": 5,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "SALZBURG",
+          "jinete": "KEVIN ESPINA",
+          "partidor": 7,
+          "puntaje": 4.9943,
+          "probabilidad": 86,
+          "ranking": 6,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "BENTINCK",
+          "jinete": "OSCAR ULLOA",
+          "partidor": 10,
+          "puntaje": 5.0241,
+          "probabilidad": 84,
+          "ranking": 7,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "STEAKHOUSE",
+          "jinete": "JOAQUIN HERRERA",
+          "partidor": 6,
+          "puntaje": 5.0944,
+          "probabilidad": 78,
+          "ranking": 8,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "RESISTENTE",
+          "jinete": "JAIME MEDINA",
+          "partidor": 2,
+          "puntaje": 5.2273,
+          "probabilidad": 67,
+          "ranking": 9,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "MI RINCON",
+          "jinete": "HUGO OCHOA",
+          "partidor": 8,
+          "puntaje": 5.3691,
+          "probabilidad": 54,
+          "ranking": 10,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "GOOD FATHER",
+          "jinete": "PEDRO ROBLES",
+          "partidor": 4,
+          "puntaje": 6.0109,
+          "probabilidad": 0,
+          "ranking": 11,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        }
+      ]
+    },
+    {
+      "fecha": "2025-11-21",
+      "hipodromo": "CHC",
+      "nro_carrera": 14,
+      "confianza": 100,
+      "top4": [
+        "DOCTORA MILAGRO",
+        "GRAN KURU",
+        "EL CALBUCANO",
+        "SOY GUSTOSA"
+      ],
+      "detalle": [
+        {
+          "caballo": "DOCTORA MILAGRO",
+          "jinete": "HUGO OCHOA",
+          "partidor": 8,
+          "puntaje": 4.5953,
+          "probabilidad": 100,
+          "ranking": 1,
+          "stats": {
+            "carreras": 1,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 4.0
+          }
+        },
+        {
+          "caballo": "GRAN KURU",
+          "jinete": "JONATHAN A. CASTILLO",
+          "partidor": 4,
+          "puntaje": 4.8051,
+          "probabilidad": 97,
+          "ranking": 2,
+          "stats": {
+            "carreras": 1,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "EL CALBUCANO",
+          "jinete": "RODRIGO PAINEN",
+          "partidor": 9,
+          "puntaje": 4.8188,
+          "probabilidad": 97,
+          "ranking": 3,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "SOY GUSTOSA",
+          "jinete": "DARIEN CHEUQUE",
+          "partidor": 1,
+          "puntaje": 4.9483,
+          "probabilidad": 95,
+          "ranking": 4,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "YA TE DIJE",
+          "jinete": "ANDRES CASTILLO",
+          "partidor": 11,
+          "puntaje": 4.949,
+          "probabilidad": 95,
+          "ranking": 5,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "PUNTO QUIEBRE",
+          "jinete": "FABIAN MEDINA",
+          "partidor": 6,
+          "puntaje": 5.0094,
+          "probabilidad": 94,
+          "ranking": 6,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "SABIONDO",
+          "jinete": "TOMAS SEITH",
+          "partidor": 5,
+          "puntaje": 5.1466,
+          "probabilidad": 92,
+          "ranking": 7,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "TOP KING",
+          "jinete": "JOAQUIN HERRERA",
+          "partidor": 7,
+          "puntaje": 5.2415,
+          "probabilidad": 91,
+          "ranking": 8,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "PETIROSSA",
+          "jinete": "JESUS REYES",
+          "partidor": 14,
+          "puntaje": 5.3019,
+          "probabilidad": 90,
+          "ranking": 9,
+          "stats": {
+            "carreras": 1,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "HARRY GO",
+          "jinete": "PEDRO ROBLES",
+          "partidor": 10,
+          "puntaje": 5.7011,
+          "probabilidad": 85,
+          "ranking": 10,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "DOMENICO",
+          "jinete": "BASTIAN SOTO",
+          "partidor": 3,
+          "puntaje": 6.7519,
+          "probabilidad": 71,
+          "ranking": 11,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "SE PREPARO",
+          "jinete": "JESUS TORO",
+          "partidor": 2,
+          "puntaje": 6.7634,
+          "probabilidad": 71,
+          "ranking": 12,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "TODAS MIENTEN",
+          "jinete": "JOSE PAREDES",
+          "partidor": 12,
+          "puntaje": 8.6093,
+          "probabilidad": 46,
+          "ranking": 13,
+          "stats": {
+            "carreras": 1,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 9.0
+          }
+        },
+        {
+          "caballo": "SIN PREJUICIOS",
+          "jinete": "FRANCISCO MORALES",
+          "partidor": 13,
+          "puntaje": 10.5498,
+          "probabilidad": 21,
+          "ranking": 14,
+          "stats": {
+            "carreras": 1,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 10.0
+          }
+        },
+        {
+          "caballo": "MISTER HEAD",
+          "jinete": "AXEL ALVAREZ",
+          "partidor": 15,
+          "puntaje": 12.162,
+          "probabilidad": 0,
+          "ranking": 15,
+          "stats": {
+            "carreras": 1,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 14.0
+          }
+        }
+      ]
+    },
+    {
+      "fecha": "2025-11-21",
+      "hipodromo": "CHC",
+      "nro_carrera": 15,
+      "confianza": 52,
+      "top4": [
+        "GRAND CASABLANCA",
+        "IMANOL",
+        "JARPITA",
+        "MECEDOR"
+      ],
+      "detalle": [
+        {
+          "caballo": "GRAND CASABLANCA",
+          "jinete": "JESUS PIMENTEL",
+          "partidor": 5,
+          "puntaje": 4.6705,
+          "probabilidad": 100,
+          "ranking": 1,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "IMANOL",
+          "jinete": "NICOLAS RAMIREZ",
+          "partidor": 9,
+          "puntaje": 4.782,
+          "probabilidad": 95,
+          "ranking": 2,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "JARPITA",
+          "jinete": "BERNARDO LEON",
+          "partidor": 11,
+          "puntaje": 4.949,
+          "probabilidad": 89,
+          "ranking": 3,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "MECEDOR",
+          "jinete": "WLADIMIR QUINTEROS",
+          "partidor": 14,
+          "puntaje": 4.9585,
+          "probabilidad": 88,
+          "ranking": 4,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "ASTRO SOL",
+          "jinete": "TOMAS SEITH",
+          "partidor": 10,
+          "puntaje": 4.9603,
+          "probabilidad": 88,
+          "ranking": 5,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "PRIMA TOWN",
+          "jinete": "VICTOR BRACETTI",
+          "partidor": 1,
+          "puntaje": 4.9603,
+          "probabilidad": 88,
+          "ranking": 6,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "QUICOTE",
+          "jinete": "IGNACIO VALDIVIA",
+          "partidor": 12,
+          "puntaje": 4.9786,
+          "probabilidad": 88,
+          "ranking": 7,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "TOWN OF TREBBI",
+          "jinete": "FELIPE HENRIQUEZ",
+          "partidor": 7,
+          "puntaje": 5.1095,
+          "probabilidad": 83,
+          "ranking": 8,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "REY DEL ESTERO",
+          "jinete": "GERARD RODRIGUEZ",
+          "partidor": 2,
+          "puntaje": 5.1294,
+          "probabilidad": 82,
+          "ranking": 9,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "VUELA EL AMOR",
+          "jinete": "MIGUEL GUTIERREZ",
+          "partidor": 15,
+          "puntaje": 5.2782,
+          "probabilidad": 76,
+          "ranking": 10,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "FLEDGE",
+          "jinete": "DARIEN CHEUQUE",
+          "partidor": 8,
+          "puntaje": 5.3746,
+          "probabilidad": 73,
+          "ranking": 11,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "MI JOYA",
+          "jinete": "FRANCISCO MORALES",
+          "partidor": 13,
+          "puntaje": 5.498,
+          "probabilidad": 68,
+          "ranking": 12,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "LEON DEL VIENTO",
+          "jinete": "PEDRO ROBLES",
+          "partidor": 4,
+          "puntaje": 6.0109,
+          "probabilidad": 48,
+          "ranking": 13,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "HUACARNECO",
+          "jinete": "JESUS TORO",
+          "partidor": 3,
+          "puntaje": 6.7737,
+          "probabilidad": 19,
+          "ranking": 14,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "WALK EASY",
+          "jinete": "VICTOR MIRANDA",
+          "partidor": 6,
+          "puntaje": 7.2808,
+          "probabilidad": 0,
+          "ranking": 15,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        }
+      ]
+    },
+    {
+      "fecha": "2025-11-21",
+      "hipodromo": "CHC",
+      "nro_carrera": 16,
+      "confianza": 100,
+      "top4": [
+        "MR YO",
+        "GIORGIO DI CAPRI",
+        "ELMITA",
+        "MAGUIRE"
+      ],
+      "detalle": [
+        {
+          "caballo": "MR YO",
+          "jinete": "MIGUEL GUTIERREZ",
+          "partidor": 4,
+          "puntaje": 0.6815,
+          "probabilidad": 100,
+          "ranking": 1,
+          "stats": {
+            "carreras": 1,
+            "tasa_victoria": 100.0,
+            "pos_promedio": 1.0
+          }
+        },
+        {
+          "caballo": "GIORGIO DI CAPRI",
+          "jinete": "IGNACIO VALDIVIA",
+          "partidor": 9,
+          "puntaje": 4.572,
+          "probabilidad": 47,
+          "ranking": 2,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "ELMITA",
+          "jinete": "RODOLFO FUENZALIDA",
+          "partidor": 15,
+          "puntaje": 4.5945,
+          "probabilidad": 47,
+          "ranking": 3,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "MAGUIRE",
+          "jinete": "RODRIGO PAINEN",
+          "partidor": 3,
+          "puntaje": 4.6364,
+          "probabilidad": 46,
+          "ranking": 4,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "TU Y YO",
+          "jinete": "RONALD FOURNET",
+          "partidor": 14,
+          "puntaje": 4.8869,
+          "probabilidad": 43,
+          "ranking": 5,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "CINABRIO",
+          "jinete": "NICOLAS MOLINA",
+          "partidor": 12,
+          "puntaje": 4.9396,
+          "probabilidad": 42,
+          "ranking": 6,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "SUBI",
+          "jinete": "ANDRES CASTILLO",
+          "partidor": 11,
+          "puntaje": 4.949,
+          "probabilidad": 42,
+          "ranking": 7,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "CIAO JUANITA",
+          "jinete": "MOISES A. DONOSO",
+          "partidor": 10,
+          "puntaje": 4.9603,
+          "probabilidad": 42,
+          "ranking": 8,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "TWEETY",
+          "jinete": "N.N.",
+          "partidor": 1,
+          "puntaje": 4.9603,
+          "probabilidad": 42,
+          "ranking": 9,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "AMPAWAN",
+          "jinete": "RAFAEL CISTERNAS",
+          "partidor": 2,
+          "puntaje": 4.9667,
+          "probabilidad": 42,
+          "ranking": 10,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "DE ORO Y COBRE",
+          "jinete": "GERARD RODRIGUEZ",
+          "partidor": 5,
+          "puntaje": 5.2562,
+          "probabilidad": 38,
+          "ranking": 11,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "YO PAGO TODO",
+          "jinete": "WLADIMIR QUINTEROS",
+          "partidor": 13,
+          "puntaje": 5.6785,
+          "probabilidad": 32,
+          "ranking": 12,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "CUCCINELLO",
+          "jinete": "RICARDO SOLORZA",
+          "partidor": 8,
+          "puntaje": 6.2086,
+          "probabilidad": 25,
+          "ranking": 13,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "ANFIELD ROAD",
+          "jinete": "JESUS TORO",
+          "partidor": 7,
+          "puntaje": 6.8175,
+          "probabilidad": 17,
+          "ranking": 14,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "KORPER",
+          "jinete": "FRANCISCO MORALES",
+          "partidor": 6,
+          "puntaje": 8.1242,
+          "probabilidad": 0,
+          "ranking": 15,
+          "stats": {
+            "carreras": 1,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 8.0
+          }
+        }
+      ]
+    },
+    {
+      "fecha": "2025-11-21",
+      "hipodromo": "CHC",
+      "nro_carrera": 17,
+      "confianza": 100,
+      "top4": [
+        "HIER ANCORE",
+        "CALOCHITA",
+        "MANKIND",
+        "TEA AND MILK"
+      ],
+      "detalle": [
+        {
+          "caballo": "HIER ANCORE",
+          "jinete": "JESUS PIMENTEL",
+          "partidor": 2,
+          "puntaje": 4.6241,
+          "probabilidad": 99,
+          "ranking": 1,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "CALOCHITA",
+          "jinete": "RODOLFO FUENZALIDA",
+          "partidor": 10,
+          "puntaje": 4.7166,
+          "probabilidad": 98,
+          "ranking": 2,
+          "stats": {
+            "carreras": 1,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "MANKIND",
+          "jinete": "RODRIGO PAINEN",
+          "partidor": 12,
+          "puntaje": 4.8531,
+          "probabilidad": 96,
+          "ranking": 3,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "TEA AND MILK",
+          "jinete": "FRANCISCO MORALES",
+          "partidor": 3,
+          "puntaje": 4.8785,
+          "probabilidad": 96,
+          "ranking": 4,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "JE T'AIME",
+          "jinete": "MARCO A. BUSTAMANTE",
+          "partidor": 9,
+          "puntaje": 4.8918,
+          "probabilidad": 95,
+          "ranking": 5,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "LLUVIA DE ENERO",
+          "jinete": "JAIME A. MIÑO",
+          "partidor": 1,
+          "puntaje": 4.9603,
+          "probabilidad": 94,
+          "ranking": 6,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "NEL BLU",
+          "jinete": "NICOLAS MOLINA",
+          "partidor": 14,
+          "puntaje": 4.9756,
+          "probabilidad": 94,
+          "ranking": 7,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "SORELLA DEL KING",
+          "jinete": "JAIME MEDINA",
+          "partidor": 4,
+          "puntaje": 5.0234,
+          "probabilidad": 93,
+          "ranking": 8,
+          "stats": {
+            "carreras": 1,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "CHECO IS A LEGEND",
+          "jinete": "GERARD RODRIGUEZ",
+          "partidor": 11,
+          "puntaje": 5.065,
+          "probabilidad": 93,
+          "ranking": 9,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "CHAMPELICE",
+          "jinete": "TOMAS SEITH",
+          "partidor": 5,
+          "puntaje": 5.1466,
+          "probabilidad": 92,
+          "ranking": 10,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "MINONI",
+          "jinete": "JESUS REYES",
+          "partidor": 7,
+          "puntaje": 5.475,
+          "probabilidad": 87,
+          "ranking": 11,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "UNDER THE LIGHT",
+          "jinete": "BASTIAN SOTO",
+          "partidor": 13,
+          "puntaje": 6.829,
+          "probabilidad": 66,
+          "ranking": 12,
+          "stats": {
+            "carreras": 1,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 4.0
+          }
+        },
+        {
+          "caballo": "TARUGUITA",
+          "jinete": "BERNARDO LEON",
+          "partidor": 6,
+          "puntaje": 10.0269,
+          "probabilidad": 18,
+          "ranking": 13,
+          "stats": {
+            "carreras": 1,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 10.0
+          }
+        },
+        {
+          "caballo": "SISI STAR",
+          "jinete": "WILBERT LEON",
+          "partidor": 8,
+          "puntaje": 11.2593,
+          "probabilidad": 0,
+          "ranking": 14,
+          "stats": {
+            "carreras": 1,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 12.0
+          }
+        }
+      ]
+    },
+    {
+      "fecha": "2025-11-21",
+      "hipodromo": "CHC",
+      "nro_carrera": 18,
+      "confianza": 100,
+      "top4": [
+        "TANGO Y COMPAS",
+        "EXTROVERTIDA",
+        "AGUILA DE FUEGO",
+        "VALLTTERI"
+      ],
+      "detalle": [
+        {
+          "caballo": "TANGO Y COMPAS",
+          "jinete": "WLADIMIR QUINTEROS",
+          "partidor": 12,
+          "puntaje": 0.918,
+          "probabilidad": 100,
+          "ranking": 1,
+          "stats": {
+            "carreras": 1,
+            "tasa_victoria": 100.0,
+            "pos_promedio": 1.0
+          }
+        },
+        {
+          "caballo": "EXTROVERTIDA",
+          "jinete": "IGNACIO VALDIVIA",
+          "partidor": 2,
+          "puntaje": 2.0755,
+          "probabilidad": 92,
+          "ranking": 2,
+          "stats": {
+            "carreras": 1,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 2.0
+          }
+        },
+        {
+          "caballo": "AGUILA DE FUEGO",
+          "jinete": "RODOLFO FUENZALIDA",
+          "partidor": 8,
+          "puntaje": 2.6531,
+          "probabilidad": 88,
+          "ranking": 3,
+          "stats": {
+            "carreras": 1,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 2.0
+          }
+        },
+        {
+          "caballo": "VALLTTERI",
+          "jinete": "FELIPE HENRIQUEZ",
+          "partidor": 16,
+          "puntaje": 4.7607,
+          "probabilidad": 74,
+          "ranking": 4,
+          "stats": {
+            "carreras": 1,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "BICAMPEON CHILENO",
+          "jinete": "RODRIGO PAINEN",
+          "partidor": 4,
+          "puntaje": 4.7778,
+          "probabilidad": 74,
+          "ranking": 5,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "AMAYNA",
+          "jinete": "WILBERT LEON",
+          "partidor": 3,
+          "puntaje": 4.8785,
+          "probabilidad": 74,
+          "ranking": 6,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "CONTIGO SI QUIERO",
+          "jinete": "DARIEN CHEUQUE",
+          "partidor": 11,
+          "puntaje": 4.9437,
+          "probabilidad": 73,
+          "ranking": 7,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "MARULINA",
+          "jinete": "RAFAEL CISTERNAS",
+          "partidor": 10,
+          "puntaje": 4.967,
+          "probabilidad": 73,
+          "ranking": 8,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "EL DUKE",
+          "jinete": "FABIAN MEDINA",
+          "partidor": 14,
+          "puntaje": 5.0823,
+          "probabilidad": 72,
+          "ranking": 9,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "NO HAY ADIOS",
+          "jinete": "FRANCISCO MORALES",
+          "partidor": 5,
+          "puntaje": 5.1466,
+          "probabilidad": 72,
+          "ranking": 10,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "FLOR DE JAMAICA",
+          "jinete": "NICOLAS MOLINA",
+          "partidor": 13,
+          "puntaje": 5.6748,
+          "probabilidad": 68,
+          "ranking": 11,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "SUEÑO REALIDAD",
+          "jinete": "SEBASTIAN GONZALEZ",
+          "partidor": 1,
+          "puntaje": 5.7961,
+          "probabilidad": 68,
+          "ranking": 12,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "STRATA",
+          "jinete": "CLAUDIO JORQUERA",
+          "partidor": 9,
+          "puntaje": 6.7014,
+          "probabilidad": 62,
+          "ranking": 13,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "LUCE PERICOLOSO",
+          "jinete": "BASTIAN SOTO",
+          "partidor": 7,
+          "puntaje": 6.7735,
+          "probabilidad": 61,
+          "ranking": 14,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "MOSASAURUS",
+          "jinete": "MOISES A. DONOSO",
+          "partidor": 15,
+          "puntaje": 9.041,
+          "probabilidad": 46,
+          "ranking": 15,
+          "stats": {
+            "carreras": 1,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 9.0
+          }
+        },
+        {
+          "caballo": "NOCHE DE PAINE",
+          "jinete": "N.N.",
+          "partidor": 6,
+          "puntaje": 16.1951,
+          "probabilidad": 0,
+          "ranking": 16,
+          "stats": {
+            "carreras": 1,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 17.0
+          }
+        }
+      ]
+    },
+    {
+      "fecha": "2025-11-21",
+      "hipodromo": "CHC",
+      "nro_carrera": 19,
+      "confianza": 100,
+      "top4": [
+        "MATE AMARGO",
+        "ARTHUR SHELBY",
+        "RAIRET",
+        "GRIEZMANN"
+      ],
+      "detalle": [
+        {
+          "caballo": "MATE AMARGO",
+          "jinete": "BASTIAN SOTO",
+          "partidor": 3,
+          "puntaje": 4.0018,
+          "probabilidad": 100,
+          "ranking": 1,
+          "stats": {
+            "carreras": 1,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 2.0
+          }
+        },
+        {
+          "caballo": "ARTHUR SHELBY",
+          "jinete": "RODRIGO PAINEN",
+          "partidor": 7,
+          "puntaje": 4.1098,
+          "probabilidad": 99,
+          "ranking": 2,
+          "stats": {
+            "carreras": 1,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 4.0
+          }
+        },
+        {
+          "caballo": "RAIRET",
+          "jinete": "MIGUEL GUTIERREZ",
+          "partidor": 4,
+          "puntaje": 4.5044,
+          "probabilidad": 95,
+          "ranking": 3,
+          "stats": {
+            "carreras": 1,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 4.0
+          }
+        },
+        {
+          "caballo": "GRIEZMANN",
+          "jinete": "KEVIN ESPINA",
+          "partidor": 9,
+          "puntaje": 4.9239,
+          "probabilidad": 92,
+          "ranking": 4,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "DON'T CRY DADDY",
+          "jinete": "MOISES A. DONOSO",
+          "partidor": 12,
+          "puntaje": 4.9393,
+          "probabilidad": 92,
+          "ranking": 5,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "TIGRO (ARG)",
+          "jinete": "TOMAS SEITH",
+          "partidor": 11,
+          "puntaje": 4.949,
+          "probabilidad": 92,
+          "ranking": 6,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "CRANS MONTANA",
+          "jinete": "LUIS TORRES",
+          "partidor": 10,
+          "puntaje": 4.9603,
+          "probabilidad": 91,
+          "ranking": 7,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "DON GIORGIO",
+          "jinete": "HUGO OCHOA",
+          "partidor": 6,
+          "puntaje": 5.0826,
+          "probabilidad": 90,
+          "ranking": 8,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "INDHIRA",
+          "jinete": "FRANCISCO MORALES",
+          "partidor": 5,
+          "puntaje": 5.1466,
+          "probabilidad": 90,
+          "ranking": 9,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "ABOMBADA",
+          "jinete": "JOAQUIN HERRERA",
+          "partidor": 2,
+          "puntaje": 5.4682,
+          "probabilidad": 87,
+          "ranking": 10,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "REY MIDAS",
+          "jinete": "JORGE A. GONZALEZ",
+          "partidor": 13,
+          "puntaje": 5.5244,
+          "probabilidad": 87,
+          "ranking": 11,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "JACINTA GOOD",
+          "jinete": "CLAUDIO JORQUERA",
+          "partidor": 8,
+          "puntaje": 7.4762,
+          "probabilidad": 70,
+          "ranking": 12,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "NOTORIOUS LOVER",
+          "jinete": "WILBERT LEON",
+          "partidor": 1,
+          "puntaje": 15.865,
+          "probabilidad": 0,
+          "ranking": 13,
+          "stats": {
+            "carreras": 1,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 18.0
+          }
+        }
+      ]
+    },
+    {
+      "fecha": "2025-12-05",
+      "hipodromo": "HC",
+      "nro_carrera": 1,
+      "confianza": 32,
+      "top4": [
+        "AHMAKIL",
+        "DOMINGO ISLEÑO",
+        "VALLTTERI",
+        "MICCA"
+      ],
+      "detalle": [
+        {
+          "caballo": "AHMAKIL",
+          "jinete": "RODOLFO FUENZALIDA",
+          "partidor": null,
+          "puntaje": 4.5945,
+          "probabilidad": 100,
+          "ranking": 1,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "DOMINGO ISLEÑO",
+          "jinete": "JESUS PIMENTEL",
+          "partidor": null,
+          "puntaje": 4.6809,
+          "probabilidad": 94,
+          "ranking": 2,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "VALLTTERI",
+          "jinete": "FRANCISCO MORALES",
+          "partidor": null,
+          "puntaje": 4.7607,
+          "probabilidad": 89,
+          "ranking": 3,
+          "stats": {
+            "carreras": 1,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "MICCA",
+          "jinete": "GUSTAVO AROS",
+          "partidor": null,
+          "puntaje": 4.7607,
+          "probabilidad": 89,
+          "ranking": 4,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "PRAIA DO FORTE",
+          "jinete": "JAIME A. MIÑO",
+          "partidor": null,
+          "puntaje": 4.7607,
+          "probabilidad": 89,
+          "ranking": 5,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "RAYO VELOZ",
+          "jinete": "BENJAMIN AYALA",
+          "partidor": null,
+          "puntaje": 4.7607,
+          "probabilidad": 89,
+          "ranking": 6,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "ANTUMBRA",
+          "jinete": "MAURICIO CHAMORRO",
+          "partidor": null,
+          "puntaje": 4.7607,
+          "probabilidad": 89,
+          "ranking": 7,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "RODELINDO CRACK",
+          "jinete": "SEBASTIAN GONZALEZ",
+          "partidor": null,
+          "puntaje": 4.8193,
+          "probabilidad": 86,
+          "ranking": 8,
+          "stats": {
+            "carreras": 1,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 4.0
+          }
+        },
+        {
+          "caballo": "AMAYNA",
+          "jinete": "NICOLAS RAMIREZ",
+          "partidor": null,
+          "puntaje": 4.8981,
+          "probabilidad": 81,
+          "ranking": 9,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "DANITA FIRST",
+          "jinete": "WLADIMIR QUINTEROS",
+          "partidor": null,
+          "puntaje": 4.929,
+          "probabilidad": 79,
+          "ranking": 10,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "KING NICOLAS",
+          "jinete": "NICOLAS MOLINA",
+          "partidor": null,
+          "puntaje": 4.9375,
+          "probabilidad": 79,
+          "ranking": 11,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "SOBRAO DE CARIÑO",
+          "jinete": "JORGE VERA",
+          "partidor": null,
+          "puntaje": 4.9541,
+          "probabilidad": 78,
+          "ranking": 12,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "NIETA DEL MONTY",
+          "jinete": "RODOLFO S. DORES",
+          "partidor": null,
+          "puntaje": 5.1554,
+          "probabilidad": 65,
+          "ranking": 13,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "SALE DE MIS OJOS",
+          "jinete": "BASTIAN SOTO",
+          "partidor": null,
+          "puntaje": 5.7633,
+          "probabilidad": 29,
+          "ranking": 14,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "GRAN TOMAHAWK",
+          "jinete": "PIERO REYES P.",
+          "partidor": null,
+          "puntaje": 6.2434,
+          "probabilidad": 0,
+          "ranking": 15,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        }
+      ]
+    },
+    {
+      "fecha": "2025-12-05",
+      "hipodromo": "HC",
+      "nro_carrera": 2,
+      "confianza": 10,
+      "top4": [
+        "QUE HICE MAL",
+        "NUEVA ACTRICE",
+        "SONG SONG BLUE",
+        "GOLFISTA"
+      ],
+      "detalle": [
+        {
+          "caballo": "QUE HICE MAL",
+          "jinete": "LESLY C. GONZALEZ",
+          "partidor": null,
+          "puntaje": 4.7607,
+          "probabilidad": 100,
+          "ranking": 1,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "NUEVA ACTRICE",
+          "jinete": "WILBERT LEON",
+          "partidor": null,
+          "puntaje": 4.7607,
+          "probabilidad": 100,
+          "ranking": 2,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "SONG SONG BLUE",
+          "jinete": "RODRIGO COVARRUBIAS",
+          "partidor": null,
+          "puntaje": 4.7607,
+          "probabilidad": 100,
+          "ranking": 3,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "GOLFISTA",
+          "jinete": "RONALD FOURNET",
+          "partidor": null,
+          "puntaje": 4.8537,
+          "probabilidad": 82,
+          "ranking": 4,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "DULCITA",
+          "jinete": "WLADIMIR QUINTEROS",
+          "partidor": null,
+          "puntaje": 4.929,
+          "probabilidad": 67,
+          "ranking": 5,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "TRANQUILA NIÑA",
+          "jinete": "DARIEN CHEUQUE",
+          "partidor": null,
+          "puntaje": 4.9318,
+          "probabilidad": 66,
+          "ranking": 6,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "CHE AWAY",
+          "jinete": "JAIME MEDINA",
+          "partidor": null,
+          "puntaje": 4.9477,
+          "probabilidad": 63,
+          "ranking": 7,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "PASCUERA",
+          "jinete": "JONATHAN A. CASTILLO",
+          "partidor": null,
+          "puntaje": 4.9526,
+          "probabilidad": 62,
+          "ranking": 8,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "KOBRICH",
+          "jinete": "JOAQUIN HERRERA",
+          "partidor": null,
+          "puntaje": 5.0455,
+          "probabilidad": 44,
+          "ranking": 9,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "SERKET",
+          "jinete": "FABIAN MEDINA",
+          "partidor": null,
+          "puntaje": 5.0586,
+          "probabilidad": 42,
+          "ranking": 10,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "MADAM SECRETARY",
+          "jinete": "MIGUEL GUTIERREZ",
+          "partidor": null,
+          "puntaje": 5.2782,
+          "probabilidad": 0,
+          "ranking": 11,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        }
+      ]
+    },
+    {
+      "fecha": "2025-12-05",
+      "hipodromo": "HC",
+      "nro_carrera": 3,
+      "confianza": 60,
+      "top4": [
+        "EL NANY",
+        "MANKIND",
+        "BICHOTA",
+        "CALOCHITA"
+      ],
+      "detalle": [
+        {
+          "caballo": "EL NANY",
+          "jinete": "PEDRO ROBLES",
+          "partidor": null,
+          "puntaje": 3.8978,
+          "probabilidad": 100,
+          "ranking": 1,
+          "stats": {
+            "carreras": 1,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 4.0
+          }
+        },
+        {
+          "caballo": "MANKIND",
+          "jinete": "RODRIGO PAINEN",
+          "partidor": null,
+          "puntaje": 4.7521,
+          "probabilidad": 71,
+          "ranking": 2,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "BICHOTA",
+          "jinete": "MARCO MORALES",
+          "partidor": null,
+          "puntaje": 4.7607,
+          "probabilidad": 71,
+          "ranking": 3,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "CALOCHITA",
+          "jinete": "NICOLAS RAMIREZ",
+          "partidor": null,
+          "puntaje": 4.8981,
+          "probabilidad": 66,
+          "ranking": 4,
+          "stats": {
+            "carreras": 1,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "CHAMPELICE",
+          "jinete": "GERARD RODRIGUEZ",
+          "partidor": null,
+          "puntaje": 4.906,
+          "probabilidad": 66,
+          "ranking": 5,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "MONARCA",
+          "jinete": "AXEL ALVAREZ",
+          "partidor": null,
+          "puntaje": 4.9526,
+          "probabilidad": 65,
+          "ranking": 6,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "CATITA REVOLTOSA",
+          "jinete": "OSCAR ULLOA",
+          "partidor": null,
+          "puntaje": 4.9706,
+          "probabilidad": 64,
+          "ranking": 7,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "ZULEIMAN (ARG)",
+          "jinete": "RAFAEL CISTERNAS",
+          "partidor": null,
+          "puntaje": 6.9155,
+          "probabilidad": 0,
+          "ranking": 8,
+          "stats": {
+            "carreras": 1,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 7.0
+          }
+        }
+      ]
+    },
+    {
+      "fecha": "2025-12-05",
+      "hipodromo": "HC",
+      "nro_carrera": 4,
+      "confianza": 85,
+      "top4": [
+        "JALISCO",
+        "MOSALA",
+        "IMPLICADO",
+        "VICHITO"
+      ],
+      "detalle": [
+        {
+          "caballo": "JALISCO",
+          "jinete": "RODRIGO PAINEN",
+          "partidor": null,
+          "puntaje": 4.7521,
+          "probabilidad": 100,
+          "ranking": 1,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "MOSALA",
+          "jinete": "JAIME MEDINA",
+          "partidor": null,
+          "puntaje": 4.9477,
+          "probabilidad": 95,
+          "ranking": 2,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "IMPLICADO",
+          "jinete": "AXEL ALVAREZ",
+          "partidor": null,
+          "puntaje": 4.9526,
+          "probabilidad": 95,
+          "ranking": 3,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "VICHITO",
+          "jinete": "JOAQUIN HERRERA",
+          "partidor": null,
+          "puntaje": 5.0455,
+          "probabilidad": 93,
+          "ranking": 4,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "CANTICIO",
+          "jinete": "SEBASTIAN GONZALEZ",
+          "partidor": null,
+          "puntaje": 5.7485,
+          "probabilidad": 76,
+          "ranking": 5,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "MY GREAT",
+          "jinete": "JESUS TORO",
+          "partidor": null,
+          "puntaje": 5.7896,
+          "probabilidad": 75,
+          "ranking": 6,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "MALANDRO",
+          "jinete": "GUSTAVO AROS",
+          "partidor": null,
+          "puntaje": 9.041,
+          "probabilidad": 0,
+          "ranking": 7,
+          "stats": {
+            "carreras": 1,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 9.0
+          }
+        }
+      ]
+    },
+    {
+      "fecha": "2025-12-05",
+      "hipodromo": "HC",
+      "nro_carrera": 5,
+      "confianza": 23,
+      "top4": [
+        "VAN DER SAR",
+        "PACIENCIA ETERNA",
+        "ESTEPHANIA",
+        "NEGRO APAPUCHI"
+      ],
+      "detalle": [
+        {
+          "caballo": "VAN DER SAR",
+          "jinete": "RODOLFO FUENZALIDA",
+          "partidor": null,
+          "puntaje": 4.5945,
+          "probabilidad": 100,
+          "ranking": 1,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "PACIENCIA ETERNA",
+          "jinete": "JESUS PIMENTEL",
+          "partidor": null,
+          "puntaje": 4.6809,
+          "probabilidad": 92,
+          "ranking": 2,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "ESTEPHANIA",
+          "jinete": "BENJAMIN TRONCOSO",
+          "partidor": null,
+          "puntaje": 4.7607,
+          "probabilidad": 85,
+          "ranking": 3,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "NEGRO APAPUCHI",
+          "jinete": "JAIME A. MIÑO",
+          "partidor": null,
+          "puntaje": 4.7607,
+          "probabilidad": 85,
+          "ranking": 4,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "GRAN TILAPIA",
+          "jinete": "WILBERT LEON",
+          "partidor": null,
+          "puntaje": 4.7607,
+          "probabilidad": 85,
+          "ranking": 5,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "SPECIAL MACHINE",
+          "jinete": "MAURICIO CHAMORRO",
+          "partidor": null,
+          "puntaje": 4.7607,
+          "probabilidad": 85,
+          "ranking": 6,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "MANANO",
+          "jinete": "MOISES A. DONOSO",
+          "partidor": null,
+          "puntaje": 4.7607,
+          "probabilidad": 85,
+          "ranking": 7,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "LA FABITA",
+          "jinete": "MARCO A. BUSTAMANTE",
+          "partidor": null,
+          "puntaje": 4.7607,
+          "probabilidad": 85,
+          "ranking": 8,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "AFIRMATE TONITO",
+          "jinete": "LUIS D. MENGHINI",
+          "partidor": null,
+          "puntaje": 4.7607,
+          "probabilidad": 85,
+          "ranking": 9,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "FLEETWOOD",
+          "jinete": "GERARD RODRIGUEZ",
+          "partidor": null,
+          "puntaje": 4.906,
+          "probabilidad": 73,
+          "ranking": 10,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "UNO CERO",
+          "jinete": "DARIEN CHEUQUE",
+          "partidor": null,
+          "puntaje": 4.9318,
+          "probabilidad": 71,
+          "ranking": 11,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "REPUBLIC ANA",
+          "jinete": "JOSE SOLANO",
+          "partidor": null,
+          "puntaje": 4.9381,
+          "probabilidad": 70,
+          "ranking": 12,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "LUDMILA",
+          "jinete": "BASTIAN SOTO",
+          "partidor": null,
+          "puntaje": 5.7633,
+          "probabilidad": 0,
+          "ranking": 13,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        }
+      ]
+    },
+    {
+      "fecha": "2025-12-05",
+      "hipodromo": "HC",
+      "nro_carrera": 6,
+      "confianza": 100,
+      "top4": [
+        "KILAN",
+        "LUQUITAS",
+        "TORO DEL MONTE",
+        "CRUZA EL RIO"
+      ],
+      "detalle": [
+        {
+          "caballo": "KILAN",
+          "jinete": "JOSE SOLANO",
+          "partidor": null,
+          "puntaje": 3.1465,
+          "probabilidad": 100,
+          "ranking": 1,
+          "stats": {
+            "carreras": 1,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 3.0
+          }
+        },
+        {
+          "caballo": "LUQUITAS",
+          "jinete": "JOSE VILLABLANCA",
+          "partidor": null,
+          "puntaje": 3.8901,
+          "probabilidad": 90,
+          "ranking": 2,
+          "stats": {
+            "carreras": 1,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 4.0
+          }
+        },
+        {
+          "caballo": "TORO DEL MONTE",
+          "jinete": "RODOLFO FUENZALIDA",
+          "partidor": null,
+          "puntaje": 4.5945,
+          "probabilidad": 80,
+          "ranking": 3,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "CRUZA EL RIO",
+          "jinete": "FRANCISCO MORALES",
+          "partidor": null,
+          "puntaje": 4.7607,
+          "probabilidad": 78,
+          "ranking": 4,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "POETA GRIEGO (ARG)",
+          "jinete": "RONALD FOURNET",
+          "partidor": null,
+          "puntaje": 4.8537,
+          "probabilidad": 77,
+          "ranking": 5,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "GUNDOGAN",
+          "jinete": "NICOLAS RAMIREZ",
+          "partidor": null,
+          "puntaje": 4.8981,
+          "probabilidad": 76,
+          "ranking": 6,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "EL COMEDIANTE",
+          "jinete": "DARIEN CHEUQUE",
+          "partidor": null,
+          "puntaje": 4.9318,
+          "probabilidad": 76,
+          "ranking": 7,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "SALTARIN",
+          "jinete": "NICOLAS MOLINA",
+          "partidor": null,
+          "puntaje": 4.9375,
+          "probabilidad": 76,
+          "ranking": 8,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "SLOVAK",
+          "jinete": "BASTIAN SOTO",
+          "partidor": null,
+          "puntaje": 5.7633,
+          "probabilidad": 64,
+          "ranking": 9,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "NO SE NA",
+          "jinete": "JOAQUIN HERRERA",
+          "partidor": null,
+          "puntaje": 6.1999,
+          "probabilidad": 59,
+          "ranking": 10,
+          "stats": {
+            "carreras": 1,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 6.0
+          }
+        },
+        {
+          "caballo": "CATANZARO",
+          "jinete": "BENJAMIN TRONCOSO",
+          "partidor": null,
+          "puntaje": 6.9637,
+          "probabilidad": 48,
+          "ranking": 11,
+          "stats": {
+            "carreras": 1,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 7.0
+          }
+        },
+        {
+          "caballo": "MANO DE PIEDRA",
+          "jinete": "RODRIGO PAINEN",
+          "partidor": null,
+          "puntaje": 6.9804,
+          "probabilidad": 48,
+          "ranking": 12,
+          "stats": {
+            "carreras": 1,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 7.0
+          }
+        },
+        {
+          "caballo": "TE ANDAN BUSCANDO",
+          "jinete": "BENJAMIN AYALA",
+          "partidor": null,
+          "puntaje": 10.6138,
+          "probabilidad": 0,
+          "ranking": 13,
+          "stats": {
+            "carreras": 1,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 11.0
+          }
+        }
+      ]
+    },
+    {
+      "fecha": "2025-12-05",
+      "hipodromo": "HC",
+      "nro_carrera": 7,
+      "confianza": 82,
+      "top4": [
+        "AMOR CLANDESTINO",
+        "TENTADERO",
+        "ON THE MUSIC",
+        "TOQUE Y DESPEGUE"
+      ],
+      "detalle": [
+        {
+          "caballo": "AMOR CLANDESTINO",
+          "jinete": "JAIME MEDINA",
+          "partidor": null,
+          "puntaje": 0.9069,
+          "probabilidad": 100,
+          "ranking": 1,
+          "stats": {
+            "carreras": 1,
+            "tasa_victoria": 100.0,
+            "pos_promedio": 1.0
+          }
+        },
+        {
+          "caballo": "TENTADERO",
+          "jinete": "IGNACIO VALDIVIA",
+          "partidor": null,
+          "puntaje": 4.6881,
+          "probabilidad": 8,
+          "ranking": 2,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "ON THE MUSIC",
+          "jinete": "ALVARO APABLAZA",
+          "partidor": null,
+          "puntaje": 4.7607,
+          "probabilidad": 6,
+          "ranking": 3,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "TOQUE Y DESPEGUE",
+          "jinete": "HECTOR BERRIOS",
+          "partidor": null,
+          "puntaje": 4.7607,
+          "probabilidad": 6,
+          "ranking": 4,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "SOY INVENCIBLE",
+          "jinete": "OSCAR ULLOA",
+          "partidor": null,
+          "puntaje": 4.9706,
+          "probabilidad": 1,
+          "ranking": 5,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "FLACO TITO",
+          "jinete": "JOAQUIN HERRERA",
+          "partidor": null,
+          "puntaje": 5.0455,
+          "probabilidad": 0,
+          "ranking": 6,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        }
+      ]
+    },
+    {
+      "fecha": "2025-12-05",
+      "hipodromo": "HC",
+      "nro_carrera": 8,
+      "confianza": 77,
+      "top4": [
+        "DOMENICO",
+        "MISTER MINNION",
+        "AMARTE A TI",
+        "YO PAGO TODO"
+      ],
+      "detalle": [
+        {
+          "caballo": "DOMENICO",
+          "jinete": "RODRIGO PAINEN",
+          "partidor": null,
+          "puntaje": 4.7521,
+          "probabilidad": 100,
+          "ranking": 1,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "MISTER MINNION",
+          "jinete": "BENJAMIN TRONCOSO",
+          "partidor": null,
+          "puntaje": 4.7607,
+          "probabilidad": 99,
+          "ranking": 2,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "AMARTE A TI",
+          "jinete": "MAURICIO CHAMORRO",
+          "partidor": null,
+          "puntaje": 4.7607,
+          "probabilidad": 99,
+          "ranking": 3,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "YO PAGO TODO",
+          "jinete": "LUIS TORRES",
+          "partidor": null,
+          "puntaje": 4.7607,
+          "probabilidad": 99,
+          "ranking": 4,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "ULTIMO BRINDIS",
+          "jinete": "RAFAEL CISTERNAS",
+          "partidor": null,
+          "puntaje": 4.787,
+          "probabilidad": 99,
+          "ranking": 5,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "SALTO DE LUZ",
+          "jinete": "NICOLAS RAMIREZ",
+          "partidor": null,
+          "puntaje": 4.8981,
+          "probabilidad": 96,
+          "ranking": 6,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "EN VECES",
+          "jinete": "GERARD RODRIGUEZ",
+          "partidor": null,
+          "puntaje": 4.906,
+          "probabilidad": 96,
+          "ranking": 7,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "HIJA DEL PAN",
+          "jinete": "NICOLAS MOLINA",
+          "partidor": null,
+          "puntaje": 4.9375,
+          "probabilidad": 95,
+          "ranking": 8,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "SABIONDO",
+          "jinete": "JONATHAN A. CASTILLO",
+          "partidor": null,
+          "puntaje": 4.9526,
+          "probabilidad": 94,
+          "ranking": 9,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "RIO SAN JUAN",
+          "jinete": "JORGE VERA",
+          "partidor": null,
+          "puntaje": 4.9541,
+          "probabilidad": 94,
+          "ranking": 10,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "PATMAHO",
+          "jinete": "BASTIAN SOTO",
+          "partidor": null,
+          "puntaje": 7.7264,
+          "probabilidad": 23,
+          "ranking": 11,
+          "stats": {
+            "carreras": 1,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 8.0
+          }
+        },
+        {
+          "caballo": "DONDE RAUL",
+          "jinete": "VICTOR MIRANDA",
+          "partidor": null,
+          "puntaje": 8.3829,
+          "probabilidad": 6,
+          "ranking": 12,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "TODAS MIENTEN",
+          "jinete": "JOSE PAREDES",
+          "partidor": null,
+          "puntaje": 8.6205,
+          "probabilidad": 0,
+          "ranking": 13,
+          "stats": {
+            "carreras": 1,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 9.0
+          }
+        }
+      ]
+    },
+    {
+      "fecha": "2025-12-05",
+      "hipodromo": "HC",
+      "nro_carrera": 9,
+      "confianza": 100,
+      "top4": [
+        "HERE I GO AGAIN",
+        "CIAO JUANITA",
+        "PETIROSSA",
+        "IVY QUEEN"
+      ],
+      "detalle": [
+        {
+          "caballo": "HERE I GO AGAIN",
+          "jinete": "BENJAMIN AYALA",
+          "partidor": null,
+          "puntaje": 4.7607,
+          "probabilidad": 100,
+          "ranking": 1,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "CIAO JUANITA",
+          "jinete": "LUIS D. MENGHINI",
+          "partidor": null,
+          "puntaje": 4.7607,
+          "probabilidad": 100,
+          "ranking": 2,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "PETIROSSA",
+          "jinete": "BENJAMIN SANCHO",
+          "partidor": null,
+          "puntaje": 4.7607,
+          "probabilidad": 100,
+          "ranking": 3,
+          "stats": {
+            "carreras": 1,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "IVY QUEEN",
+          "jinete": "GUSTAVO AROS",
+          "partidor": null,
+          "puntaje": 4.7607,
+          "probabilidad": 100,
+          "ranking": 4,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "GRAN KURU",
+          "jinete": "LESLY C. GONZALEZ",
+          "partidor": null,
+          "puntaje": 4.7607,
+          "probabilidad": 100,
+          "ranking": 5,
+          "stats": {
+            "carreras": 1,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "NOVAK",
+          "jinete": "RAFAEL CISTERNAS",
+          "partidor": null,
+          "puntaje": 4.787,
+          "probabilidad": 99,
+          "ranking": 6,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "EL KING",
+          "jinete": "DARIEN CHEUQUE",
+          "partidor": null,
+          "puntaje": 4.9318,
+          "probabilidad": 97,
+          "ranking": 7,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "LA DOPINHUE",
+          "jinete": "RODOLFO S. DORES",
+          "partidor": null,
+          "puntaje": 5.1554,
+          "probabilidad": 94,
+          "ranking": 8,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "BACHATA",
+          "jinete": "SEBASTIAN GONZALEZ",
+          "partidor": null,
+          "puntaje": 5.7485,
+          "probabilidad": 86,
+          "ranking": 9,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "CHINITA TRAVIESA",
+          "jinete": "PIERO REYES P.",
+          "partidor": null,
+          "puntaje": 6.2434,
+          "probabilidad": 79,
+          "ranking": 10,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "JACINTA GOOD",
+          "jinete": "CLAUDIO JORQUERA",
+          "partidor": null,
+          "puntaje": 7.3658,
+          "probabilidad": 64,
+          "ranking": 11,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "FLOWER POWER",
+          "jinete": "VICTOR MIRANDA",
+          "partidor": null,
+          "puntaje": 8.3829,
+          "probabilidad": 51,
+          "ranking": 12,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "MISTER HEAD",
+          "jinete": "AXEL ALVAREZ",
+          "partidor": null,
+          "puntaje": 12.162,
+          "probabilidad": 0,
+          "ranking": 13,
+          "stats": {
+            "carreras": 1,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 14.0
+          }
+        }
+      ]
+    },
+    {
+      "fecha": "2025-12-05",
+      "hipodromo": "HC",
+      "nro_carrera": 10,
+      "confianza": 9,
+      "top4": [
+        "EL SALVADOR",
+        "REY SALOMON",
+        "AL AMIR",
+        "NAMRUD TIGER"
+      ],
+      "detalle": [
+        {
+          "caballo": "EL SALVADOR",
+          "jinete": "RODOLFO FUENZALIDA",
+          "partidor": null,
+          "puntaje": 4.5945,
+          "probabilidad": 100,
+          "ranking": 1,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "REY SALOMON",
+          "jinete": "GUSTAVO AROS",
+          "partidor": null,
+          "puntaje": 4.7607,
+          "probabilidad": 63,
+          "ranking": 2,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "AL AMIR",
+          "jinete": "BENJAMIN TRONCOSO",
+          "partidor": null,
+          "puntaje": 4.7607,
+          "probabilidad": 63,
+          "ranking": 3,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "NAMRUD TIGER",
+          "jinete": "RAFAEL CISTERNAS",
+          "partidor": null,
+          "puntaje": 4.787,
+          "probabilidad": 57,
+          "ranking": 4,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "REY RANGNAR",
+          "jinete": "GERARD RODRIGUEZ",
+          "partidor": null,
+          "puntaje": 4.906,
+          "probabilidad": 30,
+          "ranking": 5,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "SIEMPRE ESTOY",
+          "jinete": "DARIEN CHEUQUE",
+          "partidor": null,
+          "puntaje": 4.9318,
+          "probabilidad": 25,
+          "ranking": 6,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "NYQUISTER",
+          "jinete": "JAIME MEDINA",
+          "partidor": null,
+          "puntaje": 4.9477,
+          "probabilidad": 21,
+          "ranking": 7,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "CAREMECHE",
+          "jinete": "JORGE VERA",
+          "partidor": null,
+          "puntaje": 4.9541,
+          "probabilidad": 20,
+          "ranking": 8,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "LEEVAN CLEFF",
+          "jinete": "OSCAR ULLOA",
+          "partidor": null,
+          "puntaje": 4.9706,
+          "probabilidad": 16,
+          "ranking": 9,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "YO Y DIEZ MAS",
+          "jinete": "JOAQUIN HERRERA",
+          "partidor": null,
+          "puntaje": 5.0455,
+          "probabilidad": 0,
+          "ranking": 10,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        }
+      ]
+    },
+    {
+      "fecha": "2025-12-05",
+      "hipodromo": "HC",
+      "nro_carrera": 11,
+      "confianza": 100,
+      "top4": [
+        "VAMOS A BAILAR",
+        "MI GIGANTE",
+        "FLOTT JOEL",
+        "ELSEBAAHORRATODO"
+      ],
+      "detalle": [
+        {
+          "caballo": "VAMOS A BAILAR",
+          "jinete": "JORGE VERA",
+          "partidor": null,
+          "puntaje": 0.8994,
+          "probabilidad": 100,
+          "ranking": 1,
+          "stats": {
+            "carreras": 1,
+            "tasa_victoria": 100.0,
+            "pos_promedio": 1.0
+          }
+        },
+        {
+          "caballo": "MI GIGANTE",
+          "jinete": "RODOLFO FUENZALIDA",
+          "partidor": null,
+          "puntaje": 4.5945,
+          "probabilidad": 58,
+          "ranking": 2,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "FLOTT JOEL",
+          "jinete": "WILBERT LEON",
+          "partidor": null,
+          "puntaje": 4.7607,
+          "probabilidad": 56,
+          "ranking": 3,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "ELSEBAAHORRATODO",
+          "jinete": "BENJAMIN TRONCOSO",
+          "partidor": null,
+          "puntaje": 4.7607,
+          "probabilidad": 56,
+          "ranking": 4,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "CANELO DORADO",
+          "jinete": "RONALD FOURNET",
+          "partidor": null,
+          "puntaje": 4.8537,
+          "probabilidad": 55,
+          "ranking": 5,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "MACHINE HEAD",
+          "jinete": "PEDRO ROBLES",
+          "partidor": null,
+          "puntaje": 4.8637,
+          "probabilidad": 55,
+          "ranking": 6,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "ARRUMACO",
+          "jinete": "NICOLAS MOLINA",
+          "partidor": null,
+          "puntaje": 4.9375,
+          "probabilidad": 54,
+          "ranking": 7,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "GO SUNSHINE GO",
+          "jinete": "JOAQUIN HERRERA",
+          "partidor": null,
+          "puntaje": 5.0455,
+          "probabilidad": 53,
+          "ranking": 8,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "TIO SALCHICHA",
+          "jinete": "SEBASTIAN GONZALEZ",
+          "partidor": null,
+          "puntaje": 5.7485,
+          "probabilidad": 45,
+          "ranking": 9,
+          "stats": {
+            "carreras": 1,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "CATAPOS",
+          "jinete": "JESUS TORO",
+          "partidor": null,
+          "puntaje": 5.7896,
+          "probabilidad": 45,
+          "ranking": 10,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "REY DE ASTURIAS",
+          "jinete": "GUSTAVO AROS",
+          "partidor": null,
+          "puntaje": 6.9637,
+          "probabilidad": 31,
+          "ranking": 11,
+          "stats": {
+            "carreras": 1,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 7.0
+          }
+        },
+        {
+          "caballo": "ALFONSO EL GRANDE",
+          "jinete": "GERARD RODRIGUEZ",
+          "partidor": null,
+          "puntaje": 7.0599,
+          "probabilidad": 30,
+          "ranking": 12,
+          "stats": {
+            "carreras": 1,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 7.0
+          }
+        },
+        {
+          "caballo": "LUPO VELOCE",
+          "jinete": "DARIEN CHEUQUE",
+          "partidor": null,
+          "puntaje": 9.5721,
+          "probabilidad": 2,
+          "ranking": 13,
+          "stats": {
+            "carreras": 1,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 10.0
+          }
+        },
+        {
+          "caballo": "VOY A PALERMO",
+          "jinete": "BENJAMIN SANCHO",
+          "partidor": null,
+          "puntaje": 9.7978,
+          "probabilidad": 0,
+          "ranking": 14,
+          "stats": {
+            "carreras": 1,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 10.0
+          }
+        }
+      ]
+    },
+    {
+      "fecha": "2025-12-05",
+      "hipodromo": "HC",
+      "nro_carrera": 12,
+      "confianza": 8,
+      "top4": [
+        "CINCINNATUS",
+        "MISTER WATSON",
+        "A MI MODO",
+        "SALTO ETERNO"
+      ],
+      "detalle": [
+        {
+          "caballo": "CINCINNATUS",
+          "jinete": "IGNACIO VALDIVIA",
+          "partidor": null,
+          "puntaje": 4.6881,
+          "probabilidad": 100,
+          "ranking": 1,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "MISTER WATSON",
+          "jinete": "HECTOR BERRIOS",
+          "partidor": null,
+          "puntaje": 4.7607,
+          "probabilidad": 82,
+          "ranking": 2,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "A MI MODO",
+          "jinete": "LUIS TORRES",
+          "partidor": null,
+          "puntaje": 4.7607,
+          "probabilidad": 82,
+          "ranking": 3,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "SALTO ETERNO",
+          "jinete": "JORGE A. GONZALEZ",
+          "partidor": null,
+          "puntaje": 4.7871,
+          "probabilidad": 75,
+          "ranking": 4,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "JAMES BRUCE",
+          "jinete": "HUGO OCHOA",
+          "partidor": null,
+          "puntaje": 4.8018,
+          "probabilidad": 72,
+          "ranking": 5,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "DIAMOND BLUE",
+          "jinete": "NICOLAS RAMIREZ",
+          "partidor": null,
+          "puntaje": 4.8981,
+          "probabilidad": 48,
+          "ranking": 6,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "JALONADO",
+          "jinete": "JOSE SOLANO",
+          "partidor": null,
+          "puntaje": 4.9381,
+          "probabilidad": 38,
+          "ranking": 7,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "EL GRIEGO",
+          "jinete": "JAIME MEDINA",
+          "partidor": null,
+          "puntaje": 4.9477,
+          "probabilidad": 36,
+          "ranking": 8,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "MI PRECIOSO",
+          "jinete": "AXEL ALVAREZ",
+          "partidor": null,
+          "puntaje": 4.9526,
+          "probabilidad": 34,
+          "ranking": 9,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "CORDON DEL CAULLE",
+          "jinete": "ANYELO RIVERA",
+          "partidor": null,
+          "puntaje": 4.9526,
+          "probabilidad": 34,
+          "ranking": 10,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "SEA WARRIOR",
+          "jinete": "OSCAR ULLOA",
+          "partidor": null,
+          "puntaje": 4.9706,
+          "probabilidad": 30,
+          "ranking": 11,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "HARMONY OF THE SEA",
+          "jinete": "JOAQUIN HERRERA",
+          "partidor": null,
+          "puntaje": 5.0455,
+          "probabilidad": 11,
+          "ranking": 12,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "CAPOLAVORO",
+          "jinete": "KEVIN ESPINA",
+          "partidor": null,
+          "puntaje": 5.0942,
+          "probabilidad": 0,
+          "ranking": 13,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        }
+      ]
+    },
+    {
+      "fecha": "2025-12-05",
+      "hipodromo": "HC",
+      "nro_carrera": 13,
+      "confianza": 100,
+      "top4": [
+        "DIAMOND ONE",
+        "KANDOZI",
+        "MAGUIRE",
+        "CRANS MONTANA"
+      ],
+      "detalle": [
+        {
+          "caballo": "DIAMOND ONE",
+          "jinete": "JOAQUIN HERRERA",
+          "partidor": null,
+          "puntaje": 0.8814,
+          "probabilidad": 100,
+          "ranking": 1,
+          "stats": {
+            "carreras": 1,
+            "tasa_victoria": 100.0,
+            "pos_promedio": 1.0
+          }
+        },
+        {
+          "caballo": "KANDOZI",
+          "jinete": "SEBASTIAN GONZALEZ",
+          "partidor": null,
+          "puntaje": 0.9318,
+          "probabilidad": 99,
+          "ranking": 2,
+          "stats": {
+            "carreras": 1,
+            "tasa_victoria": 100.0,
+            "pos_promedio": 1.0
+          }
+        },
+        {
+          "caballo": "MAGUIRE",
+          "jinete": "RODRIGO PAINEN",
+          "partidor": null,
+          "puntaje": 4.7521,
+          "probabilidad": 32,
+          "ranking": 3,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "CRANS MONTANA",
+          "jinete": "LUIS TORRES",
+          "partidor": null,
+          "puntaje": 4.7607,
+          "probabilidad": 32,
+          "ranking": 4,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "INDHIRA",
+          "jinete": "FRANCISCO MORALES",
+          "partidor": null,
+          "puntaje": 4.7607,
+          "probabilidad": 32,
+          "ranking": 5,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "CHANGE FORADOLLAR",
+          "jinete": "RAFAEL CISTERNAS",
+          "partidor": null,
+          "puntaje": 4.787,
+          "probabilidad": 31,
+          "ranking": 6,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "TRES PALABRAS",
+          "jinete": "GERARD RODRIGUEZ",
+          "partidor": null,
+          "puntaje": 4.906,
+          "probabilidad": 29,
+          "ranking": 7,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "COCHERO DEL DIABLO",
+          "jinete": "OSCAR ULLOA",
+          "partidor": null,
+          "puntaje": 4.9706,
+          "probabilidad": 28,
+          "ranking": 8,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "NO PASO AGOSTO",
+          "jinete": "RODOLFO S. DORES",
+          "partidor": null,
+          "puntaje": 5.1554,
+          "probabilidad": 25,
+          "ranking": 9,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "SATOSHI",
+          "jinete": "VICTOR MIRANDA",
+          "partidor": null,
+          "puntaje": 6.6111,
+          "probabilidad": 0,
+          "ranking": 10,
+          "stats": {
+            "carreras": 1,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 3.0
+          }
+        }
+      ]
+    },
+    {
+      "fecha": "2025-12-05",
+      "hipodromo": "HC",
+      "nro_carrera": 14,
+      "confianza": 78,
+      "top4": [
+        "EL NENE",
+        "DOLCE AMARENA",
+        "VAI BENE COSI",
+        "DI LA VERDAD ROSA"
+      ],
+      "detalle": [
+        {
+          "caballo": "EL NENE",
+          "jinete": "AXEL ALVAREZ",
+          "partidor": null,
+          "puntaje": 2.3036,
+          "probabilidad": 100,
+          "ranking": 1,
+          "stats": {
+            "carreras": 1,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 2.0
+          }
+        },
+        {
+          "caballo": "DOLCE AMARENA",
+          "jinete": "JESUS PIMENTEL",
+          "partidor": null,
+          "puntaje": 3.8901,
+          "probabilidad": 59,
+          "ranking": 2,
+          "stats": {
+            "carreras": 1,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 4.0
+          }
+        },
+        {
+          "caballo": "VAI BENE COSI",
+          "jinete": "RODOLFO FUENZALIDA",
+          "partidor": null,
+          "puntaje": 4.5945,
+          "probabilidad": 41,
+          "ranking": 3,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "DI LA VERDAD ROSA",
+          "jinete": "ANDRES CASTILLO",
+          "partidor": null,
+          "puntaje": 4.7607,
+          "probabilidad": 37,
+          "ranking": 4,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "VITA KC",
+          "jinete": "BENJAMIN SANCHO",
+          "partidor": null,
+          "puntaje": 4.7607,
+          "probabilidad": 37,
+          "ranking": 5,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "LADY OF MERCIA",
+          "jinete": "MAURICIO CHAMORRO",
+          "partidor": null,
+          "puntaje": 4.7607,
+          "probabilidad": 37,
+          "ranking": 6,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "MI TATA SAMBUKA",
+          "jinete": "RODRIGO COVARRUBIAS",
+          "partidor": null,
+          "puntaje": 4.7607,
+          "probabilidad": 37,
+          "ranking": 7,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "NUTCRACKER",
+          "jinete": "JUAN MUÑOZ",
+          "partidor": null,
+          "puntaje": 4.7607,
+          "probabilidad": 37,
+          "ranking": 8,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "GRAN SAMIR",
+          "jinete": "GUSTAVO AROS",
+          "partidor": null,
+          "puntaje": 4.7607,
+          "probabilidad": 37,
+          "ranking": 9,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "BRINDO POR ELLA",
+          "jinete": "RAFAEL CISTERNAS",
+          "partidor": null,
+          "puntaje": 4.787,
+          "probabilidad": 36,
+          "ranking": 10,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "MUCHO VERSO",
+          "jinete": "GERARD RODRIGUEZ",
+          "partidor": null,
+          "puntaje": 4.906,
+          "probabilidad": 33,
+          "ranking": 11,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "MERCI MON DIEU",
+          "jinete": "WLADIMIR QUINTEROS",
+          "partidor": null,
+          "puntaje": 4.929,
+          "probabilidad": 33,
+          "ranking": 12,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "MISTER VILLAGRA",
+          "jinete": "JESUS TORO",
+          "partidor": null,
+          "puntaje": 5.7896,
+          "probabilidad": 11,
+          "ranking": 13,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "KOLETTE",
+          "jinete": "JORGE VERA",
+          "partidor": null,
+          "puntaje": 6.1463,
+          "probabilidad": 2,
+          "ranking": 14,
+          "stats": {
+            "carreras": 1,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 6.0
+          }
+        },
+        {
+          "caballo": "MY RICHARD",
+          "jinete": "PIERO REYES P.",
+          "partidor": null,
+          "puntaje": 6.2434,
+          "probabilidad": 0,
+          "ranking": 15,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        }
+      ]
+    },
+    {
+      "fecha": "2025-12-05",
+      "hipodromo": "HC",
+      "nro_carrera": 15,
+      "confianza": 100,
+      "top4": [
+        "ARTHUR SHELBY",
+        "SEÑOR TRONCOSO",
+        "MI JOYA",
+        "MARIA SUREÑA"
+      ],
+      "detalle": [
+        {
+          "caballo": "ARTHUR SHELBY",
+          "jinete": "RODRIGO PAINEN",
+          "partidor": null,
+          "puntaje": 3.8299,
+          "probabilidad": 100,
+          "ranking": 1,
+          "stats": {
+            "carreras": 1,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 4.0
+          }
+        },
+        {
+          "caballo": "SEÑOR TRONCOSO",
+          "jinete": "RODOLFO FUENZALIDA",
+          "partidor": null,
+          "puntaje": 4.5945,
+          "probabilidad": 88,
+          "ranking": 2,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "MI JOYA",
+          "jinete": "BENJAMIN SANCHO",
+          "partidor": null,
+          "puntaje": 4.7607,
+          "probabilidad": 86,
+          "ranking": 3,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "MARIA SUREÑA",
+          "jinete": "BENJAMIN TRONCOSO",
+          "partidor": null,
+          "puntaje": 4.7607,
+          "probabilidad": 86,
+          "ranking": 4,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "BAMBO LUKAS",
+          "jinete": "RAFAEL CISTERNAS",
+          "partidor": null,
+          "puntaje": 4.787,
+          "probabilidad": 85,
+          "ranking": 5,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "CINABRIO",
+          "jinete": "RONALD FOURNET",
+          "partidor": null,
+          "puntaje": 4.8537,
+          "probabilidad": 84,
+          "ranking": 6,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "MORINGA",
+          "jinete": "NICOLAS RAMIREZ",
+          "partidor": null,
+          "puntaje": 4.8981,
+          "probabilidad": 84,
+          "ranking": 7,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "BOY SCOUT",
+          "jinete": "JONATHAN A. CASTILLO",
+          "partidor": null,
+          "puntaje": 4.9526,
+          "probabilidad": 83,
+          "ranking": 8,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "LA PUPPE",
+          "jinete": "OSCAR ULLOA",
+          "partidor": null,
+          "puntaje": 4.9706,
+          "probabilidad": 83,
+          "ranking": 9,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "CHARLES ATLAS",
+          "jinete": "JOAQUIN HERRERA",
+          "partidor": null,
+          "puntaje": 5.0455,
+          "probabilidad": 82,
+          "ranking": 10,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "CASUAL VISION",
+          "jinete": "RODOLFO S. DORES",
+          "partidor": null,
+          "puntaje": 5.1554,
+          "probabilidad": 80,
+          "ranking": 11,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "AMPAWAN",
+          "jinete": "BASTIAN SOTO",
+          "partidor": null,
+          "puntaje": 5.7633,
+          "probabilidad": 71,
+          "ranking": 12,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "CROCKED",
+          "jinete": "HUGO OCHOA",
+          "partidor": null,
+          "puntaje": 8.9678,
+          "probabilidad": 24,
+          "ranking": 13,
+          "stats": {
+            "carreras": 1,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 9.0
+          }
+        },
+        {
+          "caballo": "SULTAN GUERRERO",
+          "jinete": "FRANCISCO MORALES",
+          "partidor": null,
+          "puntaje": 10.6138,
+          "probabilidad": 0,
+          "ranking": 14,
+          "stats": {
+            "carreras": 1,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 12.0
+          }
+        }
+      ]
+    },
+    {
+      "fecha": "2025-12-05",
+      "hipodromo": "HC",
+      "nro_carrera": 16,
+      "confianza": 7,
+      "top4": [
+        "SPES",
+        "SALTO DEL GUAPO",
+        "STRONG DAIKIRI",
+        "FLOREADOR"
+      ],
+      "detalle": [
+        {
+          "caballo": "SPES",
+          "jinete": "DIEGO CARRASCO",
+          "partidor": null,
+          "puntaje": 4.7607,
+          "probabilidad": 100,
+          "ranking": 1,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "SALTO DEL GUAPO",
+          "jinete": "FELIPE HENRIQUEZ",
+          "partidor": null,
+          "puntaje": 4.7607,
+          "probabilidad": 100,
+          "ranking": 2,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "STRONG DAIKIRI",
+          "jinete": "LUIS TORRES",
+          "partidor": null,
+          "puntaje": 4.7607,
+          "probabilidad": 100,
+          "ranking": 3,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "FLOREADOR",
+          "jinete": "BENJAMIN TRONCOSO",
+          "partidor": null,
+          "puntaje": 4.7607,
+          "probabilidad": 100,
+          "ranking": 4,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "COMO DORMISTE",
+          "jinete": "FRANCISCO MORALES",
+          "partidor": null,
+          "puntaje": 4.7607,
+          "probabilidad": 100,
+          "ranking": 5,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "DESENFRENADO",
+          "jinete": "RAFAEL CISTERNAS",
+          "partidor": null,
+          "puntaje": 4.787,
+          "probabilidad": 93,
+          "ranking": 6,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "CORRER NORTINO",
+          "jinete": "HUGO OCHOA",
+          "partidor": null,
+          "puntaje": 4.8018,
+          "probabilidad": 89,
+          "ranking": 7,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "EL CURANDERO",
+          "jinete": "PEDRO ROBLES",
+          "partidor": null,
+          "puntaje": 4.8637,
+          "probabilidad": 73,
+          "ranking": 8,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "EL CARRIL",
+          "jinete": "GERARD RODRIGUEZ",
+          "partidor": null,
+          "puntaje": 4.906,
+          "probabilidad": 63,
+          "ranking": 9,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "LA JIBARITA",
+          "jinete": "DARIEN CHEUQUE",
+          "partidor": null,
+          "puntaje": 4.9318,
+          "probabilidad": 56,
+          "ranking": 10,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "INDIAN POET",
+          "jinete": "JAIME MEDINA",
+          "partidor": null,
+          "puntaje": 4.9477,
+          "probabilidad": 52,
+          "ranking": 11,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "STOP PLAYING",
+          "jinete": "AXEL ALVAREZ",
+          "partidor": null,
+          "puntaje": 4.9526,
+          "probabilidad": 51,
+          "ranking": 12,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "DOORSTEP",
+          "jinete": "RODOLFO S. DORES",
+          "partidor": null,
+          "puntaje": 5.1554,
+          "probabilidad": 0,
+          "ranking": 13,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        }
+      ]
+    },
+    {
+      "fecha": "2025-12-05",
+      "hipodromo": "HC",
+      "nro_carrera": 17,
+      "confianza": 100,
+      "top4": [
+        "VOLANTE MIXTO",
+        "INTRIGANT",
+        "BEL FIOR",
+        "LATEN GOOD"
+      ],
+      "detalle": [
+        {
+          "caballo": "VOLANTE MIXTO",
+          "jinete": "FELIPE HENRIQUEZ",
+          "partidor": null,
+          "puntaje": 3.1494,
+          "probabilidad": 100,
+          "ranking": 1,
+          "stats": {
+            "carreras": 1,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 3.0
+          }
+        },
+        {
+          "caballo": "INTRIGANT",
+          "jinete": "RODOLFO FUENZALIDA",
+          "partidor": null,
+          "puntaje": 4.5945,
+          "probabilidad": 80,
+          "ranking": 2,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "BEL FIOR",
+          "jinete": "RODRIGO PAINEN",
+          "partidor": null,
+          "puntaje": 4.7521,
+          "probabilidad": 78,
+          "ranking": 3,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "LATEN GOOD",
+          "jinete": "BENJAMIN SANCHO",
+          "partidor": null,
+          "puntaje": 4.7607,
+          "probabilidad": 78,
+          "ranking": 4,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "GUSTO A POCO",
+          "jinete": "MAURICIO CHAMORRO",
+          "partidor": null,
+          "puntaje": 4.7607,
+          "probabilidad": 78,
+          "ranking": 5,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "JARDIN OLVIDADO",
+          "jinete": "MOISES A. DONOSO",
+          "partidor": null,
+          "puntaje": 4.7607,
+          "probabilidad": 78,
+          "ranking": 6,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "SEE YOU AGAIN",
+          "jinete": "LESLY C. GONZALEZ",
+          "partidor": null,
+          "puntaje": 4.7607,
+          "probabilidad": 78,
+          "ranking": 7,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "TAKE A NAP",
+          "jinete": "HUGO OCHOA",
+          "partidor": null,
+          "puntaje": 4.8018,
+          "probabilidad": 77,
+          "ranking": 8,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "MAKINEN",
+          "jinete": "RONALD FOURNET",
+          "partidor": null,
+          "puntaje": 4.8537,
+          "probabilidad": 77,
+          "ranking": 9,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "LA ESCUDERA",
+          "jinete": "NICOLAS RAMIREZ",
+          "partidor": null,
+          "puntaje": 4.8981,
+          "probabilidad": 76,
+          "ranking": 10,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "TE DIGO ALGO",
+          "jinete": "NICOLAS MOLINA",
+          "partidor": null,
+          "puntaje": 4.9375,
+          "probabilidad": 76,
+          "ranking": 11,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "LA SIGUIENTE",
+          "jinete": "SEBASTIAN GONZALEZ",
+          "partidor": null,
+          "puntaje": 5.7485,
+          "probabilidad": 65,
+          "ranking": 12,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "BENVENUTO CELLINI",
+          "jinete": "BASTIAN SOTO",
+          "partidor": null,
+          "puntaje": 5.7633,
+          "probabilidad": 64,
+          "ranking": 13,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "NONA BLANCA",
+          "jinete": "JESUS TORO",
+          "partidor": null,
+          "puntaje": 5.7896,
+          "probabilidad": 64,
+          "ranking": 14,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "SISI STAR",
+          "jinete": "ROBERTO AVILA",
+          "partidor": null,
+          "puntaje": 10.6138,
+          "probabilidad": 0,
+          "ranking": 15,
+          "stats": {
+            "carreras": 1,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 12.0
+          }
+        }
+      ]
+    },
+    {
+      "fecha": "2025-12-05",
+      "hipodromo": "HC",
+      "nro_carrera": 18,
+      "confianza": 100,
+      "top4": [
+        "UNDER THE LIGHT",
+        "JUNO",
+        "ACHAPLINA",
+        "BERGERAC (ARG)"
+      ],
+      "detalle": [
+        {
+          "caballo": "UNDER THE LIGHT",
+          "jinete": "MARCO MORALES",
+          "partidor": null,
+          "puntaje": 3.9747,
+          "probabilidad": 100,
+          "ranking": 1,
+          "stats": {
+            "carreras": 1,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 4.0
+          }
+        },
+        {
+          "caballo": "JUNO",
+          "jinete": "BENJAMIN TRONCOSO",
+          "partidor": null,
+          "puntaje": 4.7607,
+          "probabilidad": 87,
+          "ranking": 2,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "ACHAPLINA",
+          "jinete": "LESLY C. GONZALEZ",
+          "partidor": null,
+          "puntaje": 4.7607,
+          "probabilidad": 87,
+          "ranking": 3,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "BERGERAC (ARG)",
+          "jinete": "BENJAMIN AYALA",
+          "partidor": null,
+          "puntaje": 4.7607,
+          "probabilidad": 87,
+          "ranking": 4,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "NEOLIBERAL",
+          "jinete": "FRANCISCO MORALES",
+          "partidor": null,
+          "puntaje": 4.7607,
+          "probabilidad": 87,
+          "ranking": 5,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "TOWN OF TREBBI",
+          "jinete": "FELIPE HENRIQUEZ",
+          "partidor": null,
+          "puntaje": 4.7607,
+          "probabilidad": 87,
+          "ranking": 6,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "VUELA EL AMOR",
+          "jinete": "BENJAMIN SANCHO",
+          "partidor": null,
+          "puntaje": 4.7607,
+          "probabilidad": 87,
+          "ranking": 7,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "EL CURICANO",
+          "jinete": "GERARD RODRIGUEZ",
+          "partidor": null,
+          "puntaje": 4.906,
+          "probabilidad": 85,
+          "ranking": 8,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "SCROOGE",
+          "jinete": "JORGE VERA",
+          "partidor": null,
+          "puntaje": 4.9541,
+          "probabilidad": 84,
+          "ranking": 9,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "HUACARNECO",
+          "jinete": "SEBASTIAN GONZALEZ",
+          "partidor": null,
+          "puntaje": 5.7485,
+          "probabilidad": 72,
+          "ranking": 10,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "EL VISIR",
+          "jinete": "BASTIAN SOTO",
+          "partidor": null,
+          "puntaje": 5.7633,
+          "probabilidad": 72,
+          "ranking": 11,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "ASTRO SOL",
+          "jinete": "JESUS TORO",
+          "partidor": null,
+          "puntaje": 5.7896,
+          "probabilidad": 72,
+          "ranking": 12,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "SIR WALLANCE",
+          "jinete": "VICTOR MIRANDA",
+          "partidor": null,
+          "puntaje": 8.3829,
+          "probabilidad": 32,
+          "ranking": 13,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "DEAR SISTER",
+          "jinete": "DARIEN CHEUQUE",
+          "partidor": null,
+          "puntaje": 10.5003,
+          "probabilidad": 0,
+          "ranking": 14,
+          "stats": {
+            "carreras": 1,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 12.0
+          }
+        }
+      ]
+    },
+    {
+      "fecha": "2025-12-05",
+      "hipodromo": "HC",
+      "nro_carrera": 19,
+      "confianza": 10,
+      "top4": [
+        "BESO AL CIELO",
+        "BENIBLU",
+        "TENGO UN SUEÑO",
+        "PUNTA ITATA"
+      ],
+      "detalle": [
+        {
+          "caballo": "BESO AL CIELO",
+          "jinete": "RODRIGO PAINEN",
+          "partidor": null,
+          "puntaje": 4.7521,
+          "probabilidad": 100,
+          "ranking": 1,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "BENIBLU",
+          "jinete": "GUSTAVO AROS",
+          "partidor": null,
+          "puntaje": 4.7607,
+          "probabilidad": 98,
+          "ranking": 2,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "TENGO UN SUEÑO",
+          "jinete": "BENJAMIN SANCHO",
+          "partidor": null,
+          "puntaje": 4.7607,
+          "probabilidad": 98,
+          "ranking": 3,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "PUNTA ITATA",
+          "jinete": "FELIPE HENRIQUEZ",
+          "partidor": null,
+          "puntaje": 4.7607,
+          "probabilidad": 98,
+          "ranking": 4,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "BABY YODA",
+          "jinete": "PEDRO ROBLES",
+          "partidor": null,
+          "puntaje": 4.8637,
+          "probabilidad": 78,
+          "ranking": 5,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "KUAI MA",
+          "jinete": "NICOLAS RAMIREZ",
+          "partidor": null,
+          "puntaje": 4.8981,
+          "probabilidad": 72,
+          "ranking": 6,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "CONGOBELGA",
+          "jinete": "GERARD RODRIGUEZ",
+          "partidor": null,
+          "puntaje": 4.906,
+          "probabilidad": 70,
+          "ranking": 7,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "OBRA DE ARTE",
+          "jinete": "DARIEN CHEUQUE",
+          "partidor": null,
+          "puntaje": 4.9318,
+          "probabilidad": 65,
+          "ranking": 8,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "COLOR DE SUEÑO",
+          "jinete": "NICOLAS MOLINA",
+          "partidor": null,
+          "puntaje": 4.9375,
+          "probabilidad": 64,
+          "ranking": 9,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "SCALPING",
+          "jinete": "JAIME MEDINA",
+          "partidor": null,
+          "puntaje": 4.9477,
+          "probabilidad": 62,
+          "ranking": 10,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "SEÑOR GOMEZ",
+          "jinete": "JORGE VERA",
+          "partidor": null,
+          "puntaje": 4.9541,
+          "probabilidad": 61,
+          "ranking": 11,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "MR NUTS",
+          "jinete": "JOAQUIN HERRERA",
+          "partidor": null,
+          "puntaje": 5.0455,
+          "probabilidad": 44,
+          "ranking": 12,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "ALE GUAPA",
+          "jinete": "RODOLFO S. DORES",
+          "partidor": null,
+          "puntaje": 5.1554,
+          "probabilidad": 23,
+          "ranking": 13,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        },
+        {
+          "caballo": "CAROLITO",
+          "jinete": "MIGUEL GUTIERREZ",
+          "partidor": null,
+          "puntaje": 5.2782,
+          "probabilidad": 0,
+          "ranking": 14,
+          "stats": {
+            "carreras": 0,
+            "tasa_victoria": 0.0,
+            "pos_promedio": 5.0
+          }
+        }
+      ]
+    }
+  ],
+  "patrones": {}
+}
