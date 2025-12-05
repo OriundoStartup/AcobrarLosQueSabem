@@ -66,7 +66,7 @@ class OrchestratorConfig:
     # Paths
     db_path: str = "data/db/hipica_3fn.db"
     model_path: str = "models/predictor_latest.joblib"
-    output_dir: str = "output"
+    output_dir: str = "app/ml/output" 
     
     # ETL
     update_aggregations: bool = True
