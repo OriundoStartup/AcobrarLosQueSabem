@@ -38,6 +38,7 @@ import hashlib
 import json
 import logging
 import re
+import sys 
 from abc import ABC, abstractmethod
 
 # Importar detector de CSV
@@ -75,6 +76,7 @@ class ETLConfig:
     reject_threshold: float = 0.3
     update_aggregations: bool = True
     auto_detect_csv: bool = True  # Nueva opción
+    auto_predict: bool = True  # NUEVO: generar predicciones automáticas para programas
 
 
 @dataclass
@@ -681,6 +683,11 @@ class ETLPipeline:
             logger.info(f"   Actualizados: {stats['updated']}")
             logger.info(f"   Rechazados: {stats['rejected']}")
             
+            # NUEVO: Generar predicciones automáticas si es programa
+            if self.config.auto_predict and source_type == SourceType.CSV_PROGRAMA:
+                if stats['inserted'] > 0 or stats['updated'] > 0:  # ✅ También con UPDATE
+                    self._trigger_predictions()
+            
             return ETLBatchResult(
                 batch_id=batch_id,
                 source_type=source_type.value,
@@ -1025,6 +1032,37 @@ class ETLPipeline:
         self.conn.commit()
         logger.info("   ✅ Agregaciones actualizadas")
 
+    
+    def _trigger_predictions(self):
+        """Genera predicciones automáticamente después de cargar un programa."""
+        try:
+            logger.info("🤖 Generando predicciones automáticas...")
+            
+            # Importar aquí para evitar dependencias circulares
+            sys.path.insert(0, str(Path(__file__).parent.parent / "ml"))
+            from orchestrator import PistaInteligenteOrchestrator, OrchestratorConfig
+            
+            config = OrchestratorConfig(
+                db_path=self.config.db_path,
+                auto_predict=True
+            )
+            
+            with PistaInteligenteOrchestrator(config) as orch:
+                # Solo predecir, no reentrenar (usa modelo existente)
+                predictions = orch.predict_only()
+                
+                if predictions:
+                    logger.info(f"✅ Predicciones generadas: {len(predictions)} carreras")
+                else:
+                    logger.warning("⚠️ No hay carreras futuras para predecir")
+                
+        except FileNotFoundError as e:
+            logger.warning(f"⚠️ Modelo no encontrado. Ejecute primero: python app/ml/orchestrator.py --retrain")
+        except Exception as e:
+            logger.warning(f"⚠️ No se pudieron generar predicciones: {e}")
+            # No fallar el ETL si las predicciones fallan
+
+
 
 # ==============================================================================
 # FUNCIONES DE UTILIDAD
@@ -1065,19 +1103,37 @@ if __name__ == "__main__":
     import argparse
     
     parser = argparse.ArgumentParser(description="ETL Pipeline - Pista Inteligente")
-    parser.add_argument('input', help='Archivo CSV o directorio')
+    parser.add_argument('input', nargs='?', help='Archivo CSV o directorio')
     parser.add_argument('--db', default='data/db/hipica_3fn.db', help='Base de datos')
     parser.add_argument('--no-agg', action='store_true', help='No actualizar agregaciones')
+    parser.add_argument('--no-predict', action='store_true', help='No generar predicciones automáticas')
     
     args = parser.parse_args()
     
+    input_path = args.input
+    
+    # Auto-detect input if not provided
+    if not input_path:
+        default_dir = Path('exports/raw')
+        if default_dir.exists():
+            csv_files = list(default_dir.glob('*.csv'))
+            if csv_files:
+                # Get latest file by modification time
+                latest_file = max(csv_files, key=lambda p: p.stat().st_mtime)
+                input_path = str(latest_file)
+                print(f"ℹ️  No se especificó input. Usando el más reciente: {input_path}")
+    
+    if not input_path:
+        parser.error("Se requiere un archivo de entrada (input) o que existan CSVs en exports/raw")
+    
     config = ETLConfig(
         db_path=args.db,
-        update_aggregations=not args.no_agg
+        update_aggregations=not args.no_agg,
+        auto_predict=not args.no_predict  # NUEVO
     )
     
     with ETLPipeline(config) as pipeline:
-        path = Path(args.input)
+        path = Path(input_path)
         
         if path.is_dir():
             pipeline.process_directory(str(path))
