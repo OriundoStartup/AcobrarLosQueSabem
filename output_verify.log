@@ -1,0 +1,109 @@
+2025-12-04 23:50:43,064 | INFO | __main__ | \U0001f4c2 Procesando: exports/raw/resul_CHC_17-11-2025.csv
+2025-12-04 23:50:43,064 | INFO | etl_pipeline | 
+============================================================
+2025-12-04 23:50:43,064 | INFO | etl_pipeline | \U0001f504 PROCESANDO CSV: resul_CHC_17-11-2025.csv
+2025-12-04 23:50:43,064 | INFO | etl_pipeline | ============================================================
+2025-12-04 23:50:43,064 | INFO | etl_pipeline |    Batch ID: batch_20251204_235043_be3f7d0e
+2025-12-04 23:50:43,064 | INFO | detector | \u2705 CSV detectado por nombre: resultados, hip¾dromo: CHS, fecha: 2025-11-17
+2025-12-04 23:50:43,088 | INFO | detector | \U0001f4c4 LeÝdas 200 filas de resul_CHC_17-11-2025.csv
+2025-12-04 23:50:43,100 | INFO | detector | \u2705 Columnas mapeadas: ['nro_carrera', 'resultado_final', 'partidor', 'nombre_caballo', 'padre', 'stud', 'peso_final', 'jinete', 'peso_jinete', 'preparador', 'distancia_cuerpos', 'handicap', 'dividendo', 'fecha', 'hipodromo']
+2025-12-04 23:50:43,100 | INFO | etl_pipeline |    \u2705 Auto-detectado: resultados
+2025-12-04 23:50:43,100 | INFO | etl_pipeline |    \U0001f4cd Hip¾dromo: CHS
+2025-12-04 23:50:43,100 | INFO | etl_pipeline |    \U0001f4c5 Fecha: 2025-11-17
+2025-12-04 23:50:43,104 | INFO | etl_pipeline | Cache: 538 caballos, 75 jinetes
+2025-12-04 23:50:43,140 | INFO | etl_pipeline | \U0001f4ca Actualizando agregaciones...
+2025-12-04 23:50:43,147 | INFO | etl_pipeline |    \u2705 Agregaciones actualizadas
+2025-12-04 23:50:43,147 | INFO | etl_pipeline | 
+\U0001f4ca RESUMEN:
+2025-12-04 23:50:43,147 | INFO | etl_pipeline |    Registros raw: 200
+2025-12-04 23:50:43,147 | INFO | etl_pipeline |    Insertados: 0
+2025-12-04 23:50:43,147 | INFO | etl_pipeline |    Actualizados: 200
+2025-12-04 23:50:43,147 | INFO | etl_pipeline |    Rechazados: 0
+2025-12-04 23:50:43,147 | INFO | __main__ | \u2705 ETL completado:
+2025-12-04 23:50:43,147 | INFO | __main__ |    - Registros procesados: 200
+2025-12-04 23:50:43,147 | INFO | __main__ |    - Insertados: 0
+2025-12-04 23:50:43,147 | INFO | __main__ |    - Actualizados: 200
+2025-12-04 23:50:43,147 | INFO | __main__ |    - Rechazados: 0
+2025-12-04 23:50:43,147 | INFO | __main__ | \u23ed\ufe0f Usando modelo existente: models/predictor_latest.joblib
+2025-12-04 23:50:43,347 | INFO | predictor | \U0001f50d Validando estructura de base de datos...
+2025-12-04 23:50:43,350 | INFO | predictor |    \u2705 Estructura de BD validada correctamente
+2025-12-04 23:50:43,350 | INFO | predictor | \U0001f4c2 Modelo cargado: models/predictor_latest.joblib
+2025-12-04 23:50:43,350 | INFO | predictor |    Entrenado: 2025-12-04T22:39:59.010380
+2025-12-04 23:50:43,350 | INFO | predictor |    R▓ Test: 0.8378
+2025-12-04 23:50:43,350 | INFO | predictor | 
+============================================================
+2025-12-04 23:50:43,350 | INFO | predictor | \U0001f52e GENERANDO PREDICCIONES
+2025-12-04 23:50:43,350 | INFO | predictor | ============================================================
+2025-12-04 23:50:43,350 | INFO | predictor | \U0001f4ca Extrayendo datos para predicci¾n...
+2025-12-04 23:50:43,359 | INFO | predictor |    \u2705 520 registros para predicci¾n
+2025-12-04 23:50:43,359 | INFO | predictor | \u2699\ufe0f Generando features avanzadas...
+2025-12-04 23:50:43,381 | INFO | predictor |    \u2705 38 columnas despuÚs de feature engineering
+2025-12-04 23:50:43,472 | INFO | predictor |    \u2705 56 carreras predichas
+2025-12-04 23:50:43,473 | INFO | predictor | 
+============================================================
+2025-12-04 23:50:43,473 | INFO | predictor | \U0001f50d AN┴LISIS DE PATRONES (LEY DE TRES)
+2025-12-04 23:50:43,473 | INFO | predictor | ============================================================
+2025-12-04 23:50:43,473 | INFO | predictor | 
+\u2705 Sin patrones repetidos en quinelas
+2025-12-04 23:50:43,473 | INFO | predictor | 
+\u2705 Sin patrones repetidos en trifectas
+2025-12-04 23:50:43,473 | INFO | predictor | 
+\u2705 Sin patrones repetidos en superfectas
+2025-12-04 23:50:43,480 | INFO | predictor | \U0001f4be CSV guardado: output/predicciones.csv
+2025-12-04 23:50:43,493 | INFO | predictor | \U0001f4be JSON guardado: output/predicciones_detalle.json
+2025-12-04 23:50:43,494 | INFO | __main__ | \u2705 Predicciones generadas:
+2025-12-04 23:50:43,494 | INFO | __main__ |    - Carreras predichas: 56
+2025-12-04 23:50:43,494 | INFO | __main__ |    - CSV: output/predicciones.csv
+2025-12-04 23:50:43,494 | INFO | __main__ |    - JSON: output/predicciones_detalle.json
+2025-12-04 23:50:43,494 | ERROR | __main__ | \u274c Error en pipeline: 'charmap' codec can't encode characters in position 2-61: character maps to <undefined>
+Traceback (most recent call last):
+  File "C:\Users\USUARIO\a-cobrar-los-que-saben\app\ml\orchestrator.py", line 188, in run_full_pipeline
+    self._print_summary(results)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\USUARIO\a-cobrar-los-que-saben\app\ml\orchestrator.py", line 361, in _print_summary
+    print("\n" + "\u2554" + "\u2550"*58 + "\u2557")
+    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USUARIO\AppData\Local\Programs\Python\Python313\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode characters in position 2-61: character maps to <undefined>
+
+============================================================
+  PISTA INTELIGENTE - PIPELINE COMPLETO
+============================================================
+
+
+============================================================
+  ETAPA 1: ETL - CARGA DE DATOS
+============================================================
+
+
+============================================================
+  ETAPA 3: PREDICCIONES
+============================================================
+
+Traceback (most recent call last):
+  File "C:\Users\USUARIO\a-cobrar-los-que-saben\app\ml\orchestrator.py", line 460, in <module>
+    main()
+    ~~~~^^
+  File "C:\Users\USUARIO\a-cobrar-los-que-saben\app\ml\orchestrator.py", line 452, in main
+    orchestrator.run_full_pipeline(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        csv_path=args.csv,
+        ^^^^^^^^^^^^^^^^^^
+        legacy_db_path=args.migrate,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        force_retrain=args.retrain
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\USUARIO\a-cobrar-los-que-saben\app\ml\orchestrator.py", line 188, in run_full_pipeline
+    self._print_summary(results)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\USUARIO\a-cobrar-los-que-saben\app\ml\orchestrator.py", line 361, in _print_summary
+    print("\n" + "\u2554" + "\u2550"*58 + "\u2557")
+    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USUARIO\AppData\Local\Programs\Python\Python313\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode characters in position 2-61: character maps to <undefined>

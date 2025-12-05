@@ -35,7 +35,7 @@ SCHEMA_3FN = """
 -- Hipódromos: Catálogo de recintos
 CREATE TABLE IF NOT EXISTS dim_hipodromos (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
-    codigo TEXT UNIQUE NOT NULL,           -- 'HC', 'CHC', 'VSC'
+    codigo TEXT UNIQUE NOT NULL,           -- 'HC', 'CHS', 'VSC'
     nombre TEXT NOT NULL,                   -- 'Hipódromo Chile'
     ciudad TEXT,
     pais TEXT DEFAULT 'Chile',

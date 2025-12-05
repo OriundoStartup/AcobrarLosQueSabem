@@ -1,0 +1,363 @@
+"""
+================================================================================
+PISTA INTELIGENTE - TEST DE VERIFICACIÓN ETL
+================================================================================
+Coloca este archivo en: app/etl/test_etl.py
+
+Uso:
+    python app/etl/test_etl.py
+    python app/etl/test_etl.py data/csv/PROGRAMA_CHC_2025-01-15.csv
+================================================================================
+"""
+
+import sys
+import tempfile
+import sqlite3
+from pathlib import Path
+from datetime import date
+
+# Setup paths para la estructura del proyecto
+BASE_DIR = Path(__file__).parent  # app/etl/
+APP_DIR = BASE_DIR.parent         # app/
+ROOT_DIR = APP_DIR.parent         # raíz del proyecto
+
+sys.path.insert(0, str(APP_DIR))
+sys.path.insert(0, str(BASE_DIR))
+
+# Colores para terminal
+class Colors:
+    OK = '\033[92m'
+    FAIL = '\033[91m'
+    WARN = '\033[93m'
+    INFO = '\033[94m'
+    RESET = '\033[0m'
+
+def print_ok(msg): print(f"{Colors.OK}✅ {msg}{Colors.RESET}")
+def print_fail(msg): print(f"{Colors.FAIL}❌ {msg}{Colors.RESET}")
+def print_warn(msg): print(f"{Colors.WARN}⚠️ {msg}{Colors.RESET}")
+def print_info(msg): print(f"{Colors.INFO}ℹ️ {msg}{Colors.RESET}")
+def print_header(msg): print(f"\n{'='*60}\n  {msg}\n{'='*60}")
+
+
+def test_detector():
+    """Test del módulo detector."""
+    print_header("TEST 1: DETECTOR DE CSV")
+    
+    try:
+        from detector import CSVDetector, CSVType, Hipodromo
+        print_ok("Módulo detector importado")
+    except ImportError as e:
+        print_fail(f"No se pudo importar detector: {e}")
+        print_info("Asegúrate de que detector.py está en app/etl/")
+        return False
+    
+    # Test detección por nombre de archivo
+    test_cases = [
+        ("PROGRAMA_CHC_2025-01-15.csv", CSVType.PROGRAMA, Hipodromo.CHS),
+        ("PROGRAMA_HC_2025-01-15.csv", CSVType.PROGRAMA, Hipodromo.HC),
+        ("resul_chc_2025-01-15.csv", CSVType.RESULTADOS, Hipodromo.CHS),
+        ("resul_hc_15-01-2025.csv", CSVType.RESULTADOS, Hipodromo.HC),
+    ]
+    
+    all_passed = True
+    for filename, expected_type, expected_hip in test_cases:
+        result = CSVDetector._detect_by_filename(filename.lower(), filename)
+        
+        if result.csv_type == expected_type and result.hipodromo == expected_hip:
+            print_ok(f"{filename} → {result.csv_type.value}, {result.hipodromo.value}")
+        else:
+            print_fail(f"{filename} → Esperado: {expected_type.value}/{expected_hip.value}, "
+                      f"Obtenido: {result.csv_type.value}/{result.hipodromo.value}")
+            all_passed = False
+    
+    return all_passed
+
+
+def test_mapping():
+    """Test del mapeo de columnas."""
+    print_header("TEST 2: MAPEO DE COLUMNAS")
+    
+    try:
+        from detector import process_csv_auto, CSVType
+        print_ok("Función process_csv_auto importada")
+    except ImportError as e:
+        print_fail(f"Error importando: {e}")
+        return False
+    
+    # Crear CSV de prueba PROGRAMA
+    csv_programa = """Carrera,Hora,Nombre Premio,Distancia,Condición Principal,Premio al Ganador,Cab. N°,Nombre Ejemplar,Peso,Jinete
+1,12:45,DEAR WITCH,1000m,"Handicap INDICE 2 AL 1","CLP $1.560.000",1,VALKYRIE LEGEND,57,BASTIAN SOTO
+1,12:45,DEAR WITCH,1000m,"Handicap INDICE 2 AL 1","CLP $1.560.000",2,VAN DER SAR,56,JESUS PIMENTEL
+2,13:15,SEGUNDO PREMIO,1200m,"Handicap","CLP $1.200.000",1,CABALLO TEST,55,JINETE TEST
+"""
+
+    # Crear CSV de prueba RESULTADOS
+    csv_resultados = """Carrera,Lugar,Partida,Caballo,Padrillo,Stud,PF,Jinete,Peso Jinete,Preparador,Distancia (cpos.),Índice,Dividendo
+1,1º,10,PERFECTA ACTITUD,DYLAN THOMAS,TU PAIRE,"444Kg",JOSE VILLABLANCA,58 Kg,HARRISON ADONIS,Ganador,4,24.5
+1,2º,5,SEGUNDO LUGAR,PADRE X,STUD TEST,"450Kg",OTRO JINETE,57 Kg,OTRO PREP,2 cpos,3,5.5
+"""
+
+    with tempfile.TemporaryDirectory() as tmpdir:
+        tmpdir = Path(tmpdir)
+        
+        # Test PROGRAMA
+        programa_path = tmpdir / "PROGRAMA_CHC_2025-01-15.csv"
+        programa_path.write_text(csv_programa, encoding='utf-8')
+        
+        try:
+            df, detection = process_csv_auto(str(programa_path))
+            print_ok(f"PROGRAMA detectado: {detection.csv_type.value}")
+            print_ok(f"Hipódromo: {detection.hipodromo.value}")
+            print_ok(f"Fecha: {detection.fecha}")
+            print_info(f"Columnas: {list(df.columns)}")
+            
+            # Verificar mapeo
+            if 'nro_carrera' in df.columns:
+                print_ok("nro_carrera mapeado correctamente")
+            if 'nombre_caballo' in df.columns:
+                print_ok("nombre_caballo mapeado correctamente")
+            if 'distancia' in df.columns:
+                print_ok(f"distancia extraída: {df['distancia'].iloc[0]}")
+                
+        except Exception as e:
+            print_fail(f"Error procesando PROGRAMA: {e}")
+            return False
+        
+        # Test RESULTADOS
+        resultado_path = tmpdir / "resul_chc_2025-01-15.csv"
+        resultado_path.write_text(csv_resultados, encoding='utf-8')
+        
+        try:
+            df, detection = process_csv_auto(str(resultado_path))
+            print_ok(f"RESULTADOS detectado: {detection.csv_type.value}")
+            
+            if 'resultado_final' in df.columns:
+                print_ok(f"resultado_final extraído: {df['resultado_final'].tolist()}")
+            if 'dividendo' in df.columns:
+                print_ok(f"dividendo extraído: {df['dividendo'].tolist()}")
+                
+        except Exception as e:
+            print_fail(f"Error procesando RESULTADOS: {e}")
+            return False
+    
+    return True
+
+
+def test_etl_pipeline():
+    """Test del ETL completo."""
+    print_header("TEST 3: ETL PIPELINE")
+    
+    try:
+        from etl_pipeline import ETLPipeline, ETLConfig
+        print_ok("ETLPipeline importado")
+    except ImportError as e:
+        print_fail(f"Error importando etl_pipeline: {e}")
+        print_info("Asegúrate de que etl_pipeline.py está en app/etl/")
+        return False
+    
+    # CSV de prueba
+    csv_data = """Carrera,Hora,Nombre Premio,Distancia,Condición Principal,Premio al Ganador,Cab. N°,Nombre Ejemplar,Peso,Jinete
+1,12:45,PREMIO TEST,1000m,"Handicap","CLP $1.000.000",1,CABALLO UNO,57,JINETE A
+1,12:45,PREMIO TEST,1000m,"Handicap","CLP $1.000.000",2,CABALLO DOS,56,JINETE B
+1,12:45,PREMIO TEST,1000m,"Handicap","CLP $1.000.000",3,CABALLO TRES,55,JINETE C
+"""
+
+    with tempfile.TemporaryDirectory() as tmpdir:
+        tmpdir = Path(tmpdir)
+        csv_path = tmpdir / "PROGRAMA_CHC_2025-01-15.csv"
+        db_path = tmpdir / "test.db"
+        
+        csv_path.write_text(csv_data, encoding='utf-8')
+        
+        # Crear esquema
+        create_test_schema(str(db_path))
+        print_ok("Esquema de BD creado")
+        
+        # Ejecutar ETL
+        try:
+            config = ETLConfig(db_path=str(db_path), update_aggregations=False)
+            with ETLPipeline(config) as pipeline:
+                result = pipeline.process_csv(str(csv_path))
+            
+            print_ok(f"ETL ejecutado - Batch: {result.batch_id[:20]}...")
+            print_info(f"Insertados: {result.records_inserted}")
+            print_info(f"Rechazados: {result.records_rejected}")
+            
+            if result.detection_info:
+                print_ok(f"Auto-detección funcionó: {result.detection_info.get('csv_type')}")
+            
+            # Verificar en BD
+            conn = sqlite3.connect(str(db_path))
+            carreras = conn.execute("SELECT COUNT(*) FROM fact_carreras").fetchone()[0]
+            participantes = conn.execute("SELECT COUNT(*) FROM fact_participaciones").fetchone()[0]
+            conn.close()
+            
+            print_ok(f"Carreras en BD: {carreras}")
+            print_ok(f"Participaciones en BD: {participantes}")
+            
+            return carreras > 0 and participantes > 0
+            
+        except Exception as e:
+            print_fail(f"Error en ETL: {e}")
+            import traceback
+            traceback.print_exc()
+            return False
+    
+    return True
+
+
+def test_with_real_csv(csv_path: str):
+    """Test con CSV real."""
+    print_header(f"TEST: {Path(csv_path).name}")
+    
+    if not Path(csv_path).exists():
+        print_fail(f"Archivo no encontrado: {csv_path}")
+        return False
+    
+    try:
+        from detector import process_csv_auto
+        
+        df, detection = process_csv_auto(csv_path)
+        
+        print_ok("Archivo procesado")
+        print(f"\n  Tipo: {detection.csv_type.value}")
+        print(f"  Hipódromo: {detection.hipodromo.value}")
+        print(f"  Fecha: {detection.fecha}")
+        print(f"  Confianza: {detection.confidence:.0%}")
+        print(f"  Filas: {len(df)}")
+        print(f"  Columnas: {list(df.columns)}")
+        print(f"\n  Muestra:")
+        print(df.head(3).to_string())
+        
+        return True
+        
+    except Exception as e:
+        print_fail(f"Error: {e}")
+        import traceback
+        traceback.print_exc()
+        return False
+
+
+def create_test_schema(db_path: str):
+    """Crea esquema mínimo para testing."""
+    conn = sqlite3.connect(db_path)
+    conn.executescript("""
+        CREATE TABLE IF NOT EXISTS dim_hipodromos (
+            id INTEGER PRIMARY KEY,
+            codigo TEXT UNIQUE NOT NULL,
+            nombre TEXT
+        );
+        INSERT OR IGNORE INTO dim_hipodromos (codigo, nombre) VALUES 
+            ('HC', 'Hipódromo Chile'),
+            ('CHS', 'Club Hípico de Santiago');
+        
+        CREATE TABLE IF NOT EXISTS dim_caballos (
+            id INTEGER PRIMARY KEY,
+            nombre TEXT UNIQUE NOT NULL,
+            sexo TEXT,
+            stud_id INTEGER
+        );
+        
+        CREATE TABLE IF NOT EXISTS dim_jinetes (
+            id INTEGER PRIMARY KEY,
+            nombre TEXT UNIQUE NOT NULL
+        );
+        
+        CREATE TABLE IF NOT EXISTS dim_studs (
+            id INTEGER PRIMARY KEY,
+            nombre TEXT UNIQUE NOT NULL
+        );
+        
+        CREATE TABLE IF NOT EXISTS fact_carreras (
+            id INTEGER PRIMARY KEY,
+            fecha DATE NOT NULL,
+            hipodromo_id INTEGER NOT NULL,
+            nro_carrera INTEGER NOT NULL,
+            distancia_metros INTEGER,
+            superficie_id INTEGER,
+            condicion_texto TEXT,
+            premio_primero REAL,
+            hora_programada TEXT,
+            etl_batch_id TEXT,
+            created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+            updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+            UNIQUE(fecha, hipodromo_id, nro_carrera)
+        );
+        
+        CREATE TABLE IF NOT EXISTS fact_participaciones (
+            id INTEGER PRIMARY KEY,
+            carrera_id INTEGER NOT NULL,
+            caballo_id INTEGER NOT NULL,
+            jinete_id INTEGER,
+            partidor INTEGER,
+            peso_programado REAL,
+            handicap REAL,
+            edad_anos INTEGER,
+            resultado_final INTEGER,
+            etl_batch_id TEXT,
+            created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+            updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+            UNIQUE(carrera_id, caballo_id)
+        );
+        
+        CREATE TABLE IF NOT EXISTS etl_control (
+            id INTEGER PRIMARY KEY,
+            batch_id TEXT UNIQUE,
+            source_type TEXT,
+            source_file TEXT,
+            records_raw INTEGER,
+            records_inserted INTEGER,
+            records_updated INTEGER,
+            records_rejected INTEGER,
+            errors TEXT,
+            started_at TIMESTAMP,
+            completed_at TIMESTAMP,
+            status TEXT
+        );
+    """)
+    conn.commit()
+    conn.close()
+
+
+def main():
+    print("\n" + "="*60)
+    print("  🏇 PISTA INTELIGENTE - VERIFICACIÓN ETL")
+    print("="*60)
+    print(f"  Ejecutando desde: {Path(__file__).parent}")
+    
+    if len(sys.argv) > 1:
+        # Test con CSV real
+        csv_path = sys.argv[1]
+        success = test_with_real_csv(csv_path)
+    else:
+        # Tests automáticos
+        results = []
+        results.append(("Detector", test_detector()))
+        results.append(("Mapeo columnas", test_mapping()))
+        results.append(("ETL Pipeline", test_etl_pipeline()))
+        
+        print_header("RESUMEN")
+        all_passed = True
+        for name, passed in results:
+            if passed:
+                print_ok(f"{name}: PASÓ")
+            else:
+                print_fail(f"{name}: FALLÓ")
+                all_passed = False
+        
+        success = all_passed
+        
+        if success:
+            print(f"\n{Colors.OK}{'='*60}")
+            print("  ✅ TODOS LOS TESTS PASARON")
+            print(f"{'='*60}{Colors.RESET}\n")
+        else:
+            print(f"\n{Colors.FAIL}{'='*60}")
+            print("  ❌ ALGUNOS TESTS FALLARON")
+            print(f"{'='*60}{Colors.RESET}\n")
+    
+    sys.exit(0 if success else 1)
+
+
+if __name__ == "__main__":
+    main()

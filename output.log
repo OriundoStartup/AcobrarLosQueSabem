@@ -1,0 +1,42 @@
+2025-12-04 23:08:42,322 | INFO | __main__ | \U0001f4c2 Procesando: exports/raw/resul_CHC_17-11-2025.csv
+
+============================================================
+  PISTA INTELIGENTE - PIPELINE COMPLETO
+2025-12-04 23:08:42,322 | ERROR | __main__ | \u274c Error en pipeline: 'ETLPipeline' object has no attribute 'process_csv'
+============================================================
+
+
+============================================================
+  ETAPA 1: ETL - CARGA DE DATOS
+============================================================
+
+Traceback (most recent call last):
+  File "C:\Users\USUARIO\a-cobrar-los-que-saben\app\ml\orchestrator.py", line 167, in run_full_pipeline
+    results['etl'] = self.run_etl(csv_path)
+                     ~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\USUARIO\a-cobrar-los-que-saben\app\ml\orchestrator.py", line 237, in run_etl
+    result = self.etl.process_csv(csv_path)
+             ^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'ETLPipeline' object has no attribute 'process_csv'
+Traceback (most recent call last):
+  File "C:\Users\USUARIO\a-cobrar-los-que-saben\app\ml\orchestrator.py", line 460, in <module>
+    main()
+    ~~~~^^
+  File "C:\Users\USUARIO\a-cobrar-los-que-saben\app\ml\orchestrator.py", line 452, in main
+    orchestrator.run_full_pipeline(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        csv_path=args.csv,
+        ^^^^^^^^^^^^^^^^^^
+        legacy_db_path=args.migrate,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        force_retrain=args.retrain
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\USUARIO\a-cobrar-los-que-saben\app\ml\orchestrator.py", line 167, in run_full_pipeline
+    results['etl'] = self.run_etl(csv_path)
+                     ~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\USUARIO\a-cobrar-los-que-saben\app\ml\orchestrator.py", line 237, in run_etl
+    result = self.etl.process_csv(csv_path)
+             ^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'ETLPipeline' object has no attribute 'process_csv'

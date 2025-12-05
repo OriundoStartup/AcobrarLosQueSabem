@@ -368,7 +368,7 @@ def get_participantes_carrera(fecha, hipodromo, nro_carrera):
                 dc.nombre as Caballo,
                 dj.nombre as Jinete,
                 p.peso_programado as Peso,
-                p.handicap as Index,
+                p.handicap as "Index",
                 p.edad_anos as Edad,
                 c.distancia_metros as Distancia
             FROM fact_participaciones p
@@ -860,18 +860,18 @@ def render_tab_predicciones():
             
             with col1:
                 st.markdown("#### 🏆 Top Predicciones")
-                for i, pick in enumerate(pred.get('detalle', pred.get('predicciones', []))[:6], 1):
+                for i, pick in enumerate(pred.get('predicciones', pred.get('detalle', []))[:6], 1):
                     render_prediction_card(
                         rank=i,
                         horse=pick['caballo'],
                         jockey=pick['jinete'],
-                        score=pick.get('puntaje', pick.get('puntaje_calculado', 0)),
+                        score=pick.get('puntaje_calculado', pick.get('puntaje', 0)),
                         probability=pick['probabilidad']
                     )
             
             with col2:
                 # Mini gráfico de probabilidades
-                top_4 = pred.get('detalle', pred.get('predicciones', []))[:4]
+                top_4 = pred.get('predicciones', pred.get('detalle', []))[:4]
                 if top_4:
                     chart_data = pd.DataFrame({
                         'Caballo': [p['caballo'][:12] for p in top_4],
@@ -958,29 +958,21 @@ def render_tab_estadisticas():
     st.markdown("#### 🏇 Ranking de Jinetes")
     
     if 'jinetes' in stats and stats['jinetes']:
-        df_jinetes = pd.DataFrame.from_dict(stats['jinetes'], orient='index')
-        df_jinetes.index.name = 'Jinete'
-        df_jinetes = df_jinetes.reset_index()
+        df_jinetes = pd.DataFrame(stats['jinetes'])
         
         st.dataframe(
             df_jinetes,
             width='stretch',
             hide_index=True,
             column_config={
-                "Jinete": st.column_config.TextColumn("🏇 Jinete"),
-                "montadas": st.column_config.NumberColumn("Montadas"),
+                "nombre": st.column_config.TextColumn("🏇 Jinete"),
+                "total_carreras": st.column_config.NumberColumn("Carreras"),
                 "victorias": st.column_config.NumberColumn("Victorias"),
-                "pct_victoria": st.column_config.ProgressColumn(
+                "win_rate": st.column_config.ProgressColumn(
                     "% Victoria", 
                     format="%.1f%%", 
                     min_value=0, 
-                    max_value=30
-                ),
-                "pct_lugar": st.column_config.ProgressColumn(
-                    "% Lugar",
-                    format="%.1f%%",
-                    min_value=0,
-                    max_value=50
+                    max_value=100
                 )
             }
         )
