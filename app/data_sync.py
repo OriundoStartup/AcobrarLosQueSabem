@@ -315,7 +315,7 @@ def load_advanced_stats() -> Dict[str, Any]:
             ORDER BY s.tasa_victoria DESC
             LIMIT 10
             """
-            stats['top_jinetes'] = pd.read_sql_query(query_jinetes, conn).to_dict('records')
+            stats['jinetes'] = pd.read_sql_query(query_jinetes, conn).to_dict('records')
             
             # Top 10 Caballos por tasa de victoria
             query_caballos = """
@@ -337,34 +337,17 @@ def load_advanced_stats() -> Dict[str, Any]:
             query_hipodromos = """
             SELECT 
                 h.nombre as hipodromo,
-                h.codigo,
-                COUNT(DISTINCT c.id) as total_carreras,
-                COUNT(p.id) as total_participaciones
+                h.codigo as hipodromo,
+                c.nro_carrera,
+                c.distancia_metros,
+                COUNT(p.id) as participantes
             FROM fact_carreras c
             JOIN dim_hipodromos h ON c.hipodromo_id = h.id
             LEFT JOIN fact_participaciones p ON c.id = p.carrera_id
-            GROUP BY h.id
-            ORDER BY total_carreras DESC
+            GROUP BY c.id
+            ORDER BY c.fecha DESC, c.nro_carrera
+            LIMIT 20
             """
-            stats['hipodromos'] = pd.read_sql_query(query_hipodromos, conn).to_dict('records')
-            
-            # Distribución por distancia
-            query_distancias = """
-            SELECT 
-                CASE 
-                    WHEN distancia_metros <= 1100 THEN 'Sprint (≤1100m)'
-                    WHEN distancia_metros <= 1400 THEN 'Milla Corta (1100-1400m)'
-                    WHEN distancia_metros <= 1700 THEN 'Milla (1400-1700m)'
-                    ELSE 'Fondo (>1700m)'
-                END as categoria,
-                COUNT(*) as total_carreras
-            FROM fact_carreras
-            WHERE distancia_metros IS NOT NULL
-            GROUP BY categoria
-            ORDER BY MIN(distancia_metros)
-            """
-            stats['distancias'] = pd.read_sql_query(query_distancias, conn).to_dict('records')
-            
             # Carreras recientes
             query_recientes = """
             SELECT 

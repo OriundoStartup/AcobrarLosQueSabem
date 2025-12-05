@@ -4,7 +4,7 @@ PISTA INTELIGENTE - A COBRAR LOS QUE SABEN
 ===============================================================================
 Aplicación Unificada con UI 2025 y Arquitectura Profesional
 
-Versión: 3.0.0
+Versión: 3.1.0 - HOME Reestructurado
 Fecha: 2025-12
 ===============================================================================
 """
@@ -55,7 +55,7 @@ st.set_page_config(
     layout="wide",
     initial_sidebar_state="expanded",
     menu_items={
-        'About': '### Pista Inteligente v3.0\nSistema Profesional de Análisis Hípico con IA'
+        'About': '### Pista Inteligente v3.1\nSistema Profesional de Análisis Hípico con IA'
     }
 )
 
@@ -90,6 +90,7 @@ def load_styles():
     critical_css = """
     <style>
     @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600;700&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200');
     
     :root {
         --bg-primary: #0a0a0f;
@@ -583,6 +584,7 @@ def render_ad_sidebar():
         </div>
     </div>
     """, unsafe_allow_html=True)
+
 def render_chatbot():
     """Renderiza el chatbot en el sidebar."""
     
@@ -676,84 +678,175 @@ def render_chatbot():
 # TAB PAGES
 # ============================================================================
 
-def render_tab_programas():
-    """Tab de programas y carreras (Programa Oficial)."""
-    render_section_header("📖 Programa Oficial", "Nómina de participantes y detalles")
+# ============================================================================
+# SOLUCIÓN COMPLETA: Busca y reemplaza en main_unified.py
+# ============================================================================
+
+# PASO 1: Buscar en tu archivo la línea ~730 y REEMPLAZAR:
+# ---------------------------------------------------------------
+# BUSCA ESTA LÍNEA (aproximadamente línea 730):
+# def render_tab_como_llegan():
+
+# REEMPLÁZALA POR:
+def render_tab_inicio():
+    """Tab INICIO - Página HOME informativa del sistema."""
     
-    col1, col2 = st.columns([3, 1])
-    with col1:
-        hipodromo_filter = st.selectbox(
-            "Filtrar por Hipódromo",
-            ["Todos", "Club Hípico de Santiago", "Hipódromo Chile", "Valparaíso Sporting Club"],
-            label_visibility="collapsed"
-        )
-    with col2:
-        if st.button("🔄 Actualizar", width='stretch'):
-            st.cache_data.clear()
-            st.rerun()
-    
-    df_carreras = get_proximas_carreras()
-    
-    if df_carreras.empty:
-        st.info("📭 No hay carreras programadas. Importa datos para ver el programa.")
-        return
-    
-    if hipodromo_filter != "Todos":
-        df_carreras = df_carreras[df_carreras['Hipodromo'] == hipodromo_filter]
-    
-    st.markdown(f"""
-    <div class="glass" style="padding: 16px; margin-bottom: 20px;">
-        <strong style="color: #00f5ff;">📊 {len(df_carreras)} carreras disponibles</strong>
-        <span style="color: rgba(255,255,255,0.5); margin-left: 10px;">
-            | Revisa el detalle de cada competencia
-        </span>
+    # Hero Section
+    st.markdown("""
+    <div style="
+        background: linear-gradient(135deg, rgba(0,245,255,0.08) 0%, rgba(255,0,170,0.08) 50%, rgba(255,215,0,0.05) 100%);
+        border: 1px solid rgba(255,255,255,0.1);
+        border-radius: 20px;
+        padding: 40px;
+        margin-bottom: 30px;
+        text-align: center;
+    ">
+        <h1 style="
+            font-size: 2.5rem;
+            font-weight: 800;
+            margin: 0 0 15px 0;
+            background: linear-gradient(135deg, #00f5ff 0%, #ff00aa 50%, #ffd700 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        ">¡Bienvenido a Pista Inteligente!</h1>
+        <p style="color: rgba(255,255,255,0.7); font-size: 1.2rem; margin: 0;">
+            Tu sistema de análisis hípico potenciado con Inteligencia Artificial
+        </p>
     </div>
     """, unsafe_allow_html=True)
     
-    # Agrupar por fecha e hipódromo
-    for (fecha, hipodromo), grupo in df_carreras.groupby(['Fecha', 'Hipodromo']):
-        st.markdown(f"""
-        <div style="
-            background: linear-gradient(90deg, rgba(255,0,170,0.1) 0%, transparent 100%);
-            border-left: 3px solid #ff00aa;
-            padding: 12px 16px;
-            border-radius: 0 12px 12px 0;
-            margin: 20px 0 10px 0;
-        ">
-            <strong style="color: #fff; font-size: 1.1rem;">🏟️ {hipodromo}</strong>
-            <span style="color: rgba(255,255,255,0.5); margin-left: 15px;">📅 {fecha}</span>
-        </div>
-        """, unsafe_allow_html=True)
-        
-        for _, carrera in grupo.iterrows():
-            nro_carrera = int(carrera['Carrera'])
-            
-            with st.expander(
-                f"Carrera {nro_carrera} | {carrera['Distancia']} | {carrera['Participantes']} participantes"
-            ):
-                # Mostrar tabla de participantes (PROGRAMA)
-                df_participantes = get_participantes_carrera(carrera['Fecha'], carrera['Hipodromo'], nro_carrera)
-                
-                if not df_participantes.empty:
-                    st.markdown('<h4 style="margin: 0 0 12px 0; color: #ff00aa;">🏇 Nómina de Participantes</h4>', unsafe_allow_html=True)
-                    st.dataframe(
-                        df_participantes,
-                        width='stretch',
-                        hide_index=True,
-                        key=f"participantes_{carrera['Fecha']}_{hipodromo}_{nro_carrera}",
-                        column_config={
-                            "Partidor": st.column_config.NumberColumn("#", width="small"),
-                            "Caballo": st.column_config.TextColumn("Caballo", width="medium"),
-                            "Jinete": st.column_config.TextColumn("Jinete", width="medium"),
-                            "Peso": st.column_config.NumberColumn("Kg", format="%.1f"),
-                            "Index": st.column_config.NumberColumn("Index", format="%d"),
-                            "Edad": st.column_config.NumberColumn("Edad", format="%d años"),
-                            "Distancia": st.column_config.TextColumn("Dist")
-                        }
-                    )
-                else:
-                    st.warning("⚠️ Sin participantes cargados")
+    # ... (mantén todo el contenido de la función igual)
 
+
+# PASO 2: Buscar en tu archivo la línea ~1394 y REEMPLAZAR:
+# ---------------------------------------------------------------
+# BUSCA ESTA SECCIÓN (aproximadamente línea 1360-1400):
+
+def page_dashboard():
+    """Página principal - Dashboard."""
+    render_header()
+    
+    # Publicidad leaderboard
+    render_ad_leaderboard()
+    
+    # Métricas principales
+    metrics = get_dashboard_metrics()
+    
+    col1, col2, col3, col4 = st.columns(4)
+    
+    with col1:
+        render_metric_card(
+            "🏇", 
+            f"{metrics['total_carreras']:,}", 
+            "Carreras Analizadas",
+            "cyan"
+        )
+    
+    with col2:
+        render_metric_card(
+            "🐴", 
+            f"{metrics['total_caballos']:,}", 
+            "Caballos Rastreados",
+            "magenta"
+        )
+    
+    with col3:
+        if metrics.get('proxima_jornada') and metrics['proxima_jornada']:
+            try:
+                fecha = datetime.strptime(metrics['proxima_jornada']['fecha'], '%Y-%m-%d').strftime('%d/%m')
+            except:
+                fecha = metrics['proxima_jornada'].get('fecha', 'N/A')
+            hip_name = (metrics['proxima_jornada'].get('nombre') or 'N/A')[:15]
+            render_metric_card("📅", fecha, f"Próxima: {hip_name}", "gold")
+        else:
+            render_metric_card("📅", "--/--", "Sin jornadas", "gold")
+    
+    with col4:
+        render_metric_card(
+            "🎯", 
+            f"{metrics['precision_ia']}%", 
+            "Precisión IA (Top 4)",
+            "lime",
+            "+2.3%"
+        )
+    
+    st.markdown("<br>", unsafe_allow_html=True)
+    
+    # TABS PRINCIPALES - CAMBIO AQUÍ ⬇️⬇️⬇️
+    tab1, tab2, tab3, tab4 = st.tabs([
+        "🏠 INICIO",  # ← CAMBIADO de "🏇 COMO LLEGAN"
+        "🏆 LA TERCERA ES LA VENCIDA", 
+        "🤖 PREDICCIONES IA", 
+        "📈 ESTADÍSTICAS"
+    ])
+    
+    with tab1:
+        render_tab_inicio()  
+    
+    with tab2:
+        render_tab_resultados()
+    
+    with tab3:
+        render_tab_predicciones()
+    
+    with tab4:
+        render_tab_estadisticas()
+
+
+# ============================================================================
+# COMANDO RÁPIDO PARA BUSCAR Y REEMPLAZAR (si usas VS Code):
+# ============================================================================
+
+def page_dashboard():
+    """Página principal - Dashboard."""
+    render_header()
+    render_ad_leaderboard()
+    
+    metrics = get_dashboard_metrics()
+    
+    col1, col2, col3, col4 = st.columns(4)
+    
+    with col1:
+        render_metric_card("🏇", f"{metrics['total_carreras']:,}", "Carreras Analizadas", "cyan")
+    
+    with col2:
+        render_metric_card("🐴", f"{metrics['total_caballos']:,}", "Caballos Rastreados", "magenta")
+    
+    with col3:
+        if metrics.get('proxima_jornada') and metrics['proxima_jornada']:
+            try:
+                fecha = datetime.strptime(metrics['proxima_jornada']['fecha'], '%Y-%m-%d').strftime('%d/%m')
+            except:
+                fecha = metrics['proxima_jornada'].get('fecha', 'N/A')
+            hip_name = (metrics['proxima_jornada'].get('nombre') or 'N/A')[:15]
+            render_metric_card("📅", fecha, f"Próxima: {hip_name}", "gold")
+        else:
+            render_metric_card("📅", "--/--", "Sin jornadas", "gold")
+    
+    with col4:
+        render_metric_card("🎯", f"{metrics['precision_ia']}%", "Precisión IA (Top 4)", "lime", "+2.3%")
+    
+    st.markdown("<br>", unsafe_allow_html=True)
+    
+    # TABS ACTUALIZADOS
+    tab1, tab2, tab3, tab4 = st.tabs([
+        "🏠 INICIO",  # ← CAMBIO AQUÍ
+        "🏆 LA TERCERA ES LA VENCIDA", 
+        "🤖 PREDICCIONES IA", 
+        "📈 ESTADÍSTICAS"
+    ])
+    
+    with tab1:
+        render_tab_inicio()  # ← CAMBIO AQUÍ
+    
+    with tab2:
+        render_tab_resultados()
+    
+    with tab3:
+        render_tab_predicciones()
+    
+    with tab4:
+        render_tab_estadisticas()
 
 def render_tab_resultados():
     """Tab de patrones (La Tercera es la Vencida)."""
@@ -815,19 +908,6 @@ def render_tab_resultados():
 def render_tab_predicciones():
     """Tab de predicciones IA."""
     render_section_header("🤖 Predicciones de Inteligencia Artificial", "Análisis automático de todas las carreras")
-    
-    col1, col2 = st.columns([3, 1])
-    with col2:
-        if st.button("🔄 Sincronizar Pipeline", width='stretch'):
-            with st.spinner("Ejecutando pipeline completo..."):
-                success, logs = run_full_pipeline()
-                if success:
-                    st.success("✅ Pipeline ejecutado correctamente")
-                    st.cache_data.clear()
-                else:
-                    st.error("❌ Error en el pipeline")
-                with st.expander("Ver logs"):
-                    st.code(logs)
     
     predictions = load_predictions_json()
     
@@ -1042,7 +1122,7 @@ def render_sidebar():
                     -webkit-text-fill-color: transparent;
                 ">PISTA INTELIGENTE</h2>
                 <p style="color: rgba(255,255,255,0.4); font-size: 0.8rem; margin: 5px 0 0 0;">
-                    v3.0 • 2025 Edition
+                    v3.1 • 2025 Edition
                 </p>
             </div>
             """, unsafe_allow_html=True)
@@ -1050,16 +1130,6 @@ def render_sidebar():
         st.markdown("---")
         
         st.markdown("### 🎯 Acciones Rápidas")
-        
-        if st.button("🔄 Sincronizar Datos", width='stretch'):
-            with st.spinner("Sincronizando..."):
-                success, logs = run_full_pipeline()
-                if success:
-                    st.success("✅ Datos sincronizados")
-                else:
-                    st.error("Error en sincronización")
-                with st.expander("Ver detalles"):
-                    st.code(logs)
         
         if st.button("🗑️ Limpiar Caché", width='stretch'):
             st.cache_data.clear()
@@ -1152,15 +1222,15 @@ def page_dashboard():
     
     # Tabs principales
     tab1, tab2, tab3, tab4 = st.tabs([
-        "📅 COMO LLEGAN", 
+        "🏠 INICIO", 
         "🏆 LA TERCERA ES LA VENCIDA", 
         "🤖 PREDICCIONES IA", 
         "📈 ESTADÍSTICAS"
     ])
     
     with tab1:
-        render_tab_programas()
-    
+        render_tab_inicio()   
+
     with tab2:
         render_tab_resultados()
     
@@ -1185,4 +1255,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
