@@ -470,6 +470,7 @@ class ETLPipeline:
         
         if existing:
             # Update - preservar datos existentes si nuevos son NULL
+            logger.debug(f"   UPDATE participación ID {existing['id']}: caballo {caballo_id} en carrera {carrera_id}")
             cursor.execute(
                 """UPDATE fact_participaciones SET
                    jinete_id = COALESCE(?, jinete_id),
@@ -489,22 +490,55 @@ class ETLPipeline:
             )
             return existing['id'], False
         else:
-            cursor.execute(
-                """INSERT INTO fact_participaciones 
-                   (carrera_id, caballo_id, jinete_id, partidor, peso_programado,
-                    handicap, resultado_final)
-                   VALUES (?, ?, ?, ?, ?, ?, ?)""",
-                (
-                    carrera_id,
-                    caballo_id,
-                    jinete_id,
-                    data.get('partidor'),
-                    data.get('peso_programado'),
-                    data.get('handicap'),
-                    data.get('resultado_final')
+            # Insert - usar INSERT OR REPLACE como garantía contra duplicados
+            logger.debug(f"   INSERT participación: caballo {caballo_id} en carrera {carrera_id}")
+            try:
+                cursor.execute(
+                    """INSERT INTO fact_participaciones 
+                       (carrera_id, caballo_id, jinete_id, partidor, peso_programado,
+                        handicap, resultado_final)
+                       VALUES (?, ?, ?, ?, ?, ?, ?)""",
+                    (
+                        carrera_id,
+                        caballo_id,
+                        jinete_id,
+                        data.get('partidor'),
+                        data.get('peso_programado'),
+                        data.get('handicap'),
+                        data.get('resultado_final')
+                    )
                 )
-            )
-            return cursor.lastrowid, True
+                return cursor.lastrowid, True
+            except sqlite3.IntegrityError as e:
+                # Si falla por constraint UNIQUE, hacer UPDATE
+                logger.warning(f"   ⚠️  Constraint UNIQUE violation, haciendo UPDATE: {e}")
+                cursor.execute(
+                    """SELECT id FROM fact_participaciones 
+                       WHERE carrera_id = ? AND caballo_id = ?""",
+                    (carrera_id, caballo_id)
+                )
+                existing = cursor.fetchone()
+                if existing:
+                    cursor.execute(
+                        """UPDATE fact_participaciones SET
+                           jinete_id = COALESCE(?, jinete_id),
+                           partidor = COALESCE(?, partidor),
+                           peso_programado = COALESCE(?, peso_programado),
+                           handicap = COALESCE(?, handicap),
+                           resultado_final = COALESCE(?, resultado_final)
+                           WHERE id = ?""",
+                        (
+                            jinete_id,
+                            data.get('partidor'),
+                            data.get('peso_programado'),
+                            data.get('handicap'),
+                            data.get('resultado_final'),
+                            existing['id']
+                        )
+                    )
+                    return existing['id'], False
+                else:
+                    raise  # Re-raise si no se puede recuperar
 
     def process_csv(self, csv_path: str, source_type: SourceType = None) -> ETLBatchResult:
         """

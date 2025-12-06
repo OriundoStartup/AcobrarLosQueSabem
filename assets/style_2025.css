@@ -13,6 +13,9 @@ Tipografía: Outfit (Display) + JetBrains Mono (Data)
 
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600;700&display=swap');
 
+/* CRITICAL: Material Symbols para íconos de Streamlit (expanders, etc) */
+@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200');
+
 :root {
     /* === COLORES BASE === */
     --bg-primary: #0a0a0f;
@@ -138,6 +141,37 @@ body,
     z-index: 1;
     max-width: 1400px !important;
     padding: var(--space-lg) var(--space-xl) !important;
+}
+
+/* ============================================================================
+   MATERIAL SYMBOLS FIX - CRITICAL FOR STREAMLIT ICONS
+   ============================================================================ */
+
+/* Asegurar que Material Symbols se renderice correctamente */
+.material-symbols-rounded,
+[class*="material-symbols"],
+span[data-testid] .material-symbols-rounded {
+    font-family: 'Material Symbols Rounded' !important;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;
+    line-height: 1;
+    letter-spacing: normal;
+    text-transform: none;
+    display: inline-block;
+    white-space: nowrap;
+    word-wrap: normal;
+    direction: ltr;
+    -webkit-font-feature-settings: 'liga';
+    font-feature-settings: 'liga';
+    -webkit-font-smoothing: antialiased;
+}
+
+/* Fix específico para expanders de Streamlit */
+[data-testid="stExpander"] summary span,
+.streamlit-expanderHeader span,
+details summary span {
+    font-family: 'Material Symbols Rounded', sans-serif !important;
 }
 
 /* ============================================================================
@@ -456,7 +490,7 @@ code,
 }
 
 /* ============================================================================
-   EXPANDER
+   EXPANDER - FIXED ICONS
    ============================================================================ */
 
 .streamlit-expanderHeader {
@@ -479,6 +513,52 @@ code,
     border-top: none !important;
     border-radius: 0 0 var(--radius-md) var(--radius-md) !important;
     padding: var(--space-lg) !important;
+}
+
+/* ============================================================================
+   FIX CRÍTICO: Ocultar texto "keyboard_double_arrow_right" y mostrar flecha CSS
+   ============================================================================ */
+
+/* Ocultar el texto del ícono que no renderiza */
+[data-testid="stExpander"] summary span[data-testid="stExpanderToggleIcon"],
+[data-testid="stExpander"] details summary svg,
+details summary span:has-text("keyboard"),
+[data-testid="stExpanderToggleIcon"] {
+    font-size: 0 !important;
+    color: transparent !important;
+    width: 24px !important;
+    height: 24px !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    position: relative !important;
+}
+
+/* Crear flecha CSS pura usando ::after */
+[data-testid="stExpander"] summary span[data-testid="stExpanderToggleIcon"]::after,
+[data-testid="stExpanderToggleIcon"]::after {
+    content: "▶" !important;
+    font-size: 12px !important;
+    color: var(--accent-cyan, #00f5ff) !important;
+    position: absolute !important;
+    transition: transform 0.3s ease !important;
+}
+
+/* Rotar flecha cuando está abierto */
+[data-testid="stExpander"] details[open] summary span[data-testid="stExpanderToggleIcon"]::after,
+details[open] [data-testid="stExpanderToggleIcon"]::after {
+    transform: rotate(90deg) !important;
+}
+
+/* Alternativa: Ocultar completamente spans con texto de icono Material */
+[data-testid="stExpander"] summary span {
+    overflow: hidden !important;
+}
+
+/* Si el span contiene texto largo (nombre del icono), ocultarlo */
+[data-testid="stExpander"] summary > div > span:first-child {
+    max-width: 24px !important;
+    overflow: hidden !important;
 }
 
 /* ============================================================================

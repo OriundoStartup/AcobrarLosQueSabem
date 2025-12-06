@@ -316,6 +316,7 @@ class FeatureEngineer:
         LEFT JOIN agg_combo_caballo_jinete acj ON fp.caballo_id = acj.caballo_id 
             AND fp.jinete_id = acj.jinete_id
         WHERE fp.resultado_final IS NULL
+            AND fc.fecha >= date('now')
         ORDER BY fc.fecha, fc.nro_carrera, fp.partidor
         """
     
@@ -356,6 +357,7 @@ class FeatureEngineer:
         JOIN dim_caballos dc ON fp.caballo_id = dc.id
         LEFT JOIN dim_jinetes dj ON fp.jinete_id = dj.id
         WHERE fp.resultado_final IS NULL
+            AND fc.fecha >= date('now')
         ORDER BY fc.fecha, fc.nro_carrera, fp.partidor
         """
     

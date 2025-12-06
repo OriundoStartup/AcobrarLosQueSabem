@@ -419,4 +419,4 @@ def get_carreras_pendientes() -> List[Dict]:
             return pd.read_sql_query(query, conn).to_dict('records')
         except Exception as e:
             logger.error(f"Error obteniendo carreras pendientes: {e}")
-            return []
+            return []                                                                                                               

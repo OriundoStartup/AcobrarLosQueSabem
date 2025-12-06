@@ -697,88 +697,25 @@ def render_tab_inicio():
         background: linear-gradient(135deg, rgba(0,245,255,0.08) 0%, rgba(255,0,170,0.08) 50%, rgba(255,215,0,0.05) 100%);
         border: 1px solid rgba(255,255,255,0.1);
         border-radius: 20px;
-        padding: 50px 40px;
+        padding: 40px;
         margin-bottom: 30px;
         text-align: center;
     ">
         <h1 style="
-            font-size: 2.8rem;
+            font-size: 2.5rem;
             font-weight: 800;
-            margin: 0 0 20px 0;
+            margin: 0 0 15px 0;
             background: linear-gradient(135deg, #00f5ff 0%, #ff00aa 50%, #ffd700 100%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         ">¡Bienvenido a Pista Inteligente!</h1>
-        <p style="color: rgba(255,255,255,0.85); font-size: 1.3rem; margin: 0 0 25px 0; line-height: 1.6;">
-            La herramienta definitiva para apostadores profesionales de turf
-        </p>
-        <p style="color: rgba(255,255,255,0.6); font-size: 1.05rem; margin: 0 auto; max-width: 850px; line-height: 1.7;">
-            Transforma tu forma de apostar con nuestra <strong style="color: #00f5ff;">Inteligencia Artificial avanzada</strong> 
-            que analiza historial de caballos, jinetes y condiciones de pista para identificar 
-            <strong style="color: #ff00aa;">oportunidades de alto valor</strong>. Deja de apostar a ciegas y 
-            toma decisiones respaldadas por <strong style="color: #ffd700;">datos y algoritmos predictivos</strong>.
+        <p style="color: rgba(255,255,255,0.7); font-size: 1.2rem; margin: 0;">
+            Tu sistema de análisis hípico potenciado con Inteligencia Artificial
         </p>
     </div>
     """, unsafe_allow_html=True)
     
-    # Features usando st.columns (nativo de Streamlit)
-    col1, col2, col3 = st.columns(3)
-    
-    with col1:
-        st.markdown("""
-        <div style="
-            background: rgba(0, 245, 255, 0.05);
-            border: 1px solid rgba(0, 245, 255, 0.2);
-            border-radius: 16px;
-            padding: 25px;
-            text-align: center;
-            height: 240px;
-        ">
-            <div style="font-size: 2.5rem; margin-bottom: 15px;">🧠</div>
-            <h3 style="color: #00f5ff; margin: 0 0 10px 0; font-size: 1.2rem;">Predicciones con IA</h3>
-            <p style="color: rgba(255,255,255,0.6); margin: 0; font-size: 0.9rem; line-height: 1.5;">
-                Nuestro modelo analiza rendimiento histórico, estado físico y compatibilidad caballo-jinete para predecir los <strong style="color:#00f5ff;">Top 4</strong> de cada carrera.
-            </p>
-        </div>
-        """, unsafe_allow_html=True)
-    
-    with col2:
-        st.markdown("""
-        <div style="
-            background: rgba(255, 0, 170, 0.05);
-            border: 1px solid rgba(255, 0, 170, 0.2);
-            border-radius: 16px;
-            padding: 25px;
-            text-align: center;
-            height: 240px;
-        ">
-            <div style="font-size: 2.5rem; margin-bottom: 15px;">📊</div>
-            <h3 style="color: #ff00aa; margin: 0 0 10px 0; font-size: 1.2rem;">Estadísticas Profundas</h3>
-            <p style="color: rgba(255,255,255,0.6); margin: 0; font-size: 0.9rem; line-height: 1.5;">
-                Consulta el <strong style="color:#ff00aa;">win-rate</strong> de cada jinete, rendimiento por distancia y hipódromo. Información clave para tomar decisiones informadas.
-            </p>
-        </div>
-        """, unsafe_allow_html=True)
-    
-    with col3:
-        st.markdown("""
-        <div style="
-            background: rgba(255, 215, 0, 0.05);
-            border: 1px solid rgba(255, 215, 0, 0.2);
-            border-radius: 16px;
-            padding: 25px;
-            text-align: center;
-            height: 240px;
-        ">
-            <div style="font-size: 2.5rem; margin-bottom: 15px;">🎯</div>
-            <h3 style="color: #ffd700; margin: 0 0 10px 0; font-size: 1.2rem;">La Tercera es la Vencida</h3>
-            <p style="color: rgba(255,255,255,0.6); margin: 0; font-size: 0.9rem; line-height: 1.5;">
-                Detectamos <strong style="color:#ffd700;">Quinelas, Tridectas y Superfectas</strong> que se repiten con frecuencia. Si un patrón apareció 2 veces, ¡la tercera puede ser tu ganancia!
-            </p>
-        </div>
-        """, unsafe_allow_html=True)
-    
-    st.markdown("<br>", unsafe_allow_html=True)
+    # ... (mantén todo el contenido de la función igual)
 
 
 # PASO 2: Buscar en tu archivo la línea ~1394 y REEMPLAZAR:

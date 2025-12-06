@@ -23,6 +23,7 @@ from typing import Dict, Tuple, Optional, Any
 from dataclasses import dataclass
 from enum import Enum
 import logging
+
 logger = logging.getLogger(__name__)
 
 
@@ -39,7 +40,7 @@ class CSVType(Enum):
 
 class Hipodromo(Enum):
     """Hipódromos soportados."""
-    CHS = "CHS"  # Club Hípico de Santiago
+    CHS = "CHC"  # Club Hípico de Santiago (código en BD: CHC)
     HC = "HC"    # Hipódromo Chile
     VSC = "VSC"  # Valparaíso Sporting Club
     UNKNOWN = "UNK"
@@ -64,16 +65,25 @@ class CSVDetectionResult:
 PROGRAMA_COLUMN_MAP = {
     # CSV Column → Internal Field
     'carrera': 'nro_carrera',
+    'carrera_nro': 'nro_carrera',  # NUEVO: formato con underscore
+    'carrera nro': 'nro_carrera',
+    'nro_carrera': 'nro_carrera',
+    'fecha': 'fecha',  # NUEVO: mapeo directo
     'hora': 'hora_programada',
+    'tiempo': 'hora_programada',  # NUEVO: formato alternativo
     'nombre premio': 'nombre_premio',
+    'premio': 'nombre_premio',
     'distancia': 'distancia',
     'condición principal': 'condicion_texto',
     'condicion principal': 'condicion_texto',
+    'condiciones': 'condicion_texto',  # NUEVO: formato plural
     'premio al ganador': 'premio',
+    'bolsa_premios': 'premio',  # NUEVO: formato alternativo
     'cab. n°': 'partidor',
     'cab. nº': 'partidor',
     'cab n': 'partidor',
     'n°': 'partidor',
+    'nro_caballo': 'partidor',  # NUEVO: formato con underscore
     'numero': 'partidor',       # NUEVO: formato usuario
     'nro': 'partidor',
     'nombre ejemplar': 'nombre_caballo',
@@ -413,7 +423,11 @@ class CSVMapper:
             if col in df.columns:
                 df[col] = df[col].apply(cls._clean_nombre)
         
-        # 7. Asegurar tipos numéricos
+        # 7. Limpiar número de carrera (extraer número de '1ª', '2ª', etc.)
+        if 'nro_carrera' in df.columns:
+            df['nro_carrera'] = df['nro_carrera'].apply(cls._extract_posicion)
+        
+        # 8. Asegurar tipos numéricos
         numeric_cols = ['nro_carrera', 'partidor', 'resultado_final', 'handicap']
         for col in numeric_cols:
             if col in df.columns:
