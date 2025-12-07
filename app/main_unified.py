@@ -424,44 +424,13 @@ def render_header():
     if header_img_path.exists():
         header_b64 = load_image_as_base64(str(header_img_path))
         st.markdown(f"""
-        <div style="
-            width: 100%;
-            height: 280px;
-            border-radius: 20px;
-            overflow: hidden;
-            margin-bottom: 30px;
-            position: relative;
-        ">
-            <img src="data:image/png;base64,{header_b64}" style="
-                width: 100%;
-                height: 100%;
-                object-fit: cover;
-                filter: brightness(0.9);
-                object-position: center 35%;
-            ">
-            <div style="
-                position: absolute;
-                bottom: 0;
-                left: 0;
-                right: 0;
-                height: 60%;
-                background: linear-gradient(to top, #0a0a0f 0%, transparent 100%);
-            "></div>
-            <div style="
-                position: absolute;
-                bottom: 30px;
-                left: 30px;
-            ">
-                <h1 style="
-                    font-family: 'Outfit', sans-serif;
-                    font-size: 3rem;
-                    font-weight: 900;
-                    margin: 0;
-                    background: linear-gradient(135deg, #00f5ff 0%, #ff00aa 50%, #ffd700 100%);
-                    -webkit-background-clip: text;
-                    -webkit-text-fill-color: transparent;
-                ">🏇 PISTA INTELIGENTE</h1>
-                <p style="color: rgba(255,255,255,0.7); margin: 5px 0 0 0; font-size: 1.1rem;">
+
+        <div class="hero-container">
+            <img src="data:image/png;base64,{header_b64}" class="hero-img">
+            <div class="hero-gradient-overlay"></div>
+            <div class="hero-content">
+                <h1 class="hero-title">🏇 PISTA INTELIGENTE</h1>
+                <p class="hero-subtitle">
                     A Cobrar Los Que Saben • Sistema de Análisis Hípico con IA
                 </p>
             </div>
@@ -470,30 +439,9 @@ def render_header():
     else:
         # Fallback sin imagen
         st.markdown("""
-        <div style="
-            background: linear-gradient(135deg, rgba(0,245,255,0.1) 0%, rgba(255,0,170,0.1) 50%, rgba(255,215,0,0.1) 100%);
-            border: 1px solid rgba(255,255,255,0.1);
-            border-radius: 20px;
-            padding: 40px;
-            margin-bottom: 30px;
-            position: relative;
-            overflow: hidden;
-        ">
-            <h1 style="
-                font-family: 'Outfit', sans-serif;
-                font-size: 3.5rem;
-                font-weight: 900;
-                margin: 0;
-                background: linear-gradient(135deg, #00f5ff 0%, #ff00aa 50%, #ffd700 100%);
-                -webkit-background-clip: text;
-                -webkit-text-fill-color: transparent;
-            ">🏇 PISTA INTELIGENTE</h1>
-            <p style="
-                font-family: 'Outfit', sans-serif;
-                font-size: 1.3rem;
-                color: rgba(255,255,255,0.7);
-                margin: 10px 0 0 0;
-            ">A Cobrar Los Que Saben • Sistema de Análisis Hípico con IA</p>
+        <div class="hero-fallback">
+            <h1 class="hero-title">🏇 PISTA INTELIGENTE</h1>
+            <p class="hero-subtitle">A Cobrar Los Que Saben • Sistema de Análisis Hípico con IA</p>
         </div>
         """, unsafe_allow_html=True)
 

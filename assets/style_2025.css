@@ -556,7 +556,7 @@ details[open] [data-testid="stExpanderToggleIcon"]::after {
 }
 
 /* Si el span contiene texto largo (nombre del icono), ocultarlo */
-[data-testid="stExpander"] summary > div > span:first-child {
+[data-testid="stExpander"] summary>div>span:first-child {
     max-width: 24px !important;
     overflow: hidden !important;
 }
@@ -798,8 +798,227 @@ details[open] [data-testid="stExpanderToggleIcon"]::after {
 }
 
 .animate-glow {
-    animation: glow 2s ease-in-out infinite;
+    animation: glow 3s ease-in-out infinite alternate;
 }
+
+/* ============================================================================
+   RESPONSIVE LAYOUT & COMPONENTS
+   ============================================================================ */
+
+/* Hero Container Pattern */
+.hero-container {
+    width: 100%;
+    height: 280px;
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    margin-bottom: var(--space-xl);
+    position: relative;
+    background: var(--bg-secondary);
+    /* Fallback */
+}
+
+.hero-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.9);
+    object-position: center 35%;
+}
+
+.hero-gradient-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 60%;
+    background: linear-gradient(to top, #0a0a0f 0%, transparent 100%);
+}
+
+.hero-content {
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+    right: 30px;
+}
+
+.hero-title {
+    font-family: 'Outfit', sans-serif;
+    font-size: 3rem;
+    font-weight: 900;
+    margin: 0;
+    background: var(--gradient-primary);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    line-height: 1.2;
+}
+
+.hero-subtitle {
+    color: var(--text-secondary);
+    margin: 5px 0 0 0;
+    font-size: 1.1rem;
+}
+
+/* Fallback Hero (No Image) */
+.hero-fallback {
+    background: linear-gradient(135deg, rgba(0, 245, 255, 0.1) 0%, rgba(255, 0, 170, 0.1) 50%, rgba(255, 215, 0, 0.1) 100%);
+    border: 1px solid var(--border-subtle);
+    border-radius: var(--radius-lg);
+    padding: 40px;
+    margin-bottom: var(--space-xl);
+    position: relative;
+    overflow: hidden;
+}
+
+/* ============================================================================
+   MOBILE RESPONSIVENESS (Media Queries)
+   ============================================================================ */
+
+@media (max-width: 768px) {
+
+    /* Layout Setup */
+    .main .block-container {
+        padding: var(--space-md) var(--space-sm) !important;
+        max-width: 100% !important;
+    }
+
+    /* Hero Section */
+    .hero-container {
+        height: 200px;
+        /* Smaller height on mobile */
+        margin-bottom: var(--space-md);
+        border-radius: var(--radius-md);
+    }
+
+    .hero-content {
+        bottom: 15px;
+        left: 15px;
+        right: 15px;
+    }
+
+    .hero-title {
+        font-size: 1.8rem;
+        /* Smaller title */
+    }
+
+    .hero-subtitle {
+        font-size: 0.9rem;
+    }
+
+    .hero-fallback {
+        padding: 24px;
+    }
+
+    /* Headings */
+    h1,
+    .stMarkdown h1 {
+        font-size: 1.8rem !important;
+    }
+
+    h2,
+    .stMarkdown h2 {
+        font-size: 1.5rem !important;
+        margin-top: 20px !important;
+    }
+
+    h3,
+    .stMarkdown h3 {
+        font-size: 1.2rem !important;
+    }
+
+    /* Cards & Grids */
+    .metric-card {
+        padding: var(--space-md);
+    }
+
+    .metric-value {
+        font-size: 2rem;
+    }
+
+    /* Predictions */
+    .prediction-row {
+        flex-direction: row;
+        /* Keep row but tighten gaps */
+        gap: 10px;
+        padding: 12px;
+    }
+
+    .rank-badge {
+        width: 36px;
+        height: 36px;
+        font-size: 1.2rem;
+        min-width: 36px;
+        /* Prevent shrink */
+    }
+
+    /* Tables */
+    .stDataFrame {
+        overflow-x: auto;
+        display: block;
+    }
+
+    .stDataFrame table {
+        min-width: 600px;
+        /* Force scroll for wide tables */
+    }
+
+    /* Ads */
+    .ad-container-leaderboard {
+        height: auto;
+        padding: 10px;
+        max-width: 100%;
+    }
+
+    .ad-container-leaderboard div {
+        transform: scale(0.8);
+        /* Scale down content */
+    }
+
+    /* Tabs */
+    .stTabs [data-baseweb="tab-list"] {
+        flex-wrap: wrap;
+        /* Stack tabs if needed */
+        gap: 4px;
+    }
+
+    .stTabs [data-baseweb="tab"] {
+        padding: 8px 12px !important;
+        font-size: 0.9rem !important;
+        flex: 1 1 auto;
+        /* Grow to fill width */
+        text-align: center;
+    }
+
+    /* Hide floating items that block view */
+    .floating-chat-btn {
+        width: 50px;
+        height: 50px;
+        bottom: 20px;
+        right: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    /* Very small screens */
+    .hero-title {
+        font-size: 1.5rem;
+    }
+
+    .metric-value {
+        font-size: 1.8rem;
+    }
+
+    /* Stack metrics if using standard columns */
+    [data-testid="column"] {
+        width: 100% !important;
+        flex: 1 1 auto !important;
+        min-width: 100% !important;
+        margin-bottom: 12px;
+    }
+}
+
+
 
 /* ============================================================================
    SCROLLBAR
