@@ -1080,7 +1080,7 @@ def page_dashboard():
 
 def render_tab_resultados():
     """Tab de patrones (La Tercera es la Vencida)."""
-    render_section_header("🏆 La Tercera Es La Vencida", "Patrones de Apuestas Repetidas")
+    render_section_header("🏆 La Tercera Es La Vencida", "Combinaciones Ganadoras que se Repiten")
     
     predictions = load_predictions_json()
     
@@ -1090,49 +1090,122 @@ def render_tab_resultados():
         
     patrones = predictions['patrones']
     
+    # Función helper para formatear combinación
+    def format_combo(combo_str):
+        """Convierte ('CABALLO1', 'CABALLO2') en formato legible con posiciones."""
+        try:
+            # Parsear la tupla desde string
+            import ast
+            horses = ast.literal_eval(combo_str)
+            if isinstance(horses, tuple):
+                # Crear formato con medallas/números
+                medals = ["🥇", "🥈", "🥉", "4️⃣"]
+                formatted = []
+                for i, horse in enumerate(horses):
+                    medal = medals[i] if i < len(medals) else f"{i+1}°"
+                    formatted.append(f"{medal} {horse}")
+                return "<br>".join(formatted)
+            return combo_str
+        except:
+            return combo_str
+    
+    # Explicación del concepto
+    st.markdown("""
+    <div style="
+        background: linear-gradient(135deg, rgba(255,215,0,0.1) 0%, rgba(255,0,170,0.05) 100%);
+        border: 1px solid rgba(255,215,0,0.3);
+        border-radius: 12px;
+        padding: 16px;
+        margin-bottom: 24px;
+    ">
+        <div style="font-size: 1rem; color: #ffd700; font-weight: 600; margin-bottom: 8px;">
+            💡 ¿Cómo funciona?
+        </div>
+        <div style="color: rgba(255,255,255,0.8); font-size: 0.9rem; line-height: 1.5;">
+            Detectamos combinaciones de caballos que han llegado en el <strong>mismo orden</strong> 
+            múltiples veces. Si una combinación apareció 2+ veces... ¡la tercera puede ser tu ganancia!
+        </div>
+    </div>
+    """, unsafe_allow_html=True)
+    
     col1, col2, col3 = st.columns(3)
     
     with col1:
         st.markdown("### 🧩 Quinela (Top 2)")
+        st.caption("1° y 2° lugar")
         if 'quinelas' in patrones and patrones['quinelas']:
             for combo, count in patrones['quinelas'].items():
+                formatted = format_combo(combo)
                 st.markdown(f"""
-                <div class="glass" style="padding: 12px; margin: 8px 0; border-left: 3px solid #00f5ff;">
-                    <div style="font-size: 0.9rem; color: rgba(255,255,255,0.7);">Combinación</div>
-                    <strong style="color: #fff; font-size: 1.1rem;">{combo}</strong>
-                    <div style="text-align: right; color: #00f5ff; font-weight: bold;">x{count} veces</div>
+                <div class="glass" style="padding: 16px; margin: 10px 0; border-left: 4px solid #00f5ff;">
+                    <div style="font-size: 0.75rem; color: rgba(255,255,255,0.5); margin-bottom: 6px;">COMBINACIÓN</div>
+                    <div style="color: #fff; font-size: 1rem; line-height: 1.8;">{formatted}</div>
+                    <div style="
+                        margin-top: 10px;
+                        padding: 6px 12px;
+                        background: rgba(0,245,255,0.15);
+                        border-radius: 20px;
+                        display: inline-block;
+                        color: #00f5ff;
+                        font-weight: bold;
+                        font-size: 0.9rem;
+                    ">🔄 Repetida {count}x</div>
                 </div>
                 """, unsafe_allow_html=True)
         else:
-            st.caption("Sin repeticiones")
+            st.caption("Sin repeticiones detectadas")
 
     with col2:
-        st.markdown("### 🎯 Tridecta (Top 3)")
-        if 'tridectas' in patrones and patrones['tridectas']:
-            for combo, count in patrones['tridectas'].items():
+        st.markdown("### 🎯 Trifecta (Top 3)")
+        st.caption("1°, 2° y 3° lugar")
+        # Buscar tanto 'trifectas' como 'tridectas' por compatibilidad
+        trifectas = patrones.get('trifectas') or patrones.get('tridectas') or {}
+        if trifectas:
+            for combo, count in trifectas.items():
+                formatted = format_combo(combo)
                 st.markdown(f"""
-                <div class="glass" style="padding: 12px; margin: 8px 0; border-left: 3px solid #ff00aa;">
-                    <div style="font-size: 0.9rem; color: rgba(255,255,255,0.7);">Combinación</div>
-                    <strong style="color: #fff; font-size: 1.1rem;">{combo}</strong>
-                    <div style="text-align: right; color: #ff00aa; font-weight: bold;">x{count} veces</div>
+                <div class="glass" style="padding: 16px; margin: 10px 0; border-left: 4px solid #ff00aa;">
+                    <div style="font-size: 0.75rem; color: rgba(255,255,255,0.5); margin-bottom: 6px;">COMBINACIÓN</div>
+                    <div style="color: #fff; font-size: 1rem; line-height: 1.8;">{formatted}</div>
+                    <div style="
+                        margin-top: 10px;
+                        padding: 6px 12px;
+                        background: rgba(255,0,170,0.15);
+                        border-radius: 20px;
+                        display: inline-block;
+                        color: #ff00aa;
+                        font-weight: bold;
+                        font-size: 0.9rem;
+                    ">🔄 Repetida {count}x</div>
                 </div>
                 """, unsafe_allow_html=True)
         else:
-            st.caption("Sin repeticiones")
+            st.caption("Sin repeticiones detectadas")
             
     with col3:
         st.markdown("### 🔥 Superfecta (Top 4)")
+        st.caption("1°, 2°, 3° y 4° lugar")
         if 'superfectas' in patrones and patrones['superfectas']:
             for combo, count in patrones['superfectas'].items():
+                formatted = format_combo(combo)
                 st.markdown(f"""
-                <div class="glass" style="padding: 12px; margin: 8px 0; border-left: 3px solid #ffd700;">
-                    <div style="font-size: 0.9rem; color: rgba(255,255,255,0.7);">Combinación</div>
-                    <strong style="color: #fff; font-size: 1.1rem;">{combo}</strong>
-                    <div style="text-align: right; color: #ffd700; font-weight: bold;">x{count} veces</div>
+                <div class="glass" style="padding: 16px; margin: 10px 0; border-left: 4px solid #ffd700;">
+                    <div style="font-size: 0.75rem; color: rgba(255,255,255,0.5); margin-bottom: 6px;">COMBINACIÓN</div>
+                    <div style="color: #fff; font-size: 1rem; line-height: 1.8;">{formatted}</div>
+                    <div style="
+                        margin-top: 10px;
+                        padding: 6px 12px;
+                        background: rgba(255,215,0,0.15);
+                        border-radius: 20px;
+                        display: inline-block;
+                        color: #ffd700;
+                        font-weight: bold;
+                        font-size: 0.9rem;
+                    ">🔄 Repetida {count}x</div>
                 </div>
                 """, unsafe_allow_html=True)
         else:
-            st.caption("Sin repeticiones")
+            st.caption("Sin repeticiones detectadas")
 
 
 def render_tab_predicciones():
