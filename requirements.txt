@@ -20,6 +20,8 @@ pdfplumber>=0.10.0
 
 # === MACHINE LEARNING ===
 scikit-learn>=1.3.0
+xgboost>=1.7.0
+lightgbm>=4.1.0
 
 # === VISUALIZACIÓN ===
 plotly>=5.18.0

@@ -92,6 +92,10 @@ PROGRAMA_COLUMN_MAP = {
     'peso': 'peso_jinete',
     'jinete': 'jinete',
     'jockey': 'jinete',
+    # Columnas formato manual usuario
+    'tipo': 'condicion_texto',
+    'superficie': 'pista',
+    'reunion': 'reunion',
 }
 
 # Columnas del CSV de RESULTADOS

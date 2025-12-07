@@ -59,6 +59,8 @@ logs/*.log
 # OS
 .DS_Store
 Thumbs.db
-output/
-app/ml/output/*.json
-app/ml/output/*.csv
+# output/
+# app/ml/output/*.json
+# app/ml/output/*.csv
+!app/ml/output/predicciones_detalle.json
+!app/ml/output/predicciones.csv

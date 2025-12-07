@@ -250,7 +250,7 @@ def get_db_connection():
     return None
 
 
-@st.cache_data(ttl=300)
+@st.cache_data(ttl=60)  # Reducido a 60 segundos para actualizar más rápido
 def get_dashboard_metrics():
     """Obtiene métricas principales para el dashboard."""
     conn = get_db_connection()
@@ -274,11 +274,15 @@ def get_dashboard_metrics():
             "SELECT COUNT(*) as count FROM dim_caballos", conn
         ).iloc[0]['count']
         
-        prox_jornada = pd.read_sql_query("""
+        # Usar fecha de hoy en formato YYYY-MM-DD (zona horaria local)
+        from datetime import date
+        hoy = date.today().strftime('%Y-%m-%d')
+        
+        prox_jornada = pd.read_sql_query(f"""
             SELECT h.nombre, c.fecha, COUNT(*) as carreras
             FROM fact_carreras c
             JOIN dim_hipodromos h ON c.hipodromo_id = h.id
-            WHERE c.fecha >= date('now')
+            WHERE c.fecha >= '{hoy}'
             GROUP BY c.fecha, h.nombre
             ORDER BY c.fecha ASC
             LIMIT 1
@@ -978,69 +982,241 @@ def render_tab_predicciones():
         st.warning("⚠️ No hay predicciones disponibles. Ejecuta el pipeline de sincronización.")
         return
     
-    # Stats rápidas
-    total_races = len(predictions['predicciones'])
-    total_horses = sum(len(p['predicciones']) for p in predictions['predicciones'])
+    all_preds = predictions['predicciones']
+    
+    # --- TARJETA DE FILTROS ---
+    st.markdown("""
+    <div style="
+        background: rgba(20, 20, 30, 0.6);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        border-radius: 16px;
+        padding: 20px;
+        margin-bottom: 25px;
+        backdrop-filter: blur(10px);
+        box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+    ">
+        <h3 style="margin: 0 0 15px 0; font-size: 1.1rem; color: #00f5ff; display: flex; align-items: center; gap: 10px;">
+            🔍 Filtrar Carreras
+        </h3>
+    """, unsafe_allow_html=True)
+    
+    # Extraer opciones únicas
+    unique_hips = sorted(list(set(p.get('hipodromo', 'N/A') for p in all_preds)))
+    # Intentar extraer fechas (si existen en el JSON con clave 'fecha')
+    unique_dates = sorted(list(set(p.get('fecha', '') for p in all_preds if p.get('fecha'))))
+    
+    col_f1, col_f2 = st.columns(2)
+    
+    with col_f1:
+        selected_hip = st.selectbox("📍 Hipódromo", ["Todos"] + unique_hips, key="filter_hip_pred")
+        
+    with col_f2:
+        if unique_dates:
+            selected_date = st.selectbox("📅 Fecha", ["Todas"] + unique_dates, key="filter_date_pred")
+        else:
+            st.caption("📅 Fecha: Única disponible")
+            selected_date = "Todas"
+            
+    st.markdown("</div>", unsafe_allow_html=True)
+    
+    # Aplicar filtros
+    filtered_preds = all_preds
+    if selected_hip != "Todos":
+        filtered_preds = [p for p in filtered_preds if p.get('hipodromo') == selected_hip]
+        
+    if selected_date != "Todas":
+        filtered_preds = [p for p in filtered_preds if p.get('fecha') == selected_date]
+    
+    # Stats rápidas (Filtradas)
+    total_races = len(filtered_preds)
+    total_horses = sum(len(p['predicciones']) for p in filtered_preds)
     
     col1, col2, col3 = st.columns(3)
-    col1.metric("🏁 Carreras Analizadas", total_races)
-    col2.metric("🐴 Caballos Evaluados", total_horses)
-    col3.metric("📊 Promedio Participantes", f"{total_horses/total_races:.1f}" if total_races > 0 else "0")
+    col1.metric("🏁 Carreras", total_races)
+    col2.metric("🐴 Caballos", total_horses)
+    col3.metric("📊 Prom. Part.", f"{total_horses/total_races:.1f}" if total_races > 0 else "0")
     
     st.markdown("<br>", unsafe_allow_html=True)
     
-    # Mostrar predicciones por carrera
-    for idx, pred in enumerate(predictions['predicciones']):
-        # Agregar separador visual entre carreras
-        if idx > 0:
-            st.markdown("<br>", unsafe_allow_html=True)
+    if total_races == 0:
+        st.info(f"📭 No se encontraron carreras para {selected_hip}.")
+        return
+    
+    # Agrupar por Hipódromo y Fecha
+    grouped_preds = {}
+    for p in filtered_preds:
+        # Clave compuesta
+        key = (p.get('hipodromo', 'Desconocido'), p.get('fecha', 'Sin Fecha'))
+        if key not in grouped_preds:
+            grouped_preds[key] = []
+        grouped_preds[key].append(p)
+    
+    # Separar Futuras/Hoy de Pasadas
+    import datetime
+    try:
+        today = datetime.date.today()
+    except:
+        today = datetime.datetime.now().date()
         
-        with st.expander(
-            f"🏇 {pred.get('hipodromo', 'N/A')} • Carrera {pred.get('nro_carrera', '?')} • Confianza: {pred.get('confianza', 0)}%",
-            expanded=False
-        ):
-            col1, col2 = st.columns([2, 1])
+    upcoming_groups = []
+    past_groups = []
+    
+    for key in grouped_preds:
+        hip, fecha_str = key
+        try:
+            # Intentar parsear fecha (asumiendo YYYY-MM-DD o DD-MM-YYYY)
+            if "-" in fecha_str:
+                parts = fecha_str.split("-")
+                if len(parts[0]) == 4: # YYYY-MM-DD
+                    f_date = datetime.date(int(parts[0]), int(parts[1]), int(parts[2]))
+                else: # DD-MM-YYYY
+                    f_date = datetime.date(int(parts[2]), int(parts[1]), int(parts[0]))
+            elif "/" in fecha_str: # DD/MM/YYYY
+                parts = fecha_str.split("/")
+                f_date = datetime.date(int(parts[2]), int(parts[1]), int(parts[0]))
+            else:
+                f_date = today # Fallback
+                
+            if f_date >= today:
+                upcoming_groups.append((key, f_date))
+            else:
+                past_groups.append((key, f_date))
+        except:
+            # Si falla el parseo, asumir hoy para no perderla
+            upcoming_groups.append((key, today))
             
-            with col1:
-                st.markdown("#### 🏆 Top Predicciones")
-                for i, pick in enumerate(pred.get('predicciones', pred.get('detalle', []))[:6], 1):
-                    render_prediction_card(
-                        rank=i,
-                        horse=pick['caballo'],
-                        jockey=pick['jinete'],
-                        score=pick.get('puntaje_calculado', pick.get('puntaje', 0)),
-                        probability=pick['probabilidad']
-                    )
+    # Ordenar: Próximas (Ascendente fecha: Hoy -> Mañana), Pasadas (Descendente: Ayer -> Anteayer)
+    upcoming_groups.sort(key=lambda x: (x[1], x[0][0]))
+    past_groups.sort(key=lambda x: (x[1], x[0][0]), reverse=True)
+    
+    # Combinar lista ordenada para renderizar (solo claves)
+    # Mostramos PRIMERO las próximas
+    sorted_keys = [x[0] for x in upcoming_groups] + [x[0] for x in past_groups]
+    
+    # Renderizar Grupos
+    for hip, fecha in sorted_keys:
+        races = grouped_preds[(hip, fecha)]
+        
+        # Determinar estilo por Hipódromo
+        hip_lower = str(hip).lower()
+        if "club" in hip_lower or "chc" in hip_lower:
+            card_color = "#b8ff00"  # Verde Neón (Pasto/Club)
+            bg_gradient = "linear-gradient(90deg, rgba(184,255,0,0.1) 0%, rgba(20,20,30,0.0) 100%)"
+            icon = "🌲"
+        elif "chile" in hip_lower or "hc" in hip_lower:
+            card_color = "#ff00aa"  # Rosa/Rojo Neón (Arena/Hipódromo Chile)
+            bg_gradient = "linear-gradient(90deg, rgba(255,0,170,0.1) 0%, rgba(20,20,30,0.0) 100%)"
+            icon = "🏟️"
+        elif "valpara" in hip_lower or "sporting" in hip_lower or "vsc" in hip_lower:
+            card_color = "#00f5ff"  # Cyan (Mar/Sporting)
+            bg_gradient = "linear-gradient(90deg, rgba(0,245,255,0.1) 0%, rgba(20,20,30,0.0) 100%)"
+            icon = "🌊"
+        else:
+            card_color = "#ffd700"  # Dorado Default
+            bg_gradient = "linear-gradient(90deg, rgba(255,215,0,0.1) 0%, rgba(20,20,30,0.0) 100%)"
+            icon = "🏇"
+
+        # --- CABECERA DE GRUPO (TARJETA) ---
+        st.markdown(f"""
+        <div style="
+            margin-top: 30px;
+            margin-bottom: 20px;
+            background: {bg_gradient};
+            border-left: 5px solid {card_color};
+            padding: 20px;
+            border-radius: 0 16px 16px 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+        ">
+            <div>
+                <h2 style="
+                    margin: 0; 
+                    font-size: 1.8rem; 
+                    color: #fff; 
+                    font-family: 'Outfit', sans-serif;
+                    text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+                ">{icon} {hip}</h2>
+                <div style="
+                    color: rgba(255,255,255,0.8); 
+                    font-size: 1rem; 
+                    margin-top: 5px; 
+                    font-weight: 300;
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+                ">
+                    <span>📅 {fecha}</span>
+                    <span style="color: {card_color}">•</span>
+                    <span>🏁 {len(races)} carreras</span>
+                </div>
+            </div>
+            <div style="
+                border: 1px solid {card_color};
+                color: {card_color};
+                padding: 5px 15px;
+                border-radius: 20px;
+                font-size: 0.8rem;
+                font-weight: 600;
+                background: rgba(0,0,0,0.3);
+            ">
+                OFICIAL
+            </div>
+        </div>
+        """, unsafe_allow_html=True)
+        
+        # Renderizar Carreras del Grupo
+        for idx, pred in enumerate(races):
+            # Sort predictions by score explicitly if needed, assuming already sorted
             
-            with col2:
-                # Mini gráfico de probabilidades
-                top_4 = pred.get('predicciones', pred.get('detalle', []))[:4]
-                if top_4:
-                    chart_data = pd.DataFrame({
-                        'Caballo': [p['caballo'][:12] for p in top_4],
-                        'Prob': [p['probabilidad'] for p in top_4]
-                    })
-                    
-                    fig = px.bar(
-                        chart_data, 
-                        x='Prob', 
-                        y='Caballo', 
-                        orientation='h',
-                        color='Prob',
-                        color_continuous_scale=['#ff00aa', '#00f5ff']
-                    )
-                    fig.update_layout(
-                        paper_bgcolor='rgba(0,0,0,0)',
-                        plot_bgcolor='rgba(0,0,0,0)',
-                        font_color='white',
-                        showlegend=False,
-                        coloraxis_showscale=False,
-                        margin=dict(l=0, r=0, t=20, b=0),
-                        height=200
-                    )
-                    fig.update_xaxes(title='', showgrid=False)
-                    fig.update_yaxes(title='', showgrid=False)
-                    st.plotly_chart(fig, width='stretch', key=f"chart_pred_{idx}")
+            with st.expander(
+                f"🏁 Carrera {pred.get('nro_carrera', '?')} • Confianza: {pred.get('confianza', 0)}%",
+                expanded=False
+            ):
+                col1, col2 = st.columns([2, 1])
+                
+                with col1:
+                    st.markdown("#### 🏆 Top Predicciones")
+                    for i, pick in enumerate(pred.get('predicciones', pred.get('detalle', []))[:6], 1):
+                        render_prediction_card(
+                            rank=i,
+                            horse=pick['caballo'],
+                            jockey=pick['jinete'],
+                            score=pick.get('puntaje_calculado', pick.get('puntaje', 0)),
+                            probability=pick['probabilidad']
+                        )
+                
+                with col2:
+                    # Mini gráfico de probabilidades
+                    top_4 = pred.get('predicciones', pred.get('detalle', []))[:4]
+                    if top_4:
+                        chart_data = pd.DataFrame({
+                            'Caballo': [p['caballo'][:12] for p in top_4],
+                            'Prob': [p['probabilidad'] for p in top_4]
+                        })
+                        
+                        fig = px.bar(
+                            chart_data, 
+                            x='Prob', 
+                            y='Caballo', 
+                            orientation='h',
+                            color='Prob',
+                            color_continuous_scale=['#ff00aa', '#00f5ff']
+                        )
+                        fig.update_layout(
+                            paper_bgcolor='rgba(0,0,0,0)',
+                            plot_bgcolor='rgba(0,0,0,0)',
+                            font_color='white',
+                            showlegend=False,
+                            coloraxis_showscale=False,
+                            margin=dict(l=0, r=0, t=20, b=0),
+                            height=200
+                        )
+                        fig.update_xaxes(title='', showgrid=False)
+                        fig.update_yaxes(title='', showgrid=False)
+                        # Clave única para el gráfico
+                        st.plotly_chart(fig, width='stretch', key=f"chart_{hip}_{fecha}_{idx}")
     
     # Patrones detectados
     if 'patrones' in predictions and predictions['patrones']:

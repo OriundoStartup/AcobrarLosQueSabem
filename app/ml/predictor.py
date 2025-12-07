@@ -242,13 +242,18 @@ class FeatureEngineer:
         has_agg_tables = self._check_agg_tables()
         
         if has_agg_tables:
+            logger.info("   -> Usando query con agregaciones")
             query = self._get_prediction_query_with_agg()
         else:
+            logger.info("   -> Usando query básica")
             query = self._get_prediction_query_basic()
         
         try:
             with sqlite3.connect(self.db_path) as conn:
                 df = pd.read_sql_query(query, conn)
+                logger.info(f"   -> Query ejecutada. Filas recuperadas: {len(df)}")
+                if not df.empty:
+                    logger.info(f"   -> Fechas encontradas: {df['fecha'].unique()}")
         except sqlite3.Error as e:
             logger.exception(f"Error extrayendo datos para predicción: {e}")
             return None
@@ -316,7 +321,7 @@ class FeatureEngineer:
         LEFT JOIN agg_combo_caballo_jinete acj ON fp.caballo_id = acj.caballo_id 
             AND fp.jinete_id = acj.jinete_id
         WHERE fp.resultado_final IS NULL
-            AND fc.fecha >= date('now')
+            AND fc.fecha >= date('now', '-7 days')
         ORDER BY fc.fecha, fc.nro_carrera, fp.partidor
         """
     
@@ -357,7 +362,7 @@ class FeatureEngineer:
         JOIN dim_caballos dc ON fp.caballo_id = dc.id
         LEFT JOIN dim_jinetes dj ON fp.jinete_id = dj.id
         WHERE fp.resultado_final IS NULL
-            AND fc.fecha >= date('now')
+            AND fc.fecha >= date('now', '-7 days')
         ORDER BY fc.fecha, fc.nro_carrera, fp.partidor
         """
     
@@ -918,10 +923,10 @@ def run_full_pipeline(
     """
     config = config or MLConfig()
     
-    print("\n" + "╔" + "═"*58 + "╗")
-    print("║" + " "*15 + "🏇 PISTA INTELIGENTE ML" + " "*15 + "║")
-    print("║" + " "*10 + "Sistema de Predicción de Carreras" + " "*10 + "║")
-    print("╚" + "═"*58 + "╝\n")
+    print("\n" + "="*60)
+    print(" " * 15 + "PISTA INTELIGENTE ML")
+    print(" " * 10 + "Sistema de Prediccion de Carreras")
+    print("="*60 + "\n")
     
     predictor = RacePredictor(config)
     
@@ -950,9 +955,11 @@ def run_full_pipeline(
 
 
 if __name__ == "__main__":
+    # Corregir rutas para ejecución desde root
     config = MLConfig(
         db_path="data/db/hipica_3fn.db",
-        model_type="xgboost"
+        model_type="xgboost",
+        output_dir="app/ml/output"  # FIX: Ruta correcta espera por data_sync.py
     )
     
     metrics, predictions = run_full_pipeline(
