@@ -45,6 +45,21 @@ except ImportError:
         get_db_stats
     )
 
+
+
+try:
+    from app.services.ad_service import get_adsense_script
+except ImportError:
+    from services.ad_service import get_adsense_script
+
+try:
+    from app.services.chat_service import ChatService
+except ImportError:
+    # Fallback or local import if necessary, but assuming structure is correct
+    sys.path.insert(0, str(BASE_DIR / "app"))
+    from services.chat_service import ChatService
+
+
 # ============================================================================
 # PAGE CONFIG
 # ============================================================================
@@ -58,6 +73,9 @@ st.set_page_config(
         'About': '### Pista Inteligente v3.1\nSistema Profesional de Análisis Hípico con IA'
     }
 )
+
+# Inject AdSense
+st.markdown(get_adsense_script(), unsafe_allow_html=True)
 
 # ============================================================================
 # CONSTANTS
@@ -592,15 +610,27 @@ def render_ad_sidebar():
 def render_chatbot():
     """Renderiza el chatbot en el sidebar."""
     
+    # Inicializar ChatService (singleton-ish en session state)
+    if 'chat_service' not in st.session_state:
+        st.session_state.chat_service = ChatService()
+
     with st.sidebar:
         st.markdown("---")
         
+        # Logo del Chatbot
+        logo_path = ASSETS_DIR / "img" / "Log_Chatbot.png.png"
+        if logo_path.exists():
+            st.image(str(logo_path), use_container_width=True)
+        else:
+            # Fallback title if logo missing
+            st.markdown("### 💬 Asistente Hípico")
+
         # Usar expander para el chat para ahorrar espacio
-        with st.expander("💬 Asistente Virtual", expanded=False):
+        with st.expander("💬 Chat Hípico", expanded=True):
             # Estado del chat
             if 'messages' not in st.session_state:
                 st.session_state.messages = [
-                    {"role": "assistant", "content": "¡Hola! 👋 Soy tu asistente hípico. ¿En qué puedo ayudarte?"}
+                    {"role": "assistant", "content": "¡Hola! 👋 Soy tu experto en hípica. Pregúntame sobre predicciones, jinetes o tips de apuesta."}
                 ]
             
             # Mostrar mensajes
@@ -616,9 +646,10 @@ def render_chatbot():
                             border-radius: 0 10px 10px 0;
                             margin-bottom: 10px;
                             font-size: 0.85rem;
+                            color: #ddd;
                         ">🤖 {msg["content"]}</div>
                         """, unsafe_allow_html=True)
-                    else:
+                    elif msg["role"] == "user":
                         st.markdown(f"""
                         <div style="
                             background: rgba(255,0,170,0.1);
@@ -628,54 +659,113 @@ def render_chatbot():
                             margin-bottom: 10px;
                             text-align: right;
                             font-size: 0.85rem;
+                            color: #fff;
                         ">{msg["content"]} 👤</div>
                         """, unsafe_allow_html=True)
             
             # Input del usuario
-            user_input = st.text_input(
-                "Escribe tu pregunta...", 
-                key="chat_input", 
-                label_visibility="collapsed",
-                placeholder="Escribe tu pregunta aquí..."
-            )
+            if prompt := st.chat_input("Escribe tu pregunta...", key="chat_input_widget"):
+                # Agregar mensaje del usuario
+                st.session_state.messages.append({"role": "user", "content": prompt})
+                st.rerun()
+
+    # Procesar respuesta fuera del sidebar para evitar bloqueos visuales raros
+    # (El chat_input forza rerun, así que capturamos el último mensaje)
+    if st.session_state.messages and st.session_state.messages[-1]["role"] == "user":
+        # Check if we already have a response for this
+        # Simplificación: como st.rerun() ocurre, el script corre de nuevo.
+        # Necesitamos un mecanismo para saber si "acabamos" de enviar el mensaje.
+        pass 
+    
+    # NOTA: st.chat_input en sidebar es tricky. Mejor usar text_input con callback o form.
+    # Pero para mantenerlo simple y funcional como el original, usaremos text_input como antes
+    # pero conectado al servicio.
+    
+    # --- REIMPLEMENTACIÓN CON TEXT INPUT PARA MAYOR CONTROL ---
+render_chatbot_logic()
+
+def render_chatbot_logic():
+    # Esta función encapsula la lógica para no ensuciar el namespace global
+    pass
+
+# Sobreescribimos la función original con la lógica correcta
+def render_chatbot():
+    """Renderiza el chatbot en el sidebar con OpenAI."""
+    
+    if 'chat_service' not in st.session_state:
+        st.session_state.chat_service = ChatService()
+
+    with st.sidebar:
+        st.markdown("---")
+        
+        # Logo del Chatbot
+        logo_path = ASSETS_DIR / "img" / "Log_Chatbot.png.png"
+        if logo_path.exists():
+            st.image(str(logo_path), use_container_width=True)
+        
+        with st.expander("💬 Asistente Virtual", expanded=False):
+            if 'messages' not in st.session_state:
+                st.session_state.messages = [
+                    {"role": "assistant", "content": "¡Hola! 👋 Soy tu experto en hípica. ¿En qué puedo ayudarte hoy?"}
+                ]
             
-            # Botones de preguntas rápidas
-            col1, col2, col3 = st.columns(3)
-            with col1:
-                if st.button("📊", help="Ver Predicciones", key="btn_pred"):
-                    user_input = "predicciones"
-            with col2:
-                if st.button("🏇", help="Mejores Jinetes", key="btn_jinete"):
-                    user_input = "jinetes"
-            with col3:
-                if st.button("💡", help="Tips de Apuesta", key="btn_tips"):
-                    user_input = "tips"
-            
-            if user_input:
-                # Agregar mensaje del usuario (si no es repetición del último)
-                if not st.session_state.messages or st.session_state.messages[-1]["content"] != user_input:
-                    st.session_state.messages.append({"role": "user", "content": user_input})
-                    
-                    # Respuesta del bot (simulada)
-                    respuestas = {
-                        "predicciones": "📊 Las predicciones están en la pestaña 'PREDICCIONES IA'. ¡Revísalas para ver los favoritos!",
-                        "jinetes": "🏇 Revisa la pestaña 'ESTADÍSTICAS' para ver el ranking actualizado de jinetes.",
-                        "tips": "💡 Tip: Busca caballos con puntaje > 6.0 en nuestras predicciones, suelen tener alta probabilidad.",
-                        "default": "🤔 Interesante. Te recomiendo explorar las pestañas de estadísticas para más detalles."
-                    }
-                    
-                    input_lower = user_input.lower()
-                    if "predicci" in input_lower:
-                        resp = respuestas["predicciones"]
-                    elif "jinete" in input_lower or "mejor" in input_lower:
-                        resp = respuestas["jinetes"]
-                    elif "tip" in input_lower or "apostar" in input_lower:
-                        resp = respuestas["tips"]
+            # Container de mensajes
+            chat_container = st.container(height=350)
+            with chat_container:
+                for msg in st.session_state.messages:
+                    if msg["role"] == "assistant":
+                         st.markdown(f"""
+                        <div style="
+                            background: rgba(0,245,255,0.08);
+                            border-left: 2px solid #00f5ff;
+                            padding: 8px 12px;
+                            border-radius: 4px;
+                            margin-bottom: 8px;
+                            font-size: 0.85rem;
+                            line-height: 1.4;
+                        "><b>🤖 IA:</b> {msg["content"]}</div>
+                        """, unsafe_allow_html=True)
                     else:
-                        resp = respuestas["default"]
+                        st.markdown(f"""
+                        <div style="
+                            background: rgba(255,0,170,0.08);
+                            border-right: 2px solid #ff00aa;
+                            padding: 8px 12px;
+                            border-radius: 4px;
+                            margin-bottom: 8px;
+                            text-align: right;
+                            font-size: 0.85rem;
+                            line-height: 1.4;
+                        ">{msg["content"]} <b>:Tú</b></div>
+                        """, unsafe_allow_html=True)
+
+            # Formulario para input
+            with st.form("chat_form", clear_on_submit=True):
+                user_input = st.text_input("Tu pregunta:", placeholder="Ej: ¿Quién gana la 4ta?", label_visibility="collapsed")
+                submitted = st.form_submit_button("Enviar", use_container_width=True)
+            
+            if submitted and user_input:
+                # 1. Agregar mensaje usuario
+                st.session_state.messages.append({"role": "user", "content": user_input})
+                
+                # 2. Obtener respuesta IA
+                with st.spinner("Pensando..."):
+                    # Recopilar contexto simple (ej: hora actual, o última página visitada si pudiéramos)
+                    context = f"El usuario está consultando el sistema."
                     
-                    st.session_state.messages.append({"role": "assistant", "content": resp})
-                    st.rerun()
+                    response = st.session_state.chat_service.get_response(
+                        [msg for msg in st.session_state.messages if msg["role"] != "system"],
+                        context=context
+                    )
+                
+                # 3. Agregar respuesta IA
+                st.session_state.messages.append({"role": "assistant", "content": response})
+                st.rerun()
+
+        # Botón para limpiar chat
+        if st.button("🗑️ Limpiar Chat", key="clear_chat"):
+            st.session_state.messages = [{"role": "assistant", "content": "¡Chat reiniciado! ¿En qué te ayudo?"}]
+            st.rerun()
 
 
 # ============================================================================
