@@ -13,6 +13,14 @@ def get_adsense_script() -> str:
     script_html = """
     <script>
         (function() {
+            // 1. Inyectar Meta Tag de Verificación (NUEVO REQUISITO)
+            var meta = document.createElement('meta');
+            meta.name = "google-adsense-account";
+            meta.content = "ca-pub-5579178295407019";
+            document.head.appendChild(meta);
+            console.log("AdSense Meta Tag injected");
+
+            // 2. Inyectar Script Principal de AdSense
             var src = "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5579178295407019";
             if (!document.querySelector('script[src="' + src + '"]')) {
                 var script = document.createElement('script');
