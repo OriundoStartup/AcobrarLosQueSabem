@@ -39,13 +39,14 @@ ENV/
 htmlcov/
 .tox/
 
-# Data
+# Data - Include main DB for Streamlit Cloud deploy
 data/raw/*
 !data/raw/.gitkeep
 data/processed/*
 !data/processed/.gitkeep
-*.db
-*.sqlite
+# Include main DB, exclude backups
+data/db/*_backup*.db
+!data/db/hipica_3fn.db
 
 # Logs
 logs/*.log
