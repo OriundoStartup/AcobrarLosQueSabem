@@ -268,6 +268,94 @@ def get_db_connection():
     return None
 
 
+# ============================================================================
+# APP STATS & LIKES
+# ============================================================================
+
+STATS_FILE = BASE_DIR / "app" / "data" / "app_stats.json"
+
+def get_like_count():
+    """Obtiene el contador de likes desde archivo persistente."""
+    if not STATS_FILE.exists():
+        return 142  # Valor inicial seed
+    try:
+        with open(STATS_FILE, 'r') as f:
+            data = json.load(f)
+            return data.get('likes', 142)
+    except:
+        return 142
+
+def save_like_count(count):
+    """Guarda el contador de likes."""
+    STATS_FILE.parent.mkdir(parents=True, exist_ok=True)
+    try:
+        with open(STATS_FILE, 'w') as f:
+            json.dump({'likes': count}, f)
+    except Exception as e:
+        print(f"Error saving likes: {e}")
+
+def render_like_button():
+    """Renderiza el botón de Like en el sidebar."""
+    current_likes = get_like_count()
+    
+    # CSS personalizado para el contenedor de likes
+    st.markdown("""
+    <style>
+    .like-container {
+        background: rgba(255, 255, 255, 0.05);
+        border-radius: 12px;
+        padding: 15px;
+        text-align: center;
+        margin-top: 20px;
+        border: 1px dashed rgba(255, 255, 255, 0.2);
+    }
+    .like-stat {
+        font-size: 1.5rem;
+        font-weight: 800;
+        color: #ff00aa;
+    }
+    .like-text {
+        font-size: 0.8rem;
+        color: rgba(255, 255, 255, 0.6);
+    }
+    </style>
+    """, unsafe_allow_html=True)
+    
+    # Inicializar estado de sesión para este usuario específico
+    if 'has_liked' not in st.session_state:
+        st.session_state.has_liked = False
+
+    if not st.session_state.has_liked:
+        # Botón para dar like
+        col1, col2 = st.sidebar.columns([1, 4])
+        with col2:
+            st.write("¿Te sirve la App?")
+        
+        if st.sidebar.button("❤️ ¡Me gusta!", use_container_width=True, type="primary"):
+            new_count = current_likes + 1
+            save_like_count(new_count)
+            st.session_state.has_liked = True
+            st.rerun()
+            
+        st.sidebar.markdown(f"""
+        <div style="text-align: center; font-size: 0.8rem; opacity: 0.7; margin-top: 5px;">
+            {current_likes} personas aprueban esto
+        </div>
+        """, unsafe_allow_html=True)
+        
+    else:
+        # Vista de "Ya votaste"
+        st.sidebar.markdown(f"""
+        <div class="like-container animate__animated animate__pulse">
+            <div style="font-size: 2rem;">💖</div>
+            <div class="like-stat">{current_likes}</div>
+            <div class="like-text">Apostadores felices</div>
+            <div style="font-size: 0.7rem; color: #00f5ff; margin-top: 5px;">¡Gracias por tu apoyo!</div>
+        </div>
+        """, unsafe_allow_html=True)
+
+
+
 @st.cache_data(ttl=60)  # Reducido a 60 segundos para actualizar más rápido
 def get_dashboard_metrics():
     """Obtiene métricas principales para el dashboard."""
@@ -424,7 +512,28 @@ def render_header():
     if header_img_path.exists():
         header_b64 = load_image_as_base64(str(header_img_path))
         st.markdown(f"""
-
+        <style>
+        .hero-container {{
+            width: 100% !important;
+            max-width: 100% !important;
+            height: 300px !important;
+            margin-top: -60px !important; /* Subir para cubrir padding superior */
+            margin-left: -20px !important; /* Compensar padding lateral default */
+            margin-right: -20px !important;
+            border-radius: 0 0 20px 20px !important;
+            overflow: hidden !important;
+            position: relative !important;
+            background: var(--bg-secondary);
+            margin-bottom: 30px !important;
+            z-index: 0;
+        }}
+        .hero-img {{
+            width: 100vw !important; /* Forzar ancho completo de viewport si es necesario */
+            height: 100% !important;
+            object-fit: cover !important;
+            object-position: center 35% !important;
+        }}
+        </style>
         <div class="hero-container">
             <img src="data:image/png;base64,{header_b64}" class="hero-img">
             <div class="hero-gradient-overlay"></div>
@@ -708,6 +817,10 @@ def render_chatbot():
         if st.button("🗑️ Limpiar Chat", key="clear_chat"):
             st.session_state.messages = [{"role": "assistant", "content": "¡Chat reiniciado! ¿En qué te ayudo?"}]
             st.rerun()
+
+        # Renderizar footer con botón de like
+        st.markdown("---")
+        render_like_button()
 
 
 # ============================================================================

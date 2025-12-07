@@ -519,12 +519,11 @@ code,
    FIX CRÍTICO: Ocultar texto "keyboard_double_arrow_right" y mostrar flecha CSS
    ============================================================================ */
 
-/* Ocultar el texto del ícono que no renderiza */
+/* 1. Ocultar TODO el contenido del span del icono (incluyendo el texto literal) */
 [data-testid="stExpander"] summary span[data-testid="stExpanderToggleIcon"],
-[data-testid="stExpander"] details summary svg,
-details summary span:has-text("keyboard"),
 [data-testid="stExpanderToggleIcon"] {
     font-size: 0 !important;
+    /* Colapsar el texto */
     color: transparent !important;
     width: 24px !important;
     height: 24px !important;
@@ -532,17 +531,35 @@ details summary span:has-text("keyboard"),
     align-items: center !important;
     justify-content: center !important;
     position: relative !important;
+    visibility: visible !important;
+    /* Asegurar que el elemento en sí sea visible para el ::after */
 }
 
-/* Crear flecha CSS pura usando ::after */
+/* 2. Crear flecha CSS pura usando ::after */
 [data-testid="stExpander"] summary span[data-testid="stExpanderToggleIcon"]::after,
 [data-testid="stExpanderToggleIcon"]::after {
     content: "▶" !important;
-    font-size: 12px !important;
+    font-size: 14px !important;
+    /* Tamaño fijo visible */
     color: var(--accent-cyan, #00f5ff) !important;
-    position: absolute !important;
-    transition: transform 0.3s ease !important;
+    display: block !important;
+    line-height: 1 !important;
+    text-shadow: 0 0 10px rgba(0, 245, 255, 0.5);
+    transition: transform 0.3s ease;
+    visibility: visible !important;
 }
+
+/* Rotación cuando está abierto (aria-expanded="true") */
+[data-testid="stExpander"] details[open] summary [data-testid="stExpanderToggleIcon"]::after,
+[data-testid="stExpanderToggleIcon"][aria-expanded="true"]::after {
+    transform: rotate(90deg) !important;
+}
+
+/* Alternativa de seguridad: Force Material font si el CSS hide falla por alguna razón */
+[data-testid="stExpander"] summary span {
+    font-family: 'Material Symbols Rounded', sans-serif !important;
+}
+
 
 /* Rotar flecha cuando está abierto */
 [data-testid="stExpander"] details[open] summary span[data-testid="stExpanderToggleIcon"]::after,
