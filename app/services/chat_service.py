@@ -10,13 +10,24 @@ class ChatService:
         self.model = "gpt-3.5-turbo"
         
         if self.api_key:
+            # Try OpenAI first
             try:
                 import openai
                 self.client = openai.OpenAI(api_key=self.api_key)
-            except ImportError:
-                print("⚠️ OpenAI module not found. Please run 'pip install openai'")
-            except Exception as e:
-                print(f"Error initializing OpenAI client: {e}")
+                self.client_type = "openai"
+            except Exception:
+                # Fallback to Gemini if OpenAI fails or not installed
+                gemini_key = os.getenv("GEMINI_API_KEY")
+                if gemini_key:
+                    try:
+                        import google.generativeai as genai
+                        genai.configure(api_key=gemini_key)
+                        self.client = genai
+                        self.client_type = "gemini"
+                    except Exception as e:
+                        print(f"Error initializing Gemini client: {e}")
+                else:
+                    print("⚠️ No valid API key for OpenAI or Gemini found.")
 
     def get_system_prompt(self, context_str: str = "") -> str:
         """Genera el prompt del sistema con el contexto o personalidad."""

@@ -568,7 +568,7 @@ def render_chatbot():
         # Logo del Chatbot
         logo_path = ASSETS_DIR / "img" / "Log_Chatbot.png.png"
         if logo_path.exists():
-            st.image(str(logo_path), use_container_width=True)
+            st.image(str(logo_path), width='stretch')
         else:
             # Fallback title if logo missing
             st.markdown("### 💬 Asistente Hípico")
@@ -630,12 +630,6 @@ def render_chatbot():
     # pero conectado al servicio.
     
     # --- REIMPLEMENTACIÓN CON TEXT INPUT PARA MAYOR CONTROL ---
-render_chatbot_logic()
-
-def render_chatbot_logic():
-    # Esta función encapsula la lógica para no ensuciar el namespace global
-    pass
-
 # Sobreescribimos la función original con la lógica correcta
 def render_chatbot():
     """Renderiza el chatbot en el sidebar con OpenAI."""
@@ -649,7 +643,7 @@ def render_chatbot():
         # Logo del Chatbot
         logo_path = ASSETS_DIR / "img" / "Log_Chatbot.png.png"
         if logo_path.exists():
-            st.image(str(logo_path), use_container_width=True)
+            st.image(str(logo_path), width="stretch")
         
         with st.expander("💬 Asistente Virtual", expanded=False):
             if 'messages' not in st.session_state:
@@ -690,7 +684,7 @@ def render_chatbot():
             # Formulario para input
             with st.form("chat_form", clear_on_submit=True):
                 user_input = st.text_input("Tu pregunta:", placeholder="Ej: ¿Quién gana la 4ta?", label_visibility="collapsed")
-                submitted = st.form_submit_button("Enviar", use_container_width=True)
+                submitted = st.form_submit_button("Enviar", width="stretch")
             
             if submitted and user_input:
                 # 1. Agregar mensaje usuario
@@ -1413,6 +1407,12 @@ def render_sidebar():
             st.success("Caché limpiado")
             st.rerun()
         
+        # Survey button and counter
+        if "survey_count" not in st.session_state:
+            st.session_state.survey_count = 0
+        if st.button("👍 Me gusta la app", key="survey_button"):
+            st.session_state.survey_count += 1
+        st.markdown(f"**Feedback positivo:** {st.session_state.survey_count}")
         st.markdown("---")
         
         st.markdown("### ℹ️ Estado del Sistema")
