@@ -78,6 +78,23 @@ st.set_page_config(
 st.markdown(get_adsense_script(), unsafe_allow_html=True)
 
 # ============================================================================
+# ADS.TXT HANDLER - Para verificación de Google AdSense
+# ============================================================================
+# Detectar si se solicita ads.txt via query parameter
+query_params = st.query_params
+if query_params.get("ads_txt") == "1":
+    # Leer y mostrar contenido de ads.txt
+    ads_txt_path = BASE_DIR / "ads.txt"
+    if ads_txt_path.exists():
+        with open(ads_txt_path, 'r') as f:
+            ads_content = f.read()
+        st.code(ads_content, language=None)
+        st.info("📋 Contenido de ads.txt para verificación de Google AdSense")
+    else:
+        st.error("❌ Archivo ads.txt no encontrado")
+    st.stop()  # Detener ejecución normal de la app
+
+# ============================================================================
 # CONSTANTS
 # ============================================================================
 
