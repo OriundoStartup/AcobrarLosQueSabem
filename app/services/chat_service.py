@@ -1,6 +1,5 @@
 
 import os
-import openai
 from typing import List, Dict, Optional
 
 class ChatService:
@@ -8,11 +7,14 @@ class ChatService:
         """Inicializa el servicio de chat con OpenAI."""
         self.api_key = os.getenv("OPENAI_API_KEY")
         self.client = None
-        self.model = "gpt-3.5-turbo"  # Cost-effective and fast
+        self.model = "gpt-3.5-turbo"
         
         if self.api_key:
             try:
+                import openai
                 self.client = openai.OpenAI(api_key=self.api_key)
+            except ImportError:
+                print("⚠️ OpenAI module not found. Please run 'pip install openai'")
             except Exception as e:
                 print(f"Error initializing OpenAI client: {e}")
 
@@ -45,16 +47,9 @@ INSTRUCCIONES DE RESPUESTA:
     def get_response(self, messages: List[Dict[str, str]], context: str = "") -> str:
         """
         Obtiene una respuesta del modelo.
-        
-        Args:
-            messages: Lista de mensajes del historial [{'role': 'user', 'content': '...'}, ...]
-            context: Contexto opcional (ej: datos de la carrera actual)
-            
-        Returns:
-            str: Respuesta del asistente.
         """
         if not self.client:
-            return "⚠️ No se detectó una API Key de OpenAI configurada. Por favor configura OPENAI_API_KEY en el archivo .env para habilitar mi inteligencia."
+            return "⚠️ El módulo OpenAI no está disponible o no se configuró la API Key. Por favor verifica tu instalación (pip install openai) y tu archivo .env."
 
         try:
             # Preparar mensajes incluyendo el system prompt
@@ -65,7 +60,7 @@ INSTRUCCIONES DE RESPUESTA:
                 model=self.model,
                 messages=full_messages,
                 temperature=0.7,
-                max_tokens=150  # Keep responses concise for chatbot UI
+                max_tokens=150
             )
             
             return response.choices[0].message.content
