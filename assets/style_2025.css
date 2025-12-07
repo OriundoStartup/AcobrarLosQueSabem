@@ -522,7 +522,9 @@ code,
 /* 1. Ocultar TODO el contenido del span del icono (incluyendo el texto literal) */
 /* 1. Ocultar TODO el contenido del span del icono usando visibility */
 [data-testid="stExpander"] summary span[data-testid="stExpanderToggleIcon"],
-.streamlit-expanderHeader>span:first-child {
+.streamlit-expanderHeader>span:first-child,
+[data-testid="stSidebarCollapsedControl"] span,
+[data-testid="stSidebarExpandedControl"] span {
     visibility: hidden !important;
     /* Oculta el texto rebelde */
     width: 24px !important;
@@ -544,6 +546,34 @@ code,
     transform: translate(-50%, -50%) !important;
     display: block !important;
     line-height: 1 !important;
+}
+
+/* Sidebar Toggle Arrow (Expanded -> Click to Collapse) */
+[data-testid="stSidebarExpandedControl"] span::after {
+    visibility: visible !important;
+    content: "◀" !important;
+    /* Apunta a la izquierda para cerrar */
+    font-size: 18px !important;
+    color: var(--accent-cyan, #00f5ff) !important;
+    position: absolute !important;
+    top: 50% !important;
+    left: 50% !important;
+    transform: translate(-50%, -50%) !important;
+    display: block !important;
+}
+
+/* Sidebar Toggle Arrow (Collapsed -> Click to Expand) */
+[data-testid="stSidebarCollapsedControl"] span::after {
+    visibility: visible !important;
+    content: "▶" !important;
+    /* Apunta a la derecha para abrir */
+    font-size: 18px !important;
+    color: var(--text-primary) !important;
+    position: absolute !important;
+    top: 50% !important;
+    left: 50% !important;
+    transform: translate(-50%, -50%) !important;
+    display: block !important;
 }
 
 /* Rotación cuando está abierto (aria-expanded="true") */
