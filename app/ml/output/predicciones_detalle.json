@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "fecha_generacion": "2025-12-07 01:20:55",
+    "fecha_generacion": "2025-12-07 15:37:37",
     "modelo": "xgboost",
     "version": "1.0.0",
     "metricas": {
@@ -9889,16 +9889,16 @@
   ],
   "patrones": {
     "quinelas": {
-      "('ALMENDRO', 'LA CONSENTIDA')": 3,
-      "('CHINO MATADOR', 'ME LA GANE SOLO')": 4
+      "('#14 ALMENDRO', '#15 LA CONSENTIDA')": 3,
+      "('#10 CHINO MATADOR', '#2 ME LA GANE SOLO')": 4
     },
     "trifectas": {
-      "('LA CONSENTIDA', 'ALMENDRO', 'EL WHISKY CUANDO')": 3,
-      "('ME LA GANE SOLO', 'CHINO MATADOR', 'EL INVICTO')": 4
+      "('#15 LA CONSENTIDA', '#14 ALMENDRO', '#11 EL WHISKY CUANDO')": 3,
+      "('#2 ME LA GANE SOLO', '#10 CHINO MATADOR', '#3 EL INVICTO')": 4
     },
     "superfectas": {
-      "('LA CONSENTIDA', 'ALMENDRO', 'EL WHISKY CUANDO', 'EL GRINGO')": 3,
-      "('ME LA GANE SOLO', 'CHINO MATADOR', 'EL INVICTO', 'AKRAPOVIC')": 4
+      "('#15 LA CONSENTIDA', '#14 ALMENDRO', '#11 EL WHISKY CUANDO', '#12 EL GRINGO')": 3,
+      "('#2 ME LA GANE SOLO', '#10 CHINO MATADOR', '#3 EL INVICTO', '#1 AKRAPOVIC')": 4
     }
   }
 }

@@ -811,14 +811,22 @@ class RacePredictor:
         superfectas = []
         
         for pred in predictions:
-            top4 = pred.top4_predicho
+            # Obtener top 4 con partidores (formato: "#N NOMBRE")
+            top4_with_numbers = []
+            for p in pred.predicciones[:4]:
+                partidor = p.get('partidor')
+                nombre = p.get('caballo', 'N/A')
+                if partidor:
+                    top4_with_numbers.append(f"#{partidor} {nombre}")
+                else:
+                    top4_with_numbers.append(nombre)
             
-            if len(top4) >= 2:
-                quinelas.append(tuple(sorted(top4[:2])))
-            if len(top4) >= 3:
-                trifectas.append(tuple(top4[:3]))
-            if len(top4) >= 4:
-                superfectas.append(tuple(top4[:4]))
+            if len(top4_with_numbers) >= 2:
+                quinelas.append(tuple(sorted(top4_with_numbers[:2])))
+            if len(top4_with_numbers) >= 3:
+                trifectas.append(tuple(top4_with_numbers[:3]))
+            if len(top4_with_numbers) >= 4:
+                superfectas.append(tuple(top4_with_numbers[:4]))
         
         patterns = {}
         

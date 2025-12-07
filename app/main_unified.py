@@ -589,17 +589,20 @@ def render_metric_card(icon: str, value: str, label: str, color: str = "cyan", d
     """, unsafe_allow_html=True)
 
 
-def render_prediction_card(rank: int, horse: str, jockey: str, score: float, probability: int):
+def render_prediction_card(rank: int, horse: str, jockey: str, score: float, probability: int, partidor: int = None):
     """Renderiza una tarjeta de predicción."""
     rank_class = f"rank-{rank}" if rank <= 3 else "rank-default"
     medals = {1: "🥇", 2: "🥈", 3: "🥉"}
     medal = medals.get(rank, str(rank))
     
+    # Mostrar nombre con número de partidor si existe
+    horse_display = f"#{partidor} {horse}" if partidor else horse
+    
     st.markdown(f"""
     <div class="prediction-row">
         <div class="rank-badge {rank_class}">{medal}</div>
         <div style="flex: 1;">
-            <div style="font-weight: 600; color: #fff; font-size: 1.1rem;">{horse}</div>
+            <div style="font-weight: 600; color: #fff; font-size: 1.1rem;">{horse_display}</div>
             <div style="color: rgba(255,255,255,0.5); font-size: 0.85rem;">🏇 {jockey}</div>
         </div>
         <div style="text-align: right;">
@@ -1420,7 +1423,8 @@ def render_tab_predicciones():
                             horse=pick['caballo'],
                             jockey=pick['jinete'],
                             score=pick.get('puntaje_calculado', pick.get('puntaje', 0)),
-                            probability=pick['probabilidad']
+                            probability=pick['probabilidad'],
+                            partidor=pick.get('partidor')
                         )
                 
                 with col2:
@@ -1428,7 +1432,7 @@ def render_tab_predicciones():
                     top_4 = pred.get('predicciones', pred.get('detalle', []))[:4]
                     if top_4:
                         chart_data = pd.DataFrame({
-                            'Caballo': [p['caballo'][:12] for p in top_4],
+                            'Caballo': [f"#{p.get('partidor', '?')} {p['caballo'][:10]}" if p.get('partidor') else p['caballo'][:12] for p in top_4],
                             'Prob': [p['probabilidad'] for p in top_4]
                         })
                         
