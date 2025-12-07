@@ -331,7 +331,8 @@ def render_like_button():
         with col2:
             st.write("¿Te sirve la App?")
         
-        if st.sidebar.button("❤️ ¡Me gusta!", use_container_width=True, type="primary"):
+        # FIX: Agregar key estable para evitar recargas erróneas y problemas de estado
+        if st.sidebar.button("❤️ ¡Me gusta!", key="like_button_sidebar", use_container_width=True, type="primary"):
             new_count = current_likes + 1
             save_like_count(new_count)
             st.session_state.has_liked = True

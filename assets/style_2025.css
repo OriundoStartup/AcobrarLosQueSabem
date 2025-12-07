@@ -520,33 +520,30 @@ code,
    ============================================================================ */
 
 /* 1. Ocultar TODO el contenido del span del icono (incluyendo el texto literal) */
+/* 1. Ocultar TODO el contenido del span del icono usando visibility */
 [data-testid="stExpander"] summary span[data-testid="stExpanderToggleIcon"],
-[data-testid="stExpanderToggleIcon"] {
-    font-size: 0 !important;
-    /* Colapsar el texto */
-    color: transparent !important;
+.streamlit-expanderHeader>span:first-child {
+    visibility: hidden !important;
+    /* Oculta el texto rebelde */
     width: 24px !important;
     height: 24px !important;
-    display: inline-flex !important;
-    align-items: center !important;
-    justify-content: center !important;
     position: relative !important;
-    visibility: visible !important;
-    /* Asegurar que el elemento en sí sea visible para el ::after */
 }
 
-/* 2. Crear flecha CSS pura usando ::after */
+/* 2. Mostrar SOLO la flecha creada con ::after */
 [data-testid="stExpander"] summary span[data-testid="stExpanderToggleIcon"]::after,
-[data-testid="stExpanderToggleIcon"]::after {
+.streamlit-expanderHeader>span:first-child::after {
+    visibility: visible !important;
+    /* Hace visible nuestro icono custom */
     content: "▶" !important;
     font-size: 14px !important;
-    /* Tamaño fijo visible */
     color: var(--accent-cyan, #00f5ff) !important;
+    position: absolute !important;
+    top: 50% !important;
+    left: 50% !important;
+    transform: translate(-50%, -50%) !important;
     display: block !important;
     line-height: 1 !important;
-    text-shadow: 0 0 10px rgba(0, 245, 255, 0.5);
-    transition: transform 0.3s ease;
-    visibility: visible !important;
 }
 
 /* Rotación cuando está abierto (aria-expanded="true") */
