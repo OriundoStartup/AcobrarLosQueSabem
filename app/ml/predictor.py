@@ -830,17 +830,18 @@ class RacePredictor:
         
         patterns = {}
         
-        def analyze(name: str, combos: List[tuple], min_count: int = 2):
+        def analyze(name: str, combos: List[tuple], exact_count: int = 2):
             counter = Counter(combos)
-            repeated = {str(k): v for k, v in counter.items() if v >= min_count}
+            # Filtrar SOLO los que aparecieron exactamente 2 veces (la tercera es la vencida)
+            repeated = {str(k): v for k, v in counter.items() if v == exact_count}
             
             if repeated:
-                logger.info(f"\n⚠️ Patrones en {name}:")
+                logger.info(f"\n🎯 Patrones con exactamente {exact_count} apariciones en {name}:")
                 for combo, count in sorted(repeated.items(), key=lambda x: -x[1]):
-                    logger.info(f"   {combo}: {count} apariciones")
+                    logger.info(f"   {combo}: {count} apariciones (¡La 3ra puede ser la vencida!)")
                 patterns[name] = repeated
             else:
-                logger.info(f"\n✅ Sin patrones repetidos en {name}")
+                logger.info(f"\n✅ Sin patrones con exactamente {exact_count} apariciones en {name}")
         
         analyze("quinelas", quinelas)
         analyze("trifectas", trifectas)
