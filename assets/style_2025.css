@@ -914,155 +914,6 @@ details[open] [data-testid="stExpanderToggleIcon"]::after {
     overflow: hidden;
 }
 
-/* ============================================================================
-   MOBILE RESPONSIVENESS (Media Queries)
-   ============================================================================ */
-
-@media (max-width: 768px) {
-
-    /* Layout Setup */
-    .main .block-container {
-        padding: var(--space-md) var(--space-sm) !important;
-        max-width: 100% !important;
-    }
-
-    /* Hero Section */
-    .hero-container {
-        height: 200px;
-        /* Smaller height on mobile */
-        margin-bottom: var(--space-md);
-        border-radius: var(--radius-md);
-    }
-
-    .hero-content {
-        bottom: 15px;
-        left: 15px;
-        right: 15px;
-    }
-
-    .hero-title {
-        font-size: 1.8rem;
-        /* Smaller title */
-    }
-
-    .hero-subtitle {
-        font-size: 0.9rem;
-    }
-
-    .hero-fallback {
-        padding: 24px;
-    }
-
-    /* Headings */
-    h1,
-    .stMarkdown h1 {
-        font-size: 1.8rem !important;
-    }
-
-    h2,
-    .stMarkdown h2 {
-        font-size: 1.5rem !important;
-        margin-top: 20px !important;
-    }
-
-    h3,
-    .stMarkdown h3 {
-        font-size: 1.2rem !important;
-    }
-
-    /* Cards & Grids */
-    .metric-card {
-        padding: var(--space-md);
-    }
-
-    .metric-value {
-        font-size: 2rem;
-    }
-
-    /* Predictions */
-    .prediction-row {
-        flex-direction: row;
-        /* Keep row but tighten gaps */
-        gap: 10px;
-        padding: 12px;
-    }
-
-    .rank-badge {
-        width: 36px;
-        height: 36px;
-        font-size: 1.2rem;
-        min-width: 36px;
-        /* Prevent shrink */
-    }
-
-    /* Tables */
-    .stDataFrame {
-        overflow-x: auto;
-        display: block;
-    }
-
-    .stDataFrame table {
-        min-width: 600px;
-        /* Force scroll for wide tables */
-    }
-
-    /* Ads */
-    .ad-container-leaderboard {
-        height: auto;
-        padding: 10px;
-        max-width: 100%;
-    }
-
-    .ad-container-leaderboard div {
-        transform: scale(0.8);
-        /* Scale down content */
-    }
-
-    /* Tabs */
-    .stTabs [data-baseweb="tab-list"] {
-        flex-wrap: wrap;
-        /* Stack tabs if needed */
-        gap: 4px;
-    }
-
-    .stTabs [data-baseweb="tab"] {
-        padding: 8px 12px !important;
-        font-size: 0.9rem !important;
-        flex: 1 1 auto;
-        /* Grow to fill width */
-        text-align: center;
-    }
-
-    /* Hide floating items that block view */
-    .floating-chat-btn {
-        width: 50px;
-        height: 50px;
-        bottom: 20px;
-        right: 20px;
-    }
-}
-
-@media (max-width: 480px) {
-
-    /* Very small screens */
-    .hero-title {
-        font-size: 1.5rem;
-    }
-
-    .metric-value {
-        font-size: 1.8rem;
-    }
-
-    /* Stack metrics if using standard columns */
-    [data-testid="column"] {
-        width: 100% !important;
-        flex: 1 1 auto !important;
-        min-width: 100% !important;
-        margin-bottom: 12px;
-    }
-}
-
-
 
 /* ============================================================================
    SCROLLBAR
@@ -1087,25 +938,263 @@ details[open] [data-testid="stExpanderToggleIcon"]::after {
 }
 
 /* ============================================================================
-   RESPONSIVE
+   RESPONSIVE - TABLET (1024px)
+   ============================================================================ */
+
+@media (max-width: 1024px) {
+    .main .block-container {
+        max-width: 100% !important;
+        padding: var(--space-md) var(--space-lg) !important;
+    }
+
+    .hero-title {
+        font-size: 2.2rem;
+    }
+
+    .hero-subtitle {
+        font-size: 1rem;
+    }
+
+    .metric-card {
+        padding: var(--space-md);
+    }
+
+    .metric-value {
+        font-size: 2rem;
+    }
+
+    /* Tabs más compactos en tablet */
+    .stTabs [data-baseweb="tab"] {
+        padding: var(--space-sm) var(--space-md) !important;
+        font-size: 0.9rem !important;
+    }
+
+    /* Chat window ajustado */
+    .chat-window {
+        width: 320px;
+        height: 450px;
+    }
+}
+
+/* ============================================================================
+   RESPONSIVE - MOBILE LANDSCAPE (768px)
    ============================================================================ */
 
 @media (max-width: 768px) {
+
+    /* Layout principal */
+    .main .block-container {
+        padding: var(--space-sm) !important;
+        max-width: 100% !important;
+    }
+
+    /* Hero Section responsive */
+    .hero-container {
+        height: 180px;
+        margin-bottom: var(--space-md);
+        border-radius: var(--radius-md);
+    }
+
+    .hero-content {
+        bottom: 12px;
+        left: 12px;
+        right: 12px;
+    }
+
+    .hero-title {
+        font-size: 1.6rem;
+    }
+
+    .hero-subtitle {
+        font-size: 0.85rem;
+    }
+
+    .hero-fallback {
+        padding: 20px;
+    }
+
+    /* Headings */
+    h1,
+    .stMarkdown h1 {
+        font-size: 1.6rem !important;
+    }
+
+    h2,
+    .stMarkdown h2 {
+        font-size: 1.3rem !important;
+    }
+
+    h3,
+    .stMarkdown h3 {
+        font-size: 1.1rem !important;
+    }
+
+    /* Métricas más pequeñas */
+    .metric-card {
+        padding: var(--space-md);
+    }
+
     .metric-value {
         font-size: 1.8rem;
     }
 
-    .main .block-container {
-        padding: var(--space-md) !important;
+    .metric-label {
+        font-size: 0.75rem;
     }
 
+    /* Prediction cards */
+    .prediction-row {
+        gap: 10px;
+        padding: 12px;
+    }
+
+    .rank-badge {
+        width: 36px;
+        height: 36px;
+        font-size: 1.1rem;
+        min-width: 36px;
+    }
+
+    /* Tables con scroll horizontal */
+    .stDataFrame {
+        overflow-x: auto;
+        display: block;
+    }
+
+    .stDataFrame table {
+        min-width: 500px;
+    }
+
+    /* Ads responsivos */
+    .ad-container-leaderboard {
+        height: auto;
+        min-height: 70px;
+        padding: 10px;
+        max-width: 100%;
+    }
+
+    /* Chat flotante */
     .chat-window {
         width: calc(100% - 40px);
         right: 20px;
+        height: 400px;
     }
 
     .floating-chat-btn {
         bottom: 20px;
         right: 20px;
+        width: 50px;
+        height: 50px;
+    }
+
+    /* Tabs con scroll horizontal */
+    .stTabs [data-baseweb="tab-list"] {
+        overflow-x: auto;
+        flex-wrap: nowrap !important;
+        -webkit-overflow-scrolling: touch;
+        scrollbar-width: none;
+        -ms-overflow-style: none;
+    }
+
+    .stTabs [data-baseweb="tab-list"]::-webkit-scrollbar {
+        display: none;
+    }
+
+    .stTabs [data-baseweb="tab"] {
+        white-space: nowrap;
+        flex-shrink: 0;
+    }
+
+    /* Sidebar mejorado */
+    [data-testid="stSidebar"] {
+        min-width: 280px !important;
+    }
+
+    [data-testid="stSidebar"] .block-container {
+        padding: var(--space-md) !important;
+    }
+
+    /* Forzar columnas a stack vertical */
+    [data-testid="stHorizontalBlock"] {
+        flex-wrap: wrap !important;
+    }
+
+    [data-testid="stHorizontalBlock"]>[data-testid="column"] {
+        width: 100% !important;
+        flex: 1 1 100% !important;
+        min-width: 100% !important;
+    }
+}
+
+/* ============================================================================
+   RESPONSIVE - MOBILE PORTRAIT (480px)
+   ============================================================================ */
+
+@media (max-width: 480px) {
+
+    /* Títulos más pequeños */
+    .hero-title {
+        font-size: 1.4rem !important;
+    }
+
+    .hero-subtitle {
+        font-size: 0.8rem;
+    }
+
+    h1,
+    .stMarkdown h1 {
+        font-size: 1.5rem !important;
+    }
+
+    h2,
+    .stMarkdown h2 {
+        font-size: 1.2rem !important;
+    }
+
+    /* Métricas compactas */
+    .metric-value {
+        font-size: 1.5rem;
+    }
+
+    .metric-card {
+        padding: var(--space-sm);
+    }
+
+    /* Prediction cards compactas */
+    .prediction-row {
+        padding: 10px;
+        gap: 8px;
+    }
+
+    .rank-badge {
+        width: 32px;
+        height: 32px;
+        font-size: 1rem;
+        min-width: 32px;
+    }
+
+    /* Ads responsivos */
+    .ad-container-leaderboard {
+        height: 60px;
+        padding: 8px;
+    }
+
+    .ad-container-sidebar {
+        height: 200px;
+    }
+
+    /* Chat más pequeño */
+    .chat-window {
+        height: 350px;
+        bottom: 80px;
+    }
+
+    .floating-chat-btn {
+        width: 45px;
+        height: 45px;
+    }
+
+    .chat-icon {
+        font-size: 24px;
     }
 }
