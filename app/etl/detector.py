@@ -262,12 +262,48 @@ class CSVDetector:
         )
     
     @classmethod
+    def _find_header_offset(cls, csv_path: str) -> int:
+        """
+        Encuentra el número de líneas a saltar antes del header real.
+        Busca una línea que contenga columnas conocidas.
+        """
+        max_scan_lines = 20
+        # Columnas muy comunes que seguro están en el header
+        target_cols = {'carrera', 'caballo', 'ejemplar', 'jinete', 'peso', 'distancia', 'premio'}
+        
+        try:
+            with open(csv_path, 'r', encoding='utf-8', errors='replace') as f:
+                for i in range(max_scan_lines):
+                    line = f.readline()
+                    if not line:
+                        break
+                    
+                    # Convertir a minúsculas y buscar palabras clave
+                    line_lower = line.lower()
+                    
+                    # Contar cuántas palabras clave aparecen
+                    matches = sum(1 for col in target_cols if col in line_lower)
+                    
+                    # Si encontramos al menos 3 coincidencias, asumimos que es el header
+                    if matches >= 3:
+                        logger.info(f"📍 Header detectado en línea {i+1} (skiprows={i})")
+                        return i
+                        
+        except Exception as e:
+            logger.warning(f"⚠️ Error buscando header offset: {e}")
+            
+        return 0
+
+    @classmethod
     def _detect_by_columns(cls, csv_path: str, original: str) -> CSVDetectionResult:
         """Detecta tipo analizando las columnas del CSV."""
         
         try:
+            # Encontrar offset primero
+            skiprows = cls._find_header_offset(csv_path)
+            
             # Detectar separador automáticamente
-            df = pd.read_csv(csv_path, nrows=5, sep=None, engine='python')
+            df = pd.read_csv(csv_path, nrows=5, sep=None, engine='python', skiprows=skiprows)
             columns_lower = set(col.lower().strip() for col in df.columns)
             
             # Contar columnas únicas de cada tipo
@@ -534,9 +570,10 @@ def process_csv_auto(csv_path: str) -> Tuple[pd.DataFrame, CSVDetectionResult]:
             f"Nombres esperados: PROGRAMA_CHC_FECHA.csv o resul_hc_FECHA.csv"
         )
     
-    # 2. Leer CSV con detección automática de separador
-    df = pd.read_csv(csv_path, sep=None, engine='python')
-    logger.info(f"📄 Leídas {len(df)} filas de {path.name}")
+    # 2. Leer CSV con detección automática de separador y offset
+    skiprows = CSVDetector._find_header_offset(csv_path)
+    df = pd.read_csv(csv_path, sep=None, engine='python', skiprows=skiprows)
+    logger.info(f"📄 Leídas {len(df)} filas de {path.name} (skiprows={skiprows})")
     
     # 3. Mapear columnas
     df_mapped = CSVMapper.map_dataframe(df, detection.csv_type, detection)

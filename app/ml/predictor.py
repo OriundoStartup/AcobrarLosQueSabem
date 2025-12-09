@@ -35,7 +35,7 @@ import logging
 import warnings
 import joblib
 from pathlib import Path
-from datetime import datetime, timedelta
+from datetime import datetime, timedelta, date
 from typing import Dict, List, Optional, Tuple, Any
 from dataclasses import dataclass, field
 from collections import Counter
@@ -321,7 +321,7 @@ class FeatureEngineer:
         LEFT JOIN agg_combo_caballo_jinete acj ON fp.caballo_id = acj.caballo_id 
             AND fp.jinete_id = acj.jinete_id
         WHERE fp.resultado_final IS NULL
-            AND fc.fecha >= date('now', '-7 days')
+            AND fc.fecha >= date('now', '-30 days')
         ORDER BY fc.fecha, fc.nro_carrera, fp.partidor
         """
     
@@ -362,7 +362,7 @@ class FeatureEngineer:
         JOIN dim_caballos dc ON fp.caballo_id = dc.id
         LEFT JOIN dim_jinetes dj ON fp.jinete_id = dj.id
         WHERE fp.resultado_final IS NULL
-            AND fc.fecha >= date('now', '-7 days')
+            AND fc.fecha >= date('now', '-30 days')
         ORDER BY fc.fecha, fc.nro_carrera, fp.partidor
         """
     
@@ -864,7 +864,16 @@ class RacePredictor:
         
         # 1. CSV simple
         rows = []
-        for pred in predictions:
+        today = date.today()
+        
+        filtered_predictions = [
+            p for p in predictions 
+            if datetime.strptime(p.fecha, "%Y-%m-%d").date() >= today
+        ]
+        
+        logger.info(f"🔍 Filtrando predicciones: {len(predictions)} total -> {len(filtered_predictions)} futuras")
+        
+        for pred in filtered_predictions:
             for p in pred.predicciones:
                 rows.append({
                     'fecha': pred.fecha,
@@ -899,7 +908,7 @@ class RacePredictor:
                     "top4": p.top4_predicho,
                     "predicciones": p.predicciones
                 }
-                for p in predictions
+                for p in filtered_predictions
             ],
             "patrones": patterns or {}
         }
