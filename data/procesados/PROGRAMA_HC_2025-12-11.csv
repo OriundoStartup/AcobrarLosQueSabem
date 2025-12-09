@@ -1,0 +1,286 @@
+Carrera,Hora,Nombre,Distancia,Tipo,Pista,Bolsa_Total,Premio_1,Premio_2,Premio_3,Premio_4,Numero,Ejemplar,Padrillo,Edad,Peso,Jinete,Preparador
+1,12:30,Primer Deseo,1000m,Handicap 8-1,Arena,2619500,1690000,473200,304200,152100,1,Tia Marta,Viscount Nelson,5,55,Nicolás Santibañez,Juan Ubilla P.
+1,12:30,Primer Deseo,1000m,Handicap 8-1,Arena,2619500,1690000,473200,304200,152100,2,Alinfinitoymasalla,Business Bay,4,55,Rodolfo Fuenzalida,Ricardo Rojas S.
+1,12:30,Primer Deseo,1000m,Handicap 8-1,Arena,2619500,1690000,473200,304200,152100,3,Palabras Serenas,California Chrome,6,56,Sebastián Muñoz,Luis Machulas G.
+1,12:30,Primer Deseo,1000m,Handicap 8-1,Arena,2619500,1690000,473200,304200,152100,4,Vicaria Amelia,California Chrome,6,55,Jaime A. Miño,Mario A. Apablaza G.
+1,12:30,Primer Deseo,1000m,Handicap 8-1,Arena,2619500,1690000,473200,304200,152100,5,Bonita Flor,Awesome Patriot,5,55,Cathrine Weilby,Juan Ubilla P.
+1,12:30,Primer Deseo,1000m,Handicap 8-1,Arena,2619500,1690000,473200,304200,152100,6,Su Merci,Sumerio,4,55,Ariel Zúñiga,Daniel Contreras A.
+1,12:30,Primer Deseo,1000m,Handicap 8-1,Arena,2619500,1690000,473200,304200,152100,7,Juntitos Siempre,Grand Daddy,4,54,Jorge Vera,Rodrigo López B.
+1,12:30,Primer Deseo,1000m,Handicap 8-1,Arena,2619500,1690000,473200,304200,152100,8,Beautiful Moon,Exaggerator,4,54,Axel Alvarez,Jaime Hirmas R.
+1,12:30,Primer Deseo,1000m,Handicap 8-1,Arena,2619500,1690000,473200,304200,152100,9,Kirsch Royal,Leading The Parade,11,57,Boris González,Mario Covarrubias
+1,12:30,Primer Deseo,1000m,Handicap 8-1,Arena,2619500,1690000,473200,304200,152100,10,Pop Vision,Court Vision,8,55,Nicolás Molina,Walter Biava R.
+1,12:30,Primer Deseo,1000m,Handicap 8-1,Arena,2619500,1690000,473200,304200,152100,11,Queen Any,Cloud Computing,5,59,Benjamin Sancho,Raúl Montesino S.
+1,12:30,Primer Deseo,1000m,Handicap 8-1,Arena,2619500,1690000,473200,304200,152100,12,Indy Jets,Get Jets,4,55,Lesly C. González,Rodrigo Muñoz M.
+1,12:30,Primer Deseo,1000m,Handicap 8-1,Arena,2619500,1690000,473200,304200,152100,13,Thotho,Stay Thirsty,9,55,Wilbert León,Mario Covarrubias
+1,12:30,Primer Deseo,1000m,Handicap 8-1,Arena,2619500,1690000,473200,304200,152100,14,Vine Vide Vinci,Tumblebrutus,11,55,Diego Carvacho,Rodrigo Quiroz S.
+1,12:30,Primer Deseo,1000m,Handicap 8-1,Arena,2619500,1690000,473200,304200,152100,15,Roman War,War Command,9,55,J. Villagran,Genaro J. Covarrubias E.
+2,12:55,Pripol,1200m,Condicional m3ap,Arena,3150000,2250000,472500,270000,157500,1,Minden,Get Jets,3,57,Benjamin Troncoso,Aldo Castagneto U.
+2,12:55,Pripol,1200m,Condicional m3ap,Arena,3150000,2250000,472500,270000,157500,2,Dos Locos,Grand Daddy,3,57,Rodolfo Fuenzalida,José Allende F.
+2,12:55,Pripol,1200m,Condicional m3ap,Arena,3150000,2250000,472500,270000,157500,3,Cual Es Tu Ley,Good Samaritan,3,57,Rodolfo S. Dores,Luis Machulas G.
+2,12:55,Pripol,1200m,Condicional m3ap,Arena,3150000,2250000,472500,270000,157500,4,No Me Dice Nada,Dangerous Midge,3,57,Gerard Rodríguez,Claudio Bernal G.
+2,12:55,Pripol,1200m,Condicional m3ap,Arena,3150000,2250000,472500,270000,157500,5,El Lubrishell,International Star,3,57,Georgee Givovich,Juan Rodriguez R.
+2,12:55,Pripol,1200m,Condicional m3ap,Arena,3150000,2250000,472500,270000,157500,6,Indian Blitz,Indian Trail,3,57,Ronald Fournet,Oscar Donate S.
+2,12:55,Pripol,1200m,Condicional m3ap,Arena,3150000,2250000,472500,270000,157500,7,The Lyon Blue,Shampoo Silver,3,57,Boris González,Eugenio Switt V.
+2,12:55,Pripol,1200m,Condicional m3ap,Arena,3150000,2250000,472500,270000,157500,8,Rey Olimpus,Del Pacifico,3,57,Fabian Medina,Oscar Donate S.
+2,12:55,Pripol,1200m,Condicional m3ap,Arena,3150000,2250000,472500,270000,157500,9,Bruno Spiderman,Robert Bruce,3,57,Jaime Medina,Rodrigo Sánchez Q.
+2,12:55,Pripol,1200m,Condicional m3ap,Arena,3150000,2250000,472500,270000,157500,10,Gran Taita,Grand Daddy,3,57,Nicolás Santibañez,Luis Urbina H.
+2,12:55,Pripol,1200m,Condicional m3ap,Arena,3150000,2250000,472500,270000,157500,11,Big Carboncillo,Gran Carboncillo,3,57,Agustin Villagra,Raúl Montesino S.
+2,12:55,Pripol,1200m,Condicional m3ap,Arena,3150000,2250000,472500,270000,157500,12,El Orador,Spun to Run,3,57,Nicolás Molina,Claudio Bernal G.
+2,12:55,Pripol,1200m,Condicional m3ap,Arena,3150000,2250000,472500,270000,157500,13,Je Suis Pret,Mendelssohn,3,57,Axel Alvarez,Mario Covarrubias
+2,12:55,Pripol,1200m,Condicional m3ap,Arena,3150000,2250000,472500,270000,157500,14,Pedernales,Bad Daddy,3,57,Felipe Henríquez,Manuel Norambuena Ch.
+2,12:55,Pripol,1200m,Condicional m3ap,Arena,3150000,2250000,472500,270000,157500,15,Grand Lucho,Grand Daddy,3,57,Jorge Vera,Hernán Pacheco P.
+3,13:20,Piduco,1200m,Condicional m3ap,Arena,4340000,3100000,651000,372000,217000,1,Por Fortuna,Spun to Run,3,57,Jaime Medina,Juan Pablo Baeza J.
+3,13:20,Piduco,1200m,Condicional m3ap,Arena,4340000,3100000,651000,372000,217000,2,Los Bisnietos,Constitution,3,57,Rafael Cisternas,Julio Orellana R.
+3,13:20,Piduco,1200m,Condicional m3ap,Arena,4340000,3100000,651000,372000,217000,3,Guachaca,Robert Bruce,3,57,Mauricio Galáz,Daniel Contreras A.
+3,13:20,Piduco,1200m,Condicional m3ap,Arena,4340000,3100000,651000,372000,217000,4,Portodos,Porto Fino,3,57,Patricio Galáz,Harrison Adonis B.
+3,13:20,Piduco,1200m,Condicional m3ap,Arena,4340000,3100000,651000,372000,217000,5,Macallan,Spun to Run,3,57,Benjamin Troncoso,Alejandro Padovani E.
+3,13:20,Piduco,1200m,Condicional m3ap,Arena,4340000,3100000,651000,372000,217000,6,Muy Admirado,Admiral,3,57,Rodolfo Fuenzalida,Joao Castillo L.
+3,13:20,Piduco,1200m,Condicional m3ap,Arena,4340000,3100000,651000,372000,217000,7,Todos Mienten,Katmai,3,57,Fabian Medina,Julio Castillo D.
+3,13:20,Piduco,1200m,Condicional m3ap,Arena,4340000,3100000,651000,372000,217000,8,Teatro Griego,Viscount Nelson,3,57,David Sánchez,Alberto Aviles L.
+3,13:20,Piduco,1200m,Condicional m3ap,Arena,4340000,3100000,651000,372000,217000,9,Aston,Ivan Denisovich,3,57,Juan Soto,Rodrigo Muñoz M.
+3,13:20,Piduco,1200m,Condicional m3ap,Arena,4340000,3100000,651000,372000,217000,10,Murcott,Lookin At Lucky,3,57,Joaquín Herrera,Andrés Bernal G.
+3,13:20,Piduco,1200m,Condicional m3ap,Arena,4340000,3100000,651000,372000,217000,11,Al Contado,Classic Empire,3,57,Ignacio Valdivia,Pedro Diaz S.
+3,13:20,Piduco,1200m,Condicional m3ap,Arena,4340000,3100000,651000,372000,217000,12,Miguel Angel Nomas,Dubai Sky,3,57,Benjamin Sancho,Rodrigo Quiroz S.
+3,13:20,Piduco,1200m,Condicional m3ap,Arena,4340000,3100000,651000,372000,217000,13,Pelao Pelao,Patternrecognition,3,57,Ariel Zúñiga,Pedro Molina I.
+3,13:20,Piduco,1200m,Condicional m3ap,Arena,4340000,3100000,651000,372000,217000,14,Seven Points,Dubai Sky,3,57,Darien Cheuque,Rodrigo Quiroz S.
+4,13:46,Pampino,1000m,Handicap 6-1,Arena,2433500,1570000,439600,282600,141300,1,Que Hice Mal,International Star,3,56,Lesly C. González,Jaime Hirmas R.
+4,13:46,Pampino,1000m,Handicap 6-1,Arena,2433500,1570000,439600,282600,141300,2,Dimitra,Grand Daddy,4,56,Wladimir Quinteros,Rodrigo Muñoz M.
+4,13:46,Pampino,1000m,Handicap 6-1,Arena,2433500,1570000,439600,282600,141300,3,Bhadrak,Newfoundland,4,56,Cathrine Weilby,José Bravo M.
+4,13:46,Pampino,1000m,Handicap 6-1,Arena,2433500,1570000,439600,282600,141300,4,Rucia De Oro,Get Jets,4,56,Jesus Toro,Juan C. Pichara J.
+4,13:46,Pampino,1000m,Handicap 6-1,Arena,2433500,1570000,439600,282600,141300,5,Gran Lalito,International Star,4,56,Gustavo Aros,Juan C. Pichara J.
+4,13:46,Pampino,1000m,Handicap 6-1,Arena,2433500,1570000,439600,282600,141300,6,Palabra Cierta,Gemologist,7,56,Rodolfo S. Dores,Rodrigo Quiroz S.
+4,13:46,Pampino,1000m,Handicap 6-1,Arena,2433500,1570000,439600,282600,141300,7,Temporal De Amor,Grand Daddy,5,56,Nicolás Santibañez,Eduardo Lab R.
+4,13:46,Pampino,1000m,Handicap 6-1,Arena,2433500,1570000,439600,282600,141300,8,Satisfy My Soul,Sumerio,4,56,Nicolás Molina,Luis Toledo C.
+4,13:46,Pampino,1000m,Handicap 6-1,Arena,2433500,1570000,439600,282600,141300,9,Mamita Pinina,Distorted Economy,4,59,Fabian Medina,Daniel Contreras A.
+4,13:46,Pampino,1000m,Handicap 6-1,Arena,2433500,1570000,439600,282600,141300,10,La Carrera Corria,Patternrecognition,4,56,Ariel Zúñiga,Pedro Molina I.
+4,13:46,Pampino,1000m,Handicap 6-1,Arena,2433500,1570000,439600,282600,141300,11,Western Film,Annual Report,6,59,Marcelo Cordero,Eduardo Lab R.
+4,13:46,Pampino,1000m,Handicap 6-1,Arena,2433500,1570000,439600,282600,141300,12,Infinito Viaje,Viscount Nelson,4,56,Rodolfo Fuenzalida,Eugenio Switt V.
+4,13:46,Pampino,1000m,Handicap 6-1,Arena,2433500,1570000,439600,282600,141300,13,Primer Otrosi,Mendelssohn,4,56,Ronald Fournet,Hernán Pacheco P.
+4,13:46,Pampino,1000m,Handicap 6-1,Arena,2433500,1570000,439600,282600,141300,14,Salma Alegre,Gstaad II,6,56,Gerard Rodríguez,Eugenio Switt V.
+4,13:46,Pampino,1000m,Handicap 6-1,Arena,2433500,1570000,439600,282600,141300,15,Mangino,No Nay Never,9,56,David Sánchez,Alberto Aviles L.
+5,14:11,Pillo Pal Baile,1000m,Handicap 11-5,Arena,2619500,1690000,473200,304200,152100,1,Lady Chrome,California Chrome,6,54,David Sánchez,Hernán Pacheco P.
+5,14:11,Pillo Pal Baile,1000m,Handicap 11-5,Arena,2619500,1690000,473200,304200,152100,2,Ponle Toby,El Distinto,5,55,Joaquín Herrera,Rafael Bernal G.
+5,14:11,Pillo Pal Baile,1000m,Handicap 11-5,Arena,2619500,1690000,473200,304200,152100,3,Casper Inn,Dylan Thomas,4,55,Sebastián Muñoz,Luis Machulas G.
+5,14:11,Pillo Pal Baile,1000m,Handicap 11-5,Arena,2619500,1690000,473200,304200,152100,4,Tangerine Tango,Constitution,5,54,Felipe Moreno,Harrison Adonis B.
+5,14:11,Pillo Pal Baile,1000m,Handicap 11-5,Arena,2619500,1690000,473200,304200,152100,5,Silvestrin,Daddy Long Legs,10,55,Jaime A. Miño,Mario A. Apablaza G.
+5,14:11,Pillo Pal Baile,1000m,Handicap 11-5,Arena,2619500,1690000,473200,304200,152100,6,Black Kingly,Kingly,3,54,Gerard Rodríguez,Genaro J. Covarrubias E.
+5,14:11,Pillo Pal Baile,1000m,Handicap 11-5,Arena,2619500,1690000,473200,304200,152100,7,La Nortiña,Viscount Nelson,7,53,Héctor Barrera,Rafael Quiroz F.
+5,14:11,Pillo Pal Baile,1000m,Handicap 11-5,Arena,2619500,1690000,473200,304200,152100,8,Guanaquero,Seeking The Dia,10,53,C. Bustos,Eduardo Lab R.
+5,14:11,Pillo Pal Baile,1000m,Handicap 11-5,Arena,2619500,1690000,473200,304200,152100,9,Costamia,Fortify,6,56,Rodrigo Painen,Maritza Pérez A.
+5,14:11,Pillo Pal Baile,1000m,Handicap 11-5,Arena,2619500,1690000,473200,304200,152100,10,Azra,Good Samaritan,4,54,Rafael Cisternas,Eduardo Lab R.
+5,14:11,Pillo Pal Baile,1000m,Handicap 11-5,Arena,2619500,1690000,473200,304200,152100,11,Callahan,Viscount Nelson,6,58,Cathrine Weilby,Genaro J. Covarrubias E.
+5,14:11,Pillo Pal Baile,1000m,Handicap 11-5,Arena,2619500,1690000,473200,304200,152100,12,Valio La Pena,Katmai,4,55,Jaime Medina,Raúl Montesino S.
+5,14:11,Pillo Pal Baile,1000m,Handicap 11-5,Arena,2619500,1690000,473200,304200,152100,13,Carilo,Treasure Beach,4,54,Miguel Gutiérrez,Rafael Bernal G.
+6,14:36,Puerto Colon,1000m,Handicap 7-1,Arena,2433500,1570000,439600,282600,141300,1,Mano De Bronce,Cunco,6,56,Patricio Galáz,Mario A. Apablaza G.
+6,14:36,Puerto Colon,1000m,Handicap 7-1,Arena,2433500,1570000,439600,282600,141300,2,Bebetian,Masqat,7,56,Benjamin Ayala,Jaime Hirmas R.
+6,14:36,Puerto Colon,1000m,Handicap 7-1,Arena,2433500,1570000,439600,282600,141300,3,Alajja,Indian Trail,5,56,José Cueto,Juan Aravena M.
+6,14:36,Puerto Colon,1000m,Handicap 7-1,Arena,2433500,1570000,439600,282600,141300,4,Mi Sueño Secreto,Get Jets,4,56,Ariel Zúñiga,Leopoldo Parra G.
+6,14:36,Puerto Colon,1000m,Handicap 7-1,Arena,2433500,1570000,439600,282600,141300,5,Carita De Culpable,Iron Clad,4,56,Mauricio Galáz,Ricardo Rojas S.
+6,14:36,Puerto Colon,1000m,Handicap 7-1,Arena,2433500,1570000,439600,282600,141300,6,King Corleone,Timojin,9,56,David Sánchez,Cristian Quiroz E.
+6,14:36,Puerto Colon,1000m,Handicap 7-1,Arena,2433500,1570000,439600,282600,141300,7,Zigeuner,Ivan Denisovich,6,56,Jaime A. Miño,Mario Covarrubias
+6,14:36,Puerto Colon,1000m,Handicap 7-1,Arena,2433500,1570000,439600,282600,141300,8,Señorita Jerico,Masqat,7,56,Luis D. Menghini,Jaime Hirmas R.
+6,14:36,Puerto Colon,1000m,Handicap 7-1,Arena,2433500,1570000,439600,282600,141300,9,El Gran Tornado,Newfoundland,8,58,Nicolás Molina,Mario A. Apablaza G.
+6,14:36,Puerto Colon,1000m,Handicap 7-1,Arena,2433500,1570000,439600,282600,141300,10,Keep Dreaming,Hiraboku Deep,4,56,Georgee Givovich,Ricardo Rojas S.
+6,14:36,Puerto Colon,1000m,Handicap 7-1,Arena,2433500,1570000,439600,282600,141300,11,Vasca Brava,International Star,4,60,Wilbert León,Jaime Espineira C.
+6,14:36,Puerto Colon,1000m,Handicap 7-1,Arena,2433500,1570000,439600,282600,141300,12,Chilly Willy,Stevie Wonderboy,6,56,Benjamin Sancho,Rodrigo Quiroz S.
+6,14:36,Puerto Colon,1000m,Handicap 7-1,Arena,2433500,1570000,439600,282600,141300,13,Manchita Del ñuble,Admiral,5,56,Rodolfo Fuenzalida,Carlos Melero F.
+6,14:36,Puerto Colon,1000m,Handicap 7-1,Arena,2433500,1570000,439600,282600,141300,14,Sahara Chrome,California Chrome,6,56,Roberto Araya,Eugenio Switt V.
+7,15:02,Porteno Bravo,1000m,Handicap 10-2,Arena,2619500,1690000,473200,304200,152100,1,Rosa La Vasca,Van Nistelrooy,7,55,Georgee Givovich,Rafael Bernal G.
+7,15:02,Porteno Bravo,1000m,Handicap 10-2,Arena,2619500,1690000,473200,304200,152100,2,Shot For Me,Distorted Economy,6,56,Jaime A. Miño,Walter Biava R.
+7,15:02,Porteno Bravo,1000m,Handicap 10-2,Arena,2619500,1690000,473200,304200,152100,3,Mal Mirada,Il Rey Ivan,4,56,Rafael Cisternas,Jaime Espineira C.
+7,15:02,Porteno Bravo,1000m,Handicap 10-2,Arena,2619500,1690000,473200,304200,152100,4,La Soñe,Midshipman,6,54,Lesly C. González,Genaro J. Covarrubias E.
+7,15:02,Porteno Bravo,1000m,Handicap 10-2,Arena,2619500,1690000,473200,304200,152100,5,Vita Kc,Newfoundland,4,56,Benjamin Sancho,Andrés Bernal G.
+7,15:02,Porteno Bravo,1000m,Handicap 10-2,Arena,2619500,1690000,473200,304200,152100,6,Nanverqui,Neko Bay,7,55,Rodrigo Painen,Maritza Pérez A.
+7,15:02,Porteno Bravo,1000m,Handicap 10-2,Arena,2619500,1690000,473200,304200,152100,7,Tata Moncho,Good Samaritan,4,54,Luis D. Menghini,Rodrigo Quiroz S.
+7,15:02,Porteno Bravo,1000m,Handicap 10-2,Arena,2619500,1690000,473200,304200,152100,8,Power Of Horses,Exaggerator,6,54,C. Bustos,Jaime Hirmas R.
+7,15:02,Porteno Bravo,1000m,Handicap 10-2,Arena,2619500,1690000,473200,304200,152100,9,Good Chief,Good Samaritan,4,59,Diego Carvacho,Isaac Michea F.
+7,15:02,Porteno Bravo,1000m,Handicap 10-2,Arena,2619500,1690000,473200,304200,152100,10,Chica De Campeones,Annual Report,5,55,Nicolás Molina,Rodrigo Quiroz S.
+7,15:02,Porteno Bravo,1000m,Handicap 10-2,Arena,2619500,1690000,473200,304200,152100,11,Aragonero,The Lumber Guy,5,60,Jaime Medina,Rodrigo Sánchez Q.
+7,15:02,Porteno Bravo,1000m,Handicap 10-2,Arena,2619500,1690000,473200,304200,152100,12,Betone,Van Nistelrooy,4,55,Cathrine Weilby,Patricio Valderrama C.
+7,15:02,Porteno Bravo,1000m,Handicap 10-2,Arena,2619500,1690000,473200,304200,152100,13,Resiliente Gets,Get Jets,4,55,Patricio Zúñiga,Rodrigo López B.
+7,15:02,Porteno Bravo,1000m,Handicap 10-2,Arena,2619500,1690000,473200,304200,152100,14,Me Veras Caer,Iron Clad,4,54,Ronald Fournet,Julio Castillo D.
+7,15:02,Porteno Bravo,1000m,Handicap 10-2,Arena,2619500,1690000,473200,304200,152100,15,Limitless,Hold Me Back,7,55,Felipe Henríquez,Leopoldo Parra G.
+8,15:27,Puerto Viejo,1000m,Handicap 18-14,Arena,2976000,1920000,537600,345600,172800,1,Koccia,Mendelssohn,4,54,Nicolás Ramirez,Oscar Donate S.
+8,15:27,Puerto Viejo,1000m,Handicap 18-14,Arena,2976000,1920000,537600,345600,172800,2,Gran Fiscal,Grand Daddy,4,55,Ariel Zúñiga,Oscar Donate S.
+8,15:27,Puerto Viejo,1000m,Handicap 18-14,Arena,2976000,1920000,537600,345600,172800,3,Friday,Kingly,3,55,Sebastián González,Rodrigo Quiroz S.
+8,15:27,Puerto Viejo,1000m,Handicap 18-14,Arena,2976000,1920000,537600,345600,172800,4,Lo Franco,Seeking The Dia,5,54,Diego Carvacho,Rodrigo Quiroz S.
+8,15:27,Puerto Viejo,1000m,Handicap 18-14,Arena,2976000,1920000,537600,345600,172800,5,Merengada,Competitive Edge,6,55,Patricio Galáz,Mario A. Apablaza G.
+8,15:27,Puerto Viejo,1000m,Handicap 18-14,Arena,2976000,1920000,537600,345600,172800,6,El Habano,True Cause,6,54,Rodolfo Fuenzalida,Juan C. Pichara J.
+8,15:27,Puerto Viejo,1000m,Handicap 18-14,Arena,2976000,1920000,537600,345600,172800,7,Solo Amigos,Hootenanny,5,54,José Cueto,Alejandro Padovani E.
+8,15:27,Puerto Viejo,1000m,Handicap 18-14,Arena,2976000,1920000,537600,345600,172800,8,Shamrock,Bad Daddy,9,54,Andrés Covarrubias,Julio Castillo D.
+8,15:27,Puerto Viejo,1000m,Handicap 18-14,Arena,2976000,1920000,537600,345600,172800,9,Alba Brava,Kingly,3,55,Benjamin Troncoso,Alejandro Padovani E.
+8,15:27,Puerto Viejo,1000m,Handicap 18-14,Arena,2976000,1920000,537600,345600,172800,10,Socio Manuel,Forward March,5,55,Benjamin Ayala,Luis Machulas G.
+8,15:27,Puerto Viejo,1000m,Handicap 18-14,Arena,2976000,1920000,537600,345600,172800,11,Salto De Luz,Exaggerator,6,58,Gustavo Aros,Rodrigo Muñoz M.
+8,15:27,Puerto Viejo,1000m,Handicap 18-14,Arena,2976000,1920000,537600,345600,172800,12,Petimetre,Competitive Edge,6,55,Carlos Hernández,Rodrigo Pulgar A.
+9,15:51,Republica De Panama,1300m,Clásico h3a+,Arena,5716600,4040000,929200,464600,282800,1,Silene,Classic Empire,4,54,Benjamin Troncoso,Juan C. Pichara J.
+9,15:51,Republica De Panama,1300m,Clásico h3a+,Arena,5716600,4040000,929200,464600,282800,2,Joya Del Litoral,Spun to Run,3,56,Bernardo León,José Allende F.
+9,15:51,Republica De Panama,1300m,Clásico h3a+,Arena,5716600,4040000,929200,464600,282800,3,Indhira,War Command,5,56,Francisco Morales,Ricardo Rojas S.
+9,15:51,Republica De Panama,1300m,Clásico h3a+,Arena,5716600,4040000,929200,464600,282800,4,Odessa,Flyer,3,50,Axel Alvarez,Guillermo Aguirre A.
+9,15:51,Republica De Panama,1300m,Clásico h3a+,Arena,5716600,4040000,929200,464600,282800,5,Quanto Amore Sei,International Star,4,56,Joaquín Herrera,José Alvarez D.
+9,15:51,Republica De Panama,1300m,Clásico h3a+,Arena,5716600,4040000,929200,464600,282800,6,That's The Way,Flameaway,3,56,Jaime Medina,Rodrigo Sánchez Q.
+9,15:51,Republica De Panama,1300m,Clásico h3a+,Arena,5716600,4040000,929200,464600,282800,7,Ziervana,Robert Bruce,3,50,Ignacio Valdivia,Hernán E. Ulloa P.
+10,16:18,Picturro,1000m,Handicap 6-3,Arena,2619500,1690000,473200,304200,152100,1,Shayla,Boboman,4,55,Jesus Toro,Juan C. Pichara J.
+10,16:18,Picturro,1000m,Handicap 6-3,Arena,2619500,1690000,473200,304200,152100,2,Yaella,Constitution,5,56,José Villablanca,Eduardo Lab R.
+10,16:18,Picturro,1000m,Handicap 6-3,Arena,2619500,1690000,473200,304200,152100,3,Salud Compadre,Van Nistelrooy,6,56,José Solano,José Venegas P.
+10,16:18,Picturro,1000m,Handicap 6-3,Arena,2619500,1690000,473200,304200,152100,4,Ya Magico,Viscount Nelson,6,55,Wilbert León,Genaro J. Covarrubias E.
+10,16:18,Picturro,1000m,Handicap 6-3,Arena,2619500,1690000,473200,304200,152100,5,El Maripepa,Hold Me Back,6,55,Diego Carrasco,Juan C. Pichara J.
+10,16:18,Picturro,1000m,Handicap 6-3,Arena,2619500,1690000,473200,304200,152100,6,Mitski,Dylan Thomas,5,55,Nicolás Molina,Rodrigo Quiroz S.
+10,16:18,Picturro,1000m,Handicap 6-3,Arena,2619500,1690000,473200,304200,152100,7,Desert Cat,Newfoundland,8,53,Axel Alvarez,Jaime Espineira C.
+10,16:18,Picturro,1000m,Handicap 6-3,Arena,2619500,1690000,473200,304200,152100,8,Lady Bay,Neko Bay,4,54,Andrés Covarrubias,José Lastra B.
+10,16:18,Picturro,1000m,Handicap 6-3,Arena,2619500,1690000,473200,304200,152100,9,Marrakech,El Milagrito,4,56,Cathrine Weilby,Genaro J. Covarrubias E.
+10,16:18,Picturro,1000m,Handicap 6-3,Arena,2619500,1690000,473200,304200,152100,10,Legende,Sweet Sorrel,7,55,Rodolfo Fuenzalida,Ricardo Rojas S.
+10,16:18,Picturro,1000m,Handicap 6-3,Arena,2619500,1690000,473200,304200,152100,11,Irish Nation,Irish Brother,6,56,Patricio Zúñiga,Rodrigo López B.
+10,16:18,Picturro,1000m,Handicap 6-3,Arena,2619500,1690000,473200,304200,152100,12,Fabrana,Seeking The Dia,8,55,Joaquín Herrera,Ricardo Rojas S.
+10,16:18,Picturro,1000m,Handicap 6-3,Arena,2619500,1690000,473200,304200,152100,13,Pailita De Huevo,Patternrecognition,4,55,Diego Carvacho,Rodrigo Quiroz S.
+10,16:18,Picturro,1000m,Handicap 6-3,Arena,2619500,1690000,473200,304200,152100,14,Don't Stop Me Now,Ivan Denisovich,4,54,Jaime A. Miño,Eugenio Switt V.
+11,16:44,Alberto Bunster Iniguez Y Cristian Bunster Del Solar,1600m,Clásico 3a+,Arena,7967000,5140000,1439200,925200,462600,1,Kino,Aragorn II,9,53,Rodolfo S. Dores,Ricardo Rojas S.
+11,16:44,Alberto Bunster Iniguez Y Cristian Bunster Del Solar,1600m,Clásico 3a+,Arena,7967000,5140000,1439200,925200,462600,2,Flagship,Constitution,7,54,Alberto Vásquez,Juan Rodriguez R.
+11,16:44,Alberto Bunster Iniguez Y Cristian Bunster Del Solar,1600m,Clásico 3a+,Arena,7967000,5140000,1439200,925200,462600,3,Latour Cent,Goldencents,6,58,Benjamin Troncoso,Pedro Diaz S.
+11,16:44,Alberto Bunster Iniguez Y Cristian Bunster Del Solar,1600m,Clásico 3a+,Arena,7967000,5140000,1439200,925200,462600,4,Mucho Pique,Katmai,4,53,Axel Alvarez,Guillermo Aguirre A.
+11,16:44,Alberto Bunster Iniguez Y Cristian Bunster Del Solar,1600m,Clásico 3a+,Arena,7967000,5140000,1439200,925200,462600,5,Lerici,Constitution,7,54,Nicolás Ramirez,Oscar Donate S.
+11,16:44,Alberto Bunster Iniguez Y Cristian Bunster Del Solar,1600m,Clásico 3a+,Arena,7967000,5140000,1439200,925200,462600,6,Don Matias,Hinz,6,53,Jesus Toro,Alejandro Padovani E.
+11,16:44,Alberto Bunster Iniguez Y Cristian Bunster Del Solar,1600m,Clásico 3a+,Arena,7967000,5140000,1439200,925200,462600,7,Niño Indomable,Distorted Economy,4,50,Jorge Zúñiga,Cristián Urbina R.
+11,16:44,Alberto Bunster Iniguez Y Cristian Bunster Del Solar,1600m,Clásico 3a+,Arena,7967000,5140000,1439200,925200,462600,8,Referendum Joke,Practical Joke,5,52,Ignacio Valdivia,Juan Pablo Baeza J.
+12,17:11,Puchas Que Soy,1000m,Handicap 22-17,Arena,3487500,2250000,630000,405000,202500,1,El Joker,Grand Daddy,4,54,Sebastián González,Rodrigo Quiroz S.
+12,17:11,Puchas Que Soy,1000m,Handicap 22-17,Arena,3487500,2250000,630000,405000,202500,2,Seattle Snow,Dubai Sky,4,57,Nicolás Ramirez,Raúl Montesino S.
+12,17:11,Puchas Que Soy,1000m,Handicap 22-17,Arena,3487500,2250000,630000,405000,202500,3,Lucianita,Classic Empire,4,57,Alvaro Apablaza,Alejandro Padovani E.
+12,17:11,Puchas Que Soy,1000m,Handicap 22-17,Arena,3487500,2250000,630000,405000,202500,4,IL Tonino,Monthir,3,54,Ignacio Valdivia,Luis Urbina H.
+12,17:11,Puchas Que Soy,1000m,Handicap 22-17,Arena,3487500,2250000,630000,405000,202500,5,Tatuador,Goldencents,6,57,Jaime Medina,Patricio Valderrama C.
+12,17:11,Puchas Que Soy,1000m,Handicap 22-17,Arena,3487500,2250000,630000,405000,202500,6,Pero Pedro,Dylan Thomas,5,56,Georgee Givovich,Juan C. Pichara J.
+12,17:11,Puchas Que Soy,1000m,Handicap 22-17,Arena,3487500,2250000,630000,405000,202500,7,Fast Pattern,Patternrecognition,4,53,Cathrine Weilby,Patricio Valderrama C.
+12,17:11,Puchas Que Soy,1000m,Handicap 22-17,Arena,3487500,2250000,630000,405000,202500,8,Navidad Veloz,Verrazano,7,54,Roberto Avila,Mario Covarrubias
+12,17:11,Puchas Que Soy,1000m,Handicap 22-17,Arena,3487500,2250000,630000,405000,202500,9,Twisted Gem,Gemologist,6,58,José Rodríguez,Oscar Donate S.
+12,17:11,Puchas Que Soy,1000m,Handicap 22-17,Arena,3487500,2250000,630000,405000,202500,10,Geroi,Midshipman,4,56,Benjamin Sancho,Rodrigo Quiroz S.
+12,17:11,Puchas Que Soy,1000m,Handicap 22-17,Arena,3487500,2250000,630000,405000,202500,11,El Pollo Dorado,Good Samaritan,3,58,Gustavo Aros,Alejandro Padovani E.
+12,17:11,Puchas Que Soy,1000m,Handicap 22-17,Arena,3487500,2250000,630000,405000,202500,12,Dayi,Alfonso,3,56,Joaquín Herrera,José Allende F.
+12,17:11,Puchas Que Soy,1000m,Handicap 22-17,Arena,3487500,2250000,630000,405000,202500,13,Puros Cents,Goldencents,6,55,Felipe Henríquez,Claudio Bernal G.
+13,17:39,Personificado,1000m,Handicap 11-9,Arena,2976000,1920000,537600,345600,172800,1,Toxipirina,Monthir,5,55,Rodolfo Fuenzalida,José Lastra B.
+13,17:39,Personificado,1000m,Handicap 11-9,Arena,2976000,1920000,537600,345600,172800,2,Juniper,Distorted Economy,5,55,Jonathan Castillo,Jaime Hirmas R.
+13,17:39,Personificado,1000m,Handicap 11-9,Arena,2976000,1920000,537600,345600,172800,3,Compadre Cristian,Gstaad II,8,55,J. Villagran,Genaro J. Covarrubias E.
+13,17:39,Personificado,1000m,Handicap 11-9,Arena,2976000,1920000,537600,345600,172800,4,Vaquita Loira,Viscount Nelson,5,55,Roberto Avila,Mario Covarrubias
+13,17:39,Personificado,1000m,Handicap 11-9,Arena,2976000,1920000,537600,345600,172800,5,Linda Alma,International Star,3,55,Gerard Rodríguez,Eduardo Lab R.
+13,17:39,Personificado,1000m,Handicap 11-9,Arena,2976000,1920000,537600,345600,172800,6,Sovich,Ivan Denisovich,5,55,Benjamin Ayala,Manuel Norambuena Ch.
+13,17:39,Personificado,1000m,Handicap 11-9,Arena,2976000,1920000,537600,345600,172800,7,Drink's Valley,Stay Thirsty,9,54,Rodolfo S. Dores,Rodrigo Quiroz S.
+13,17:39,Personificado,1000m,Handicap 11-9,Arena,2976000,1920000,537600,345600,172800,8,Bello Encanto,Gstaad II,4,54,Rafael Cisternas,Mario Covarrubias
+13,17:39,Personificado,1000m,Handicap 11-9,Arena,2976000,1920000,537600,345600,172800,9,Lecclerc,Constitution,5,56,Diego Carrasco,Juan C. Pichara J.
+13,17:39,Personificado,1000m,Handicap 11-9,Arena,2976000,1920000,537600,345600,172800,10,Patyta Black,International Star,3,55,Felipe Henríquez,Manuel Norambuena Ch.
+13,17:39,Personificado,1000m,Handicap 11-9,Arena,2976000,1920000,537600,345600,172800,11,Hija Del Mago,Ivan Denisovich,3,56,Piero Reyes,Alejandro Padovani E.
+13,17:39,Personificado,1000m,Handicap 11-9,Arena,2976000,1920000,537600,345600,172800,12,Monkypoc,Gstaad II,6,55,Boris González,Genaro J. Covarrubias E.
+13,17:39,Personificado,1000m,Handicap 11-9,Arena,2976000,1920000,537600,345600,172800,13,Soy Vania,Flyer,3,55,Benjamin Troncoso,Alejandro Padovani E.
+13,17:39,Personificado,1000m,Handicap 11-9,Arena,2976000,1920000,537600,345600,172800,14,Volaste A La Meta,Dylan Thomas,5,55,Ignacio Valdivia,Pedro Diaz S.
+13,17:39,Personificado,1000m,Handicap 11-9,Arena,2976000,1920000,537600,345600,172800,15,Shallow,Verrazano,7,55,Sebastián Muñoz,Luis Machulas G.
+14,18:06,Paturuzu,1600m,Handicap 16-1,Arena,4076500,2630000,736400,473400,236700,1,Paquete Platico,Awesome Patriot,5,52,Lesly C. González,Eugenio Switt V.
+14,18:06,Paturuzu,1600m,Handicap 16-1,Arena,4076500,2630000,736400,473400,236700,2,Mi Mikaela,Exaggerator,4,56,Fabian Medina,Julio Castillo D.
+14,18:06,Paturuzu,1600m,Handicap 16-1,Arena,4076500,2630000,736400,473400,236700,3,Scar,International Star,4,57,Joaquín Herrera,José Alvarez D.
+14,18:06,Paturuzu,1600m,Handicap 16-1,Arena,4076500,2630000,736400,473400,236700,4,Rasheem,Seeking The Dia,7,52,Juan Soto,Isaac Michea F.
+14,18:06,Paturuzu,1600m,Handicap 16-1,Arena,4076500,2630000,736400,473400,236700,5,Molino De Viento,Hinz,4,55,Georgee Givovich,Juan C. Pichara J.
+14,18:06,Paturuzu,1600m,Handicap 16-1,Arena,4076500,2630000,736400,473400,236700,6,Zulthan,Classic Empire,3,55,Wilbert León,Jaime Espineira C.
+14,18:06,Paturuzu,1600m,Handicap 16-1,Arena,4076500,2630000,736400,473400,236700,7,Interception,Ivan Denisovich,7,50,D. Medina,Lauro Pérez A.
+14,18:06,Paturuzu,1600m,Handicap 16-1,Arena,4076500,2630000,736400,473400,236700,8,Peluka,Frank Conversation,4,50,Jesus Toro,Juan C. Pichara J.
+14,18:06,Paturuzu,1600m,Handicap 16-1,Arena,4076500,2630000,736400,473400,236700,9,Persevera Siempre,Bernardini,8,57,Sebastián González,Eugenio Switt V.
+14,18:06,Paturuzu,1600m,Handicap 16-1,Arena,4076500,2630000,736400,473400,236700,10,Sonata Celta,Mo Town,5,55,Miguel Gutiérrez,Rodrigo Quiroz S.
+14,18:06,Paturuzu,1600m,Handicap 16-1,Arena,4076500,2630000,736400,473400,236700,11,Bellafonte,Midshipman,4,60,Luis Torres,Luis Urbina H.
+14,18:06,Paturuzu,1600m,Handicap 16-1,Arena,4076500,2630000,736400,473400,236700,12,Rey Gabriel Andres,Distorted Economy,4,55,Nicolás Ramirez,M. Velarde B.
+14,18:06,Paturuzu,1600m,Handicap 16-1,Arena,4076500,2630000,736400,473400,236700,13,India Terca,Gemologist,8,52,Jaime A. Miño,Eugenio Switt V.
+14,18:06,Paturuzu,1600m,Handicap 16-1,Arena,4076500,2630000,736400,473400,236700,14,Te Diria,Exaggerator,4,51,Héctor Barrera,Julio Castillo D.
+15,18:33,Pobre Juan,1200m,Handicap 39-31,Arena,5006500,3230000,904400,581400,290700,1,Mr Bojangles,Exaggerator,5,51,Ignacio Valdivia,Cristián Urbina R.
+15,18:33,Pobre Juan,1200m,Handicap 39-31,Arena,5006500,3230000,904400,581400,290700,2,Sea Of Gold,Goldencents,6,55,Patricio Zúñiga,Rodrigo López B.
+15,18:33,Pobre Juan,1200m,Handicap 39-31,Arena,5006500,3230000,904400,581400,290700,3,Norte Risueño,Seeking The Dia,5,55,Boris González,Mario Covarrubias
+15,18:33,Pobre Juan,1200m,Handicap 39-31,Arena,5006500,3230000,904400,581400,290700,4,Negro Vlady,California One,5,51,Wilbert León,Luis Urbina H.
+15,18:33,Pobre Juan,1200m,Handicap 39-31,Arena,5006500,3230000,904400,581400,290700,5,Rio Serrano,Constitution,5,54,Jaime Medina,Juan Pablo Baeza J.
+15,18:33,Pobre Juan,1200m,Handicap 39-31,Arena,5006500,3230000,904400,581400,290700,6,Luz Oculta,Mendelssohn,4,52,Roberto Avila,Mario Covarrubias
+15,18:33,Pobre Juan,1200m,Handicap 39-31,Arena,5006500,3230000,904400,581400,290700,7,Sugar Light,Hiraboku Deep,4,50,Axel Alvarez,Claudio Bernal G.
+15,18:33,Pobre Juan,1200m,Handicap 39-31,Arena,5006500,3230000,904400,581400,290700,8,Soy Bushido,Midshipman,6,50,Jesus Toro,Alejandro Padovani E.
+15,18:33,Pobre Juan,1200m,Handicap 39-31,Arena,5006500,3230000,904400,581400,290700,9,Jerezano,Ivan Denisovich,6,55,Rodolfo S. Dores,Pedro Diaz S.
+15,18:33,Pobre Juan,1200m,Handicap 39-31,Arena,5006500,3230000,904400,581400,290700,10,Ventidue,Mendelssohn,4,53,Joaquín Herrera,Rodrigo Sánchez Q.
+15,18:33,Pobre Juan,1200m,Handicap 39-31,Arena,5006500,3230000,904400,581400,290700,11,El Batey,Gran Villano,6,58,Gustavo Aros,Rodrigo López B.
+15,18:33,Pobre Juan,1200m,Handicap 39-31,Arena,5006500,3230000,904400,581400,290700,12,Guena Petete,Layman,4,53,Héctor Barrera,Eduardo Lab R.
+15,18:33,Pobre Juan,1200m,Handicap 39-31,Arena,5006500,3230000,904400,581400,290700,13,Indian Pirate,Indian Trail,3,51,Alberto Vásquez,Oscar Donate S.
+16,19:03,Pase Adelante,1000m,Handicap 13-10,Arena,2976000,1920000,537600,345600,172800,1,Hengroen,Dylan Thomas,4,55,Benjamin Ayala,Luis Machulas G.
+16,19:03,Pase Adelante,1000m,Handicap 13-10,Arena,2976000,1920000,537600,345600,172800,2,Prodigio De Amar,Lookin At Lucky,3,56,Gustavo Aros,Alejandro Padovani E.
+16,19:03,Pase Adelante,1000m,Handicap 13-10,Arena,2976000,1920000,537600,345600,172800,3,Famosa Luz,Midshipman,4,56,Wilbert León,Genaro J. Covarrubias E.
+16,19:03,Pase Adelante,1000m,Handicap 13-10,Arena,2976000,1920000,537600,345600,172800,4,India Maulina,Awesome Patriot,4,55,Rodolfo S. Dores,Jaime Hirmas R.
+16,19:03,Pase Adelante,1000m,Handicap 13-10,Arena,2976000,1920000,537600,345600,172800,5,Reina Margaret,Flyer,3,56,Joaquín Herrera,Eduardo Lab R.
+16,19:03,Pase Adelante,1000m,Handicap 13-10,Arena,2976000,1920000,537600,345600,172800,6,Giorgio Eloriginal,California One,3,55,Fabian Medina,Juan C. Pichara J.
+16,19:03,Pase Adelante,1000m,Handicap 13-10,Arena,2976000,1920000,537600,345600,172800,7,Top Model,Mo Town,5,54,Felipe Moreno,José Venegas P.
+16,19:03,Pase Adelante,1000m,Handicap 13-10,Arena,2976000,1920000,537600,345600,172800,8,Maria Pascuala,Gemologist,6,55,Benjamin Sancho,Rodrigo Quiroz S.
+16,19:03,Pase Adelante,1000m,Handicap 13-10,Arena,2976000,1920000,537600,345600,172800,9,Doña Shishi,Midshipman,6,56,Nicolás Molina,Rodrigo Quiroz S.
+16,19:03,Pase Adelante,1000m,Handicap 13-10,Arena,2976000,1920000,537600,345600,172800,10,Tommy Wonder,Aragorn II,11,56,Georgee Givovich,Aldo Castagneto U.
+16,19:03,Pase Adelante,1000m,Handicap 13-10,Arena,2976000,1920000,537600,345600,172800,11,El Gran Menotti,Hold Me Back,6,57,Héctor Barrera,Rodrigo Quiroz S.
+16,19:03,Pase Adelante,1000m,Handicap 13-10,Arena,2976000,1920000,537600,345600,172800,12,Terrible Bruno,Ya Primo,3,56,Axel Alvarez,Juan C. Pichara J.
+16,19:03,Pase Adelante,1000m,Handicap 13-10,Arena,2976000,1920000,537600,345600,172800,13,Good Terry,Good Samaritan,4,55,Rodolfo Fuenzalida,Juan C. Pichara J.
+16,19:03,Pase Adelante,1000m,Handicap 13-10,Arena,2976000,1920000,537600,345600,172800,14,La Instrumentista,Exaggerator,5,55,Roberto Avila,Isaac Michea F.
+16,19:03,Pase Adelante,1000m,Handicap 13-10,Arena,2976000,1920000,537600,345600,172800,15,Amani's Humor,Timojin,3,55,Nicolás Ramirez,Marco Pavez O.
+17,19:31,Picaro Picaron,1000m,Handicap 10-7,Arena,2619500,1690000,473200,304200,152100,1,Lexus,Katmai,6,55,Nicolás Ramirez,Rodrigo Pulgar A.
+17,19:31,Picaro Picaron,1000m,Handicap 10-7,Arena,2619500,1690000,473200,304200,152100,2,Apuky,Grand Daddy,5,55,Boris González,Genaro J. Covarrubias E.
+17,19:31,Picaro Picaron,1000m,Handicap 10-7,Arena,2619500,1690000,473200,304200,152100,3,Ya Lo Creo,Hootenanny,5,56,Gustavo Aros,Julio Castillo D.
+17,19:31,Picaro Picaron,1000m,Handicap 10-7,Arena,2619500,1690000,473200,304200,152100,4,Sasuke,Hold Me Back,5,55,Diego Carrasco,Juan C. Pichara J.
+17,19:31,Picaro Picaron,1000m,Handicap 10-7,Arena,2619500,1690000,473200,304200,152100,5,Ayusa,Gstaad II,5,55,Benjamin Ayala,Enrique M. Becar B.
+17,19:31,Picaro Picaron,1000m,Handicap 10-7,Arena,2619500,1690000,473200,304200,152100,6,Fetlock Joint,Zawraq,5,55,Fabian Medina,Mario A. Apablaza G.
+17,19:31,Picaro Picaron,1000m,Handicap 10-7,Arena,2619500,1690000,473200,304200,152100,7,Tren a Cajon,Dylan Thomas,5,54,Jorge Vera,Rodrigo López B.
+17,19:31,Picaro Picaron,1000m,Handicap 10-7,Arena,2619500,1690000,473200,304200,152100,8,La Flower,Iron Clad,7,54,David Sánchez,Hernán Pacheco P.
+17,19:31,Picaro Picaron,1000m,Handicap 10-7,Arena,2619500,1690000,473200,304200,152100,9,Di Alba,Ivan Denisovich,4,56,Gerard Rodríguez,Genaro J. Covarrubias E.
+17,19:31,Picaro Picaron,1000m,Handicap 10-7,Arena,2619500,1690000,473200,304200,152100,10,Cuatro De Copas,Dylan Thomas,4,55,Joaquín Herrera,José Bravo M.
+17,19:31,Picaro Picaron,1000m,Handicap 10-7,Arena,2619500,1690000,473200,304200,152100,11,Merkel,Grand Daddy,6,57,Diego Carvacho,Rodrigo Quiroz S.
+17,19:31,Picaro Picaron,1000m,Handicap 10-7,Arena,2619500,1690000,473200,304200,152100,12,Cachorrita Mia,Long River,5,55,Nelson Rojas,Patricio Valderrama C.
+17,19:31,Picaro Picaron,1000m,Handicap 10-7,Arena,2619500,1690000,473200,304200,152100,13,Gaelia,State Of Play,4,55,Nicolás Santibañez,Eduardo Lab R.
+17,19:31,Picaro Picaron,1000m,Handicap 10-7,Arena,2619500,1690000,473200,304200,152100,14,Sir Caleb,Business Bay,5,55,Ariel Zúñiga,Ricardo Rojas S.
+17,19:31,Picaro Picaron,1000m,Handicap 10-7,Arena,2619500,1690000,473200,304200,152100,15,Enviado Especial,Bad Daddy,7,55,Nicolás Molina,Pedro Molina I.
+18,19:59,Parrandeo,1000m,Handicap 20-12,Arena,2976000,1920000,537600,345600,172800,1,Tetra Goleador Z,Dubai Sky,3,55,Rafael Cisternas,Oscar Donate S.
+18,19:59,Parrandeo,1000m,Handicap 20-12,Arena,2976000,1920000,537600,345600,172800,2,Elegant Katze,Good Samaritan,5,55,Miguel Gutiérrez,Claudio Bernal G.
+18,19:59,Parrandeo,1000m,Handicap 20-12,Arena,2976000,1920000,537600,345600,172800,3,Miel Rubia,Newfoundland,3,56,Gustavo Aros,Juan C. Pichara J.
+18,19:59,Parrandeo,1000m,Handicap 20-12,Arena,2976000,1920000,537600,345600,172800,4,Todos Cantan,Spun to Run,3,55,Benjamin Troncoso,Alejandro Padovani E.
+18,19:59,Parrandeo,1000m,Handicap 20-12,Arena,2976000,1920000,537600,345600,172800,5,Fashion Boy,Ya Primo,3,55,Nicolás Ramirez,Juan C. Pichara J.
+18,19:59,Parrandeo,1000m,Handicap 20-12,Arena,2976000,1920000,537600,345600,172800,6,No Me Pilla,Seeking The Dia,7,55,Sebastián González,Rodrigo Quiroz S.
+18,19:59,Parrandeo,1000m,Handicap 20-12,Arena,2976000,1920000,537600,345600,172800,7,Chiquito Campeador,Midshipman,4,53,Joaquín Herrera,Rafael Bernal G.
+18,19:59,Parrandeo,1000m,Handicap 20-12,Arena,2976000,1920000,537600,345600,172800,8,Show Paint,Show Card,4,54,Wladimir Quinteros,Eugenio Switt V.
+18,19:59,Parrandeo,1000m,Handicap 20-12,Arena,2976000,1920000,537600,345600,172800,9,Chica De La Palma,Rydilluc,3,56,Nicolás Santibañez,Julio Castillo D.
+18,19:59,Parrandeo,1000m,Handicap 20-12,Arena,2976000,1920000,537600,345600,172800,10,Nieto Español,Spun to Run,3,55,Gerard Rodríguez,Eduardo Lab R.
+18,19:59,Parrandeo,1000m,Handicap 20-12,Arena,2976000,1920000,537600,345600,172800,11,Con Zeus,Distorted Economy,5,59,Jaime Medina,Rodrigo Sánchez Q.
+18,19:59,Parrandeo,1000m,Handicap 20-12,Arena,2976000,1920000,537600,345600,172800,12,Gran Lucretio,Mr Speaker,7,55,Benjamin Sancho,Juan Rodriguez R.
+18,19:59,Parrandeo,1000m,Handicap 20-12,Arena,2976000,1920000,537600,345600,172800,13,Terrible Pancho,Exaggerator,4,55,Diego Carvacho,Isaac Michea F.
+18,19:59,Parrandeo,1000m,Handicap 20-12,Arena,2976000,1920000,537600,345600,172800,14,Limeño Feliz,Exaggerator,4,54,Patricio Galáz,Patricio Valderrama C.
+19,20:30,Paul Harris,1000m,Handicap 18-11,Arena,2976000,1920000,537600,345600,172800,1,Moment Of Get,Get Jets,3,55,Jaime A. Miño,Mario Covarrubias
+19,20:30,Paul Harris,1000m,Handicap 18-11,Arena,2976000,1920000,537600,345600,172800,2,Cambiar De Vida,Flyer,3,56,Rodolfo S. Dores,Luis Machulas G.
+19,20:30,Paul Harris,1000m,Handicap 18-11,Arena,2976000,1920000,537600,345600,172800,3,Amor De Chocolate,Awesome Patriot,4,56,Gerard Rodríguez,Eduardo Lab R.
+19,20:30,Paul Harris,1000m,Handicap 18-11,Arena,2976000,1920000,537600,345600,172800,4,Resisto Bien,Ahora II,3,55,Fabian Medina,Juan C. Pichara J.
+19,20:30,Paul Harris,1000m,Handicap 18-11,Arena,2976000,1920000,537600,345600,172800,5,Manhattan Project,Cloud Computing,5,56,Rodolfo Fuenzalida,Carlos Melero F.
+19,20:30,Paul Harris,1000m,Handicap 18-11,Arena,2976000,1920000,537600,345600,172800,6,La Chucky Trini,Stevie Wonderboy,6,55,Lesly C. González,Genaro J. Covarrubias E.
+19,20:30,Paul Harris,1000m,Handicap 18-11,Arena,2976000,1920000,537600,345600,172800,7,Dalemita,Dubai Sky,4,54,Héctor Barrera,Rafael Quiroz F.
+19,20:30,Paul Harris,1000m,Handicap 18-11,Arena,2976000,1920000,537600,345600,172800,8,Como Te Tengo,Irish Brother,3,54,Diego Carvacho,Rodrigo Quiroz S.
+19,20:30,Paul Harris,1000m,Handicap 18-11,Arena,2976000,1920000,537600,345600,172800,9,Ambrose,Dylan Thomas,4,56,Nicolás Ramirez,Alejandro Padovani E.
+19,20:30,Paul Harris,1000m,Handicap 18-11,Arena,2976000,1920000,537600,345600,172800,10,Vandu,Dubai Sky,4,56,Benjamin Sancho,Rodrigo Quiroz S.
+19,20:30,Paul Harris,1000m,Handicap 18-11,Arena,2976000,1920000,537600,345600,172800,11,Te Voy A Olvidar,Van Nistelrooy,5,59,Miguel Gutiérrez,Rafael Bernal G.
+19,20:30,Paul Harris,1000m,Handicap 18-11,Arena,2976000,1920000,537600,345600,172800,12,Red Rojo Red,Seeking The Dia,11,56,Benjamin Ayala,Enrique M. Becar B.
+19,20:30,Paul Harris,1000m,Handicap 18-11,Arena,2976000,1920000,537600,345600,172800,13,La Gran Clio,Mustaaqeem,3,55,Axel Alvarez,Alejandro Padovani E.
+19,20:30,Paul Harris,1000m,Handicap 18-11,Arena,2976000,1920000,537600,345600,172800,14,Como El Sol,Spun to Run,3,54,José Solano,Juan C. Pichara J.
+19,20:30,Paul Harris,1000m,Handicap 18-11,Arena,2976000,1920000,537600,345600,172800,15,Wonder Woman,California Chrome,6,56,Ariel Zúñiga,Oscar Donate S.
+20,21:00,Portavoz,1000m,Handicap 19-15,Arena,3487500,2250000,630000,405000,202500,1,Mountain Monarch,Sahara Spirit,3,55,Rodrigo Painen,Oscar Donate S.
+20,21:00,Portavoz,1000m,Handicap 19-15,Arena,3487500,2250000,630000,405000,202500,2,Zambian River,Timojin,3,56,Rafael Cisternas,Marco Pavez O.
+20,21:00,Portavoz,1000m,Handicap 19-15,Arena,3487500,2250000,630000,405000,202500,3,Professionals,Grand Daddy,5,56,Roberto Avila,Patricio Valderrama C.
+20,21:00,Portavoz,1000m,Handicap 19-15,Arena,3487500,2250000,630000,405000,202500,4,Zoboomafoo,Forever Thing,5,55,Gerard Rodríguez,Aldo Castagneto U.
+20,21:00,Portavoz,1000m,Handicap 19-15,Arena,3487500,2250000,630000,405000,202500,5,Blessed,Good Samaritan,5,55,Diego Carvacho,Rodrigo Quiroz S.
+20,21:00,Portavoz,1000m,Handicap 19-15,Arena,3487500,2250000,630000,405000,202500,6,Javiera Constanza,Monthir,6,55,Benjamin Troncoso,Juan Aravena M.
+20,21:00,Portavoz,1000m,Handicap 19-15,Arena,3487500,2250000,630000,405000,202500,7,Mente Brillante,Mo Town,5,53,Jesus Toro,Juan C. Pichara J.
+20,21:00,Portavoz,1000m,Handicap 19-15,Arena,3487500,2250000,630000,405000,202500,8,Magico Ideal,Viscount Nelson,7,53,Héctor Barrera,Rafael Bernal G.
+20,21:00,Portavoz,1000m,Handicap 19-15,Arena,3487500,2250000,630000,405000,202500,9,Elquilimay,Van Nistelrooy,6,56,Sebastián Muñoz,Luis Machulas G.
+20,21:00,Portavoz,1000m,Handicap 19-15,Arena,3487500,2250000,630000,405000,202500,10,Gold Daddy,Grand Daddy,3,55,Sebastián González,Juan C. Pichara J.
+20,21:00,Portavoz,1000m,Handicap 19-15,Arena,3487500,2250000,630000,405000,202500,11,Ruletazo,Constitution,5,57,Ignacio Valdivia,Genaro J. Covarrubias E.
+20,21:00,Portavoz,1000m,Handicap 19-15,Arena,3487500,2250000,630000,405000,202500,12,California Daddy,California Chrome,7,55,Carlos Hernández,Rodrigo Pulgar A.
+20,21:00,Portavoz,1000m,Handicap 19-15,Arena,3487500,2250000,630000,405000,202500,13,Lady Astor,Tamarkuz,7,55,Jorge Vera,Julio Castillo D.
+20,21:00,Portavoz,1000m,Handicap 19-15,Arena,3487500,2250000,630000,405000,202500,14,First Point's,Hootenanny,5,53,Ronald Fournet,Rodrigo Quiroz S.
+21,21:30,Prusso,1000m,Handicap 30-22,Arena,3952500,2550000,714000,459000,229500,1,Un Guarito,Tourist,7,55,Lesly C. González,Genaro J. Covarrubias E.
+21,21:30,Prusso,1000m,Handicap 30-22,Arena,3952500,2550000,714000,459000,229500,2,El Pitin,Forward March,4,59,Gerard Rodríguez,Claudio Bernal G.
+21,21:30,Prusso,1000m,Handicap 30-22,Arena,3952500,2550000,714000,459000,229500,3,Okui,Imperia II,6,59,Luis Torres,Claudio Bernal G.
+21,21:30,Prusso,1000m,Handicap 30-22,Arena,3952500,2550000,714000,459000,229500,4,Mi Menchita,Morning Raider,4,54,Axel Alvarez,Maritza Pérez A.
+21,21:30,Prusso,1000m,Handicap 30-22,Arena,3952500,2550000,714000,459000,229500,5,Bowser,Distorted Economy,4,58,Ignacio Valdivia,Daniel Contreras A.
+21,21:30,Prusso,1000m,Handicap 30-22,Arena,3952500,2550000,714000,459000,229500,6,Quiero Re Truco,Mr Speaker,6,56,Nicolás Santibañez,Luis Urbina H.
+21,21:30,Prusso,1000m,Handicap 30-22,Arena,3952500,2550000,714000,459000,229500,7,Jimbo,Newfoundland,3,53,Nicolás Ramirez,Juan C. Pichara J.
+21,21:30,Prusso,1000m,Handicap 30-22,Arena,3952500,2550000,714000,459000,229500,8,Blackcrack,Grand Daddy,5,53,Jesus Toro,Juan C. Pichara J.
+21,21:30,Prusso,1000m,Handicap 30-22,Arena,3952500,2550000,714000,459000,229500,9,Lucky Benni,Mendelssohn,4,59,Benjamin Sancho,Claudio Bernal G.
+21,21:30,Prusso,1000m,Handicap 30-22,Arena,3952500,2550000,714000,459000,229500,10,Bruno El Terrible,Gemologist,6,56,Fabian Medina,Juan C. Pichara J.
+21,21:30,Prusso,1000m,Handicap 30-22,Arena,3952500,2550000,714000,459000,229500,11,Ke Pacquiao,International Star,4,59,Gustavo Aros,Rodrigo Pulgar A.
+21,21:30,Prusso,1000m,Handicap 30-22,Arena,3952500,2550000,714000,459000,229500,12,Badboy,Bad Daddy,7,56,David Sánchez,Ricardo Rojas S.
+21,21:30,Prusso,1000m,Handicap 30-22,Arena,3952500,2550000,714000,459000,229500,13,Cosa De Locos,Grand Daddy,8,55,Miguel Gutiérrez,Rodrigo Quiroz S.
+21,21:30,Prusso,1000m,Handicap 30-22,Arena,3952500,2550000,714000,459000,229500,14,No Vuelvo Mas,Good Samaritan,5,54,Jaime A. Miño,Jaime Hirmas R.
+21,21:30,Prusso,1000m,Handicap 30-22,Arena,3952500,2550000,714000,459000,229500,15,Nubes Negras,Endorsement,7,56,Benjamin Troncoso,Alejandro Padovani E.
